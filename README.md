@@ -1,3 +1,3 @@
 # dotfiles
 
-get ready to rice
+get ready to rice.
