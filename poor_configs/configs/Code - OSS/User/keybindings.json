@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+d",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+l ctrl+d",
+        "command": "cSpell.addWordToUserDictionary"
+    }
+]
