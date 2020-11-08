@@ -27,11 +27,15 @@ set $bg5 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'city-pink-
 #################################
 #            Display            #
 #################################
-for_window [class="^.*"] border pixel 0
+client.focused_inactive #2b2b2b #2b2b2b #e6eef1 #101010 #101010
+client.unfocused        #101010 #101010 #e6eef1 #101010 #101010
+client.focused          #ffb981 #ffb981 #101010 #101010 #101010
+for_window [class="^.*"] border pixel 0 
 gaps inner 14
 gaps outer 0
 gaps top -2
 gaps bottom -2
+
 
 #################################
 #            Always             #
@@ -91,6 +95,7 @@ bindsym $mega+o resize grow width 5 px or 5 ppt
 #################################
 #         Window Rules          #
 #################################
+font pango: Open Sans 10
 assign [class="youtube-music-desktop-app"]  $ws4
 assign [class="discord"] $ws3
 
@@ -98,6 +103,9 @@ for_window [class="youtube-music-desktop-app"] floating enable
 for_window [class="zoom"] floating enable
 for_window [class="Thunar"] floating enable resize set 1440 1440
 for_window [class="discord"] floating enable resize set 2560 1440
+
+for_window [class="Chromium"] layout tabbed
+for_window [class="Zathura"] layout tabbed
 
 #################################
 #            Startup            #
