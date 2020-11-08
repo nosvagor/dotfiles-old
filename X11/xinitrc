@@ -51,11 +51,4 @@ fi
 xinput --set-prop 'ROCCAT ROCCAT Kova Mouse' 'libinput Accel Speed' 0.8
 nvidia-settings --load-config-only
 xset r rate 196 36
-
-#twm &
-#xclock -geometry 50x50-1+1 &
-#xterm -geometry 80x50+494+51 &
-#xterm -geometry 80x20+494-0 &
-#exec xterm -geometry 80x66+0+0 -name login
-
 exec i3

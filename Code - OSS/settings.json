@@ -1,10 +1,7 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "window.titleBarStyle": "custom",
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.intellisense.package.enabled": true,
-    "terminal.integrated.shell.linux": "/bin/bash",
     "editor.multiCursorModifier": "ctrlCmd",
     "cSpell.userWords": [
         "AMPA",
@@ -17,6 +14,7 @@
         "Antiporters",
         "Archaea",
         "Aufbau",
+        "Autapomorphy",
         "Autocrine",
         "Axotomy",
         "BACs",
@@ -36,6 +34,7 @@
         "Channelrhodopsins",
         "Chirality",
         "Cingulate",
+        "Cladogenesis",
         "Cofilin",
         "Colligative",
         "Colvert",
@@ -83,8 +82,10 @@
         "Gyri",
         "Hadamard",
         "Hadley",
+        "Haplotype",
         "Henle",
         "Homeotherms",
+        "Homoplasious",
         "Homoplasy",
         "IMFs",
         "IPSPs",
@@ -173,6 +174,7 @@
         "Straub",
         "Sturges",
         "Subfunctionalization",
+        "Sympatric",
         "Symporters",
         "Syste",
         "Tansmembrane",
@@ -205,6 +207,7 @@
         "achiral",
         "actinin",
         "adenylyl",
+        "alacritty",
         "allometric",
         "allosteric",
         "allosterically",
@@ -448,6 +451,7 @@
         "statsmodels",
         "stereocilia",
         "subiculum",
+        "synapomorphies",
         "synthases",
         "tconfint",
         "tectorial",
@@ -494,8 +498,6 @@
     "window.zoomLevel": 0,
     "editor.quickSuggestionsDelay": 0,
     "latex-workshop.intellisense.package.extra": [
-        "siunitx",
-        "multicol",
         "hyperref",
         "chemformula"
     ],
@@ -535,7 +537,7 @@
     "workbench.sideBar.location": "left",
     "latex-workshop.message.latexlog.exclude": [
         "Some font shapes were not available, defaults substituted.",
-        "Font shape `OT1/cmr/l/n' undefined (Font)\tusing `OT1/cmr/m/n' instead."
+        "Font shape `OT1/cmr/l/n' undefined"
     ],
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "explorer.confirmDelete": false,
@@ -544,9 +546,6 @@
     "terminal.integrated.inheritEnv": false,
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "python.dataScience.interactiveWindowMode": "perFile",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.alwaysTrustNotebooks": true,
     "python.dataScience.alwaysScrollOnNewCell": true,
@@ -577,7 +576,7 @@
         "statusBarItem.remoteBackground": "#FF7042"
     },
     "materialTheme.accent": "Orange",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
     "python.analysis.typeCheckingMode": "strict",
     "cSpell.language": "en,en-US",
     "python.dataScience.themeMatplotlibPlots": true,
@@ -587,7 +586,13 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.tabCloseButton": "off",
-    "editor.minimap.maxColumn": 69,
+    "editor.minimap.maxColumn": 42,
     "diffEditor.ignoreTrimWhitespace": false,
-    "latex-workshop.message.error.show": false
+    "latex-workshop.message.error.show": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "latex-workshop.view.pdf.viewer": "external",
+    "editor.fontSize": 15,
+    "git.autofetch": true
 }
