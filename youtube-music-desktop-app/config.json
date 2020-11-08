@@ -6,7 +6,7 @@
 		"password": ""
 	},
 	"settings-app-language": "en",
-	"settings-miniplayer-size": 606,
+	"settings-miniplayer-size": 608,
 	"settings-miniplayer-resizable": false,
 	"settings-miniplayer-show-task": false,
 	"settings-lyrics-provider": "1",
@@ -15,14 +15,12 @@
 	"settings-enable-double-tapping-show-hide": true,
 	"settings-enable-taskbar-progressbar": true,
 	"settings-accelerators": {
-		"media-play-pause": "CmdOrCtrl+Shift+Space",
-		"media-track-next": "CmdOrCtrl+Shift+PageUp",
-		"media-track-previous": "CmdOrCtrl+Shift+PageDown",
-		"media-track-like": "CmdOrCtrl+Shift+L",
-		"media-track-dislike": "CmdOrCtrl+Shift+D",
-		"media-volume-up": "CmdOrCtrl+Shift+Up",
-		"media-volume-down": "CmdOrCtrl+Shift+Down",
-		"miniplayer-open-close": "CmdOrCtrl+Shift+M"
+		"media-play-pause": "Super+Shift+Control+Alt+Space",
+		"media-track-next": "Super+Shift+Control+Alt+Y",
+		"media-track-previous": "Super+Shift+Control+Alt+G",
+		"media-volume-up": "Super+Shift+Control+Alt+P",
+		"media-volume-down": "Super+Shift+Control+Alt+L",
+		"miniplayer-open-close": "Super+Shift+Control+Alt+BackSpace"
 	},
 	"has-updated": false,
 	"discord-presence-settings": {
@@ -47,22 +45,22 @@
 	"uuid": "3c98d161-acb2-4643-8ff5-61e99e0494f2",
 	"window-maximized": false,
 	"window-size": {
-		"width": 2556,
-		"height": 1400
+		"width": 1258,
+		"height": 1022
 	},
 	"window-position": {
-		"x": 2,
-		"y": 17
+		"x": 280,
+		"y": 240
 	},
 	"window-url": "https://music.youtube.com/",
 	"settings-discord-rich-presence": true,
 	"settings-keep-background": false,
 	"miniplayer-position": {
-		"x": 1718,
-		"y": 630
+		"x": 976,
+		"y": 416
 	},
 	"settings-enable-player-bgcolor": true,
-	"settings-volume": "7.370400494518711",
+	"settings-volume": "6.14221603819997",
 	"settings-volume-media-keys": false,
 	"settings-decibel-volume": true
 }
