@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 i3-msg append_layout ~/.config/i3/organic-chemistry.json &&
-code ~/Notes/organic-chemistry |
+code ~/Notes |
 alacritty |
 chromium |
 zathura ~/Documents/Textbooks/In-use/Klein-Organic-Chemistry-3rd.pdf |
