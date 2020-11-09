@@ -1,0 +1,53 @@
+#  _____         __  __                                            _____      
+# /__  /  ____ _/ /_/ /_  __  ___________ _      _________  ____  / __(_)___ _
+#   / /  / __ `/ __/ __ \/ / / / ___/ __ `/_____/ ___/ __ \/ __ \/ /_/ / __ `/
+#  / /__/ /_/ / /_/ / / / /_/ / /  / /_/ /_____/ /__/ /_/ / / / / __/ / /_/ / 
+# /____/\__,_/\__/_/ /_/\__,_/_/   \__,_/      \___/\____/_/ /_/_/ /_/\__, /  
+#                                                                    /____/  
+# Heavily modified due to unique keyboard layout --- See 'man zathurarc'
+
+#################################
+#            General            #
+#################################
+set adjust-open width
+set zoom 
+set zoom-step 5
+
+set smooth-scroll "true"
+set scroll-page-aware "true"
+set scroll-step 50
+
+set link-hadjust "false"
+set search-hadjust "false"
+
+set window-title-basename "true"
+
+#################################
+#            Dispaly            #
+#################################
+set highlight-color "#ffb981"
+set highlight-active-color '#FF9646'
+set highlight-transparency 0.42
+
+set guioptions ""
+set font "Hack Nerd Font 10" 
+
+set inputbar-fg "#FF9646"
+
+set notification-bg "#212121"
+set notification-fg "#e6eef1"
+
+set tabbar-fg "#e6eef1" 
+set tabbar-bg "#212121"
+
+tabbar-focus-fg "#FF9646"
+tabbar-focus-bg "#212121"
+
+set completion-highlight-fg "#212121"
+set completion-highlight-bg "#FF9646"
+
+set index-active-fg "#212121"
+set index-active-bg "#FF9646"
+
+unmap s
+unmap a   
