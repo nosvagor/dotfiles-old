@@ -1,0 +1,204 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.75,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1152,
+                       "width": 1536,
+                       "x": 1152,
+                       "y": 504
+                    },
+                    "name": "temp-apres.tex - organic-chemistry - Code - OSS",
+                    "percent": 0.9,
+                    "swallows": [
+                       {
+                       "class": "^code\\-oss$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splith",
+                    "percent": 0.0999999999999998,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "pixel",
+                            "current_border_width": 0,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 600,
+                               "width": 800,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "i3-save-tree /home/cullyn",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^Alacritty$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "tabbed",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 2128,
+                       "width": 1892,
+                       "x": 1944,
+                       "y": 31
+                    },
+                    "name": "New Tab - Chromium",
+                    "percent": 0.333333333333333,
+                    "swallows": [
+                       {
+                       "class": "^Chromium$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Klein-Organic-Chemistry-3rd.pdf",
+                    "percent": 0.333333333333333,
+                    "swallows": [
+                       {
+                       "class": "^Zathura$",
+                       "title": "^Klein\\-Organic\\-Chemistry\\-3rd\\.pdf$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Klein-Solutions.pdf",
+                    "percent": 0.333333333333333,
+                    "swallows": [
+                       {
+                       "class": "^Zathura$",
+                       "title": "^Klein\\-Solutions\\.pdf$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "org-chem.pdf",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^Zathura$",
+               "title": "^org\\-chem\\.pdf$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "temp-apres.pdf",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^Zathura$",
+               "title": "^temp\\-apres\\.pdf$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "apres-lecture-quiz.pdf",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^Zathura$",
+               "title": "^apres\\-lecture\\-quiz\\.pdf$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

@@ -1,0 +1,176 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.75,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splitv",
+                    "percent": 0.9,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "pixel",
+                            "current_border_width": 0,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 1152,
+                               "width": 1536,
+                               "x": 1152,
+                               "y": 504
+                            },
+                            "name": "org-phys.tex - organismal-physiology - Code - OSS",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^code\\-oss$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "layout": "splith",
+                    "percent": 0.0999999999999998,
+                    "type": "con",
+                    "nodes": [
+                        {
+                            "border": "pixel",
+                            "current_border_width": 0,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 600,
+                               "width": 800,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "i3-save-tree /home/cullyn",
+                            "percent": 1,
+                            "swallows": [
+                               {
+                               "class": "^Alacritty$"
+                               }
+                            ],
+                            "type": "con"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "tabbed",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 2128,
+                       "width": 1892,
+                       "x": 1944,
+                       "y": 31
+                    },
+                    "name": "New Tab - Chromium",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Chromium$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Animal-Physiology.pdf",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Zathura$",
+                       "instance": "^org\\.pwmt\\.zathura$",
+                       "title": "^Animal\\-Physiology\\.pdf$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": 0.25,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "org-phys.pdf",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Zathura$",
+               "instance": "^org\\.pwmt\\.zathura$",
+               "title": "^org\\-phys\\.pdf$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "name": "lecture-concepts.pdf",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Zathura$",
+               "instance": "^org\\.pwmt\\.zathura$",
+               "title": "^lecture\\-concepts\\.pdf$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

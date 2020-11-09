@@ -30,6 +30,8 @@ set $bg5 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'city-pink-
 client.focused_inactive #2b2b2b #2b2b2b #e6eef1 #101010 #101010
 client.unfocused        #101010 #101010 #e6eef1 #101010 #101010
 client.focused          #ffb981 #ffb981 #101010 #101010 #101010
+title_align center
+font pango: Open Sans 10
 for_window [class="^.*"] border pixel 0 
 gaps inner 14
 gaps outer 0
@@ -50,14 +52,17 @@ exec_always --no-startup-id $bg2
 floating_modifier $alt
 bindsym $mod+Return exec $term
 bindsym $alt+q kill
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
-bindsym $alt+Escape exec --no-startup-id ~/.config/rofi/powermenu.sh
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+a layout tabbed
 bindsym $mod+e layout toggle split
 bindsym $mod+y fullscreen toggle
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
+
+# scripts
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
+bindsym $alt+Escape exec --no-startup-id ~/.config/rofi/powermenu.sh
+bindsym $mega+e exec --no-startup-id ~/.config/rofi/notes.sh
 
 # change focus:
 bindsym $mod+Left focus left
@@ -86,16 +91,15 @@ bindsym $mod+apostrophe workspace $ws4; exec $bg4
 bindsym $mod+p workspace $ws5; exec $bg5
 
 # resize windows
-bindsym $mega+n resize shrink width 5 px or 5 ppt
-bindsym $mega+u resize grow height 5 px or 5 ppt
-bindsym $mega+i resize shrink height 5 px or 5 ppt
-bindsym $mega+o resize grow width 5 px or 5 ppt
+bindsym $mega+n resize shrink width 1 px or 1 ppt
+bindsym $mega+u resize grow height 1 px or 1 ppt
+bindsym $mega+i resize shrink height 1 px or 1 ppt
+bindsym $mega+o resize grow width 1 px or 1 ppt
 
 
 #################################
 #         Window Rules          #
 #################################
-font pango: Open Sans 10
 assign [class="youtube-music-desktop-app"]  $ws4
 assign [class="discord"] $ws3
 
@@ -103,9 +107,6 @@ for_window [class="youtube-music-desktop-app"] floating enable
 for_window [class="zoom"] floating enable
 for_window [class="Thunar"] floating enable resize set 1440 1440
 for_window [class="discord"] floating enable resize set 2560 1440
-
-for_window [class="Chromium"] layout tabbed
-for_window [class="Zathura"] layout tabbed
 
 #################################
 #            Startup            #
