@@ -31,7 +31,7 @@ configuration {
 
 #window {
   width: 10%;
-  height: 13.2%;
+  height: 15.9%;
   padding: 20px 20px;
   border: 0px;
   border-radius: 0px;

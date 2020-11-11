@@ -3,8 +3,7 @@
 #   / /  / __ `/ __/ __ \/ / / / ___/ __ `/_____/ ___/ __ \/ __ \/ /_/ / __ `/
 #  / /__/ /_/ / /_/ / / / /_/ / /  / /_/ /_____/ /__/ /_/ / / / / __/ / /_/ / 
 # /____/\__,_/\__/_/ /_/\__,_/_/   \__,_/      \___/\____/_/ /_/_/ /_/\__, /  
-#                                                                    /____/  
-# Heavily modified due to unique keyboard layout --- See 'man zathurarc'
+#                                                                    /____/
 
 #################################
 #            General            #
@@ -15,7 +14,7 @@ set zoom-step 5
 
 set smooth-scroll "true"
 set scroll-page-aware "true"
-set scroll-step 50
+set scroll-step 200
 
 set link-hadjust "false"
 set search-hadjust "false"
@@ -26,11 +25,11 @@ set window-title-basename "true"
 #            Dispaly            #
 #################################
 set highlight-color "#ffb981"
-set highlight-active-color '#FF9646'
+set highlight-active-color '#406de3'
 set highlight-transparency 0.42
 
 set guioptions ""
-set font "Hack Nerd Font 10" 
+set font "Open Sans 12" 
 
 set inputbar-fg "#FF9646"
 
