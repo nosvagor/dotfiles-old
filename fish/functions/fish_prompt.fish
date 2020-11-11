@@ -23,9 +23,6 @@ function fish_prompt
     set -l retc red
     test $status = 0; and set retc bryellow
 
-    set -q __fish_git_prompt_showupstream
-    or set -g __fish_git_prompt_showupstream auto
-
     function _nim_prompt_wrapper
         set retc $argv[1]
         set field_name $argv[2]
@@ -33,26 +30,20 @@ function fish_prompt
 
         set_color normal
         set_color $retc
-        echo -n '─'
-        set_color -o bryellow
-        echo -n '['
+        echo -n ' '
         set_color normal
         test -n $field_name
         and echo -n $field_name:
         set_color $retc
         echo -n $field_value
-        set_color -o bryellow
-        echo -n ']'
     end
 
     set_color $retc
     echo -n '┬─'
-    set_color -o bryellow
-    echo -n [
     if test "$USER" = root -o "$USER" = toor
         set_color -o red
     else
-        set_color -o bryellow
+        set_color -o $retc
     end
     echo -n $USER
     set_color -o white
@@ -63,13 +54,8 @@ function fish_prompt
         set_color -o cyan
     end
     echo -n (prompt_hostname)
-    set_color -o white
+    set_color -o $retc
     echo -n :(prompt_pwd)
-    set_color -o bryellow
-    echo -n ']'
-
-    # Date
-    _nim_prompt_wrapper $retc '' (date +%X)
 
     # Virtual Environment
     set -q VIRTUAL_ENV_DISABLE_PROMPT
@@ -77,15 +63,8 @@ function fish_prompt
     set -q VIRTUAL_ENV
     and _nim_prompt_wrapper $retc V (basename "$VIRTUAL_ENV")
 
-    # git
-    set prompt_git (fish_git_prompt | string trim -c ' ()')
-    test -n "$prompt_git"
-    and _nim_prompt_wrapper $retc G $prompt_git
-
-    # Battery status
-    type -q acpi
-    and test (acpi -a 2> /dev/null | string match -r off)
-    and _nim_prompt_wrapper $retc B (acpi -b | cut -d' ' -f 4-)
+     # Date
+    _nim_prompt_wrapper $retc '' (date +%H:%M)
 
     # New line
     echo
@@ -102,6 +81,6 @@ function fish_prompt
     set_color $retc
     echo -n '╰─>'
     set_color -o yellow
-    echo -n '$ '
+    echo -n ' '
     set_color normal
 end
