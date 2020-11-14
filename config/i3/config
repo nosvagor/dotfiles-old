@@ -17,11 +17,11 @@ set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
-set $bg1 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'jelly-3840x2160.jpg'
-set $bg2 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'arrival-3840x2160.jpg'
-set $bg3 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'spirited-3840x2160.png'
-set $bg4 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'girl-3840x2160.png'
-set $bg5 --no-startup-id /usr/bin/feh --bg-scale ~/assets/wallpapers/'city-pink-3840x2160.jpg'
+set $bg1 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'jelly-3840x2160.jpg'
+set $bg2 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'arrival-3840x2160.jpg'
+set $bg3 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'spirited-3840x2160.png'
+set $bg4 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'girl-3840x2160.png'
+set $bg5 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'city-pink-3840x2160.jpg'
 
 #################################
 #            Display            #

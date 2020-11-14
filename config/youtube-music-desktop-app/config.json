@@ -45,12 +45,12 @@
 	"uuid": "3c98d161-acb2-4643-8ff5-61e99e0494f2",
 	"window-maximized": false,
 	"window-size": {
-		"width": 1258,
-		"height": 1022
+		"width": 1348,
+		"height": 1000
 	},
 	"window-position": {
-		"x": 280,
-		"y": 240
+		"x": 258,
+		"y": 238
 	},
 	"window-url": "https://music.youtube.com/",
 	"settings-discord-rich-presence": true,
@@ -60,7 +60,7 @@
 		"y": 416
 	},
 	"settings-enable-player-bgcolor": true,
-	"settings-volume": "6.14221603819997",
+	"settings-volume": "45.58823529411765",
 	"settings-volume-media-keys": false,
 	"settings-decibel-volume": true
 }
