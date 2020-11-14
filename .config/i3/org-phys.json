@@ -112,7 +112,7 @@
                        {
                        "class": "^Zathura$",
                        "instance": "^org\\.pwmt\\.zathura$",
-                       "title": "^Animal\\-Physiology\\.pdf$"
+                       "title": "^Animal\\-Physiology\\-4th.pdf$"
                        }
                     ],
                     "type": "con"
