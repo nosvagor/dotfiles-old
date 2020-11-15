@@ -1,6 +1,6 @@
 [colors]
 background = #BF010101 
-foreground = #e3eaf3
+foreground = #E68fc2f7
 primary = #406de3
 secondary = #65a2d9
 tertiary = #d07ef2
@@ -73,12 +73,11 @@ label-urgent-padding = ${self.label-focused-padding}
 type = internal/date
 interval = 1
 
-date = "%A, %B %d, 12,0%y"
+date = "%A, %B %d |12,0%y"
 time = "%H:%M"
 
 format-prefix-foreground = ${colors.foreground}
-label =     %date%      %time% 
-
+label =    %date%      %time% 
 
 [settings]
 screenchange-reload = true
