@@ -52,7 +52,6 @@
 		"x": 248,
 		"y": 236
 	},
-	"window-url": "https://music.youtube.com/watch?v=79j6aDJsnXc&list=RDTMAK5uy_kset8DisdE7LSD4TNjEVvrKRTmG7a56sY",
 	"settings-discord-rich-presence": true,
 	"settings-keep-background": false,
 	"miniplayer-position": {
@@ -62,5 +61,6 @@
 	"settings-enable-player-bgcolor": true,
 	"settings-volume": "45.58823529411765",
 	"settings-volume-media-keys": false,
-	"settings-decibel-volume": true
+	"settings-decibel-volume": true,
+	"window-url": "https://music.youtube.com/"
 }
