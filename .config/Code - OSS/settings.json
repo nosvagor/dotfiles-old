@@ -550,14 +550,6 @@
         "zaitsev",
         "zorder"
     ],
-    "latex-workshop.chktex.args.active": [
-        "-wall",
-        "-n22",
-        "-n30",
-        "-e16",
-        "-q",
-        "-21"
-    ],
     "editor.cursorBlinking": "phase",
     "window.zoomLevel": 0,
     "editor.quickSuggestionsDelay": 0,
@@ -646,10 +638,20 @@
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "latex-workshop.latex.autoClean.run": "onBuilt",
     "cSpell.checkLimit": 1000,
-    "latex-workshop.latex.build.forceRecipeUsage": true,
-    "latex-workshop.message.latexlog.exclude": [
-        "Some font shapes were not available, defaults substituted.",
-        "Font shape `T1/cmr/l/n' undefined"
-    ],
-    "latex-workshop.message.update.show": false
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.latex.tools": [
+        {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-lualatex",
+            "%DOC%"
+          ]
+        }
+    ]
+],
+"latex-workshop.synctex.afterBuild.enabled": true
 }
