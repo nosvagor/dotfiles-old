@@ -59,6 +59,8 @@ bindsym $mod+e layout toggle split
 bindsym $mod+y fullscreen toggle
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
+bindsym $mod+Shift+b exec maim -s -u | xclip -selection clipboard -t image/png 
+bindsym $mega+b exec maim -s -u ~/resources/screenshots/$(date +%m-%d-%y_%H':'%M).png
 
 # scripts
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh

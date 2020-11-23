@@ -651,7 +651,6 @@
             "%DOC%"
           ]
         }
-    ]
-],
-"latex-workshop.synctex.afterBuild.enabled": true
+    ],
+    "latex-workshop.synctex.afterBuild.enabled": true
 }
