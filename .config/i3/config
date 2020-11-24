@@ -8,20 +8,30 @@
 #################################
 #           Variables           #
 #################################
-set $term --no-startup-id alacritty 
+set $exec exec --no-startup-id
+
+## program preferences
+set $term alacritty 
+set $browser firefox
+set $editor code 
+
+## mod keys
 set $mod Mod4
 set $alt Mod1 
 set $mega Ctrl+Shift+Mod1+Mod4
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $bg1 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'jelly-3840x2160.jpg'
-set $bg2 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'arrival-3840x2160.jpg'
-set $bg3 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'spirited-3840x2160.png'
-set $bg4 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'girl-3840x2160.png'
-set $bg0 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'city-pink-3840x2160.jpg'
+floating_modifier $alt
+
+## workspace names, inverted for polybar
+set $ws1 "4"
+set $ws2 "3" 
+set $ws3 "2"
+set $ws4 "1"
+
+## backgrounds 
+set $bg1 feh --bg-scale ~/wallpapers/'jelly-3840x2160.jpg'
+set $bg2 feh --bg-scale ~/wallpapers/'arrival-3840x2160.jpg'
+set $bg3 feh --bg-scale ~/wallpapers/'spirited-3840x2160.png'
+set $bg4 feh --bg-scale ~/wallpapers/'girl-3840x2160.png'
 
 #################################
 #            Display            #
@@ -29,14 +39,15 @@ set $bg0 --no-startup-id /usr/bin/feh --bg-scale ~/wallpapers/'city-pink-3840x21
 client.focused_inactive #2b2b2b #2b2b2b #e6eef1 #101010 #101010
 client.unfocused        #101010 #101010 #e6eef1 #101010 #101010
 client.focused          #ffb981 #ffb981 #101010 #101010 #101010
+
 title_align center
 font pango: Open Sans 10
 for_window [class="^.*"] border pixel 0 
+
 gaps inner 14
 gaps outer 0
 gaps top 28
 gaps bottom -2
-
 
 #################################
 #            Always             #
@@ -50,22 +61,33 @@ exec_always --no-startup-id $bg2
 #################################
 #           Commands            #
 #################################
-floating_modifier $alt
-bindsym $mod+Return exec $term
+
 bindsym $alt+q kill
-bindsym $mod+Shift+space floating toggle
+bindsym $alt+space floating toggle
+
 bindsym $mod+a layout tabbed
 bindsym $mod+e layout toggle split
-bindsym $mod+y fullscreen toggle
+bindsym $mod+s fullscreen toggle
+bindsym $mod+r split h
+bindsym $mod+c split v
+
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+b exec maim -s -u | xclip -selection clipboard -t image/png 
-bindsym $mega+b exec maim -s -u ~/resources/screenshots/$(date +%m-%d-%y_%H':'%M).png
+
+## common programs
+bindsym $mod+Return $exec $term
+bindsym $mod+t $exec $browser
+bindsym $mod+f $exec $editor
+bindsym $mod+d $exec discord
+
+## screenshots
+bindsym $mod+Shift+b $exec maim -s -u | xclip -selection clipboard -t image/png 
+bindsym $mega+b $exec maim -s -u ~/resources/screenshots/$(date +%m-%d-%y_%H':'%M).png
 
 # scripts
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
-bindsym $alt+Escape exec --no-startup-id ~/.config/rofi/powermenu.sh
-bindsym $mega+e exec --no-startup-id ~/.config/rofi/notes.sh
+bindsym $mega+f $exec ~/.config/rofi/launcher.sh
+bindsym $alt+Escape $exec ~/.config/rofi/powermenu.sh
+bindsym $mega+d $exec ~/.config/rofi/notes.sh
 
 # change focus:
 bindsym $mod+Left focus left
@@ -81,41 +103,28 @@ bindsym $mod+Shift+Right move right
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume $exec pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume $exec pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute $exec pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute $exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # switch to workspace
-bindsym $mod+n workspace $ws1; exec $bg1
-bindsym $mod+i workspace $ws2; exec $bg2
-bindsym $mod+o workspace $ws3; exec $bg3
-bindsym $mod+apostrophe workspace $ws4; exec $bg4
-bindsym $mod+p workspace $ws0; exec $bg0
-
-# resize windows
-bindsym $mega+n resize shrink width 1 px or 1 ppt
-bindsym $mega+u resize grow height 1 px or 1 ppt
-bindsym $mega+i resize shrink height 1 px or 1 ppt
-bindsym $mega+o resize grow width 1 px or 1 ppt
-
+bindsym $mega+t workspace $ws1; $exec $bg1
+bindsym $mega+e workspace $ws2; $exec $bg2
+bindsym $mega+s workspace $ws3; $exec $bg3
+bindsym $mega+a workspace $ws4; $exec $bg4
 
 #################################
 #         Window Rules          #
 #################################
 assign [class="youtube-music-desktop-app"]  $ws4
-assign [class="discord"] $ws3
-assign [class="GLava"] $ws
 
 for_window [class="youtube-music-desktop-app"] floating enable
-for_window [class="GLava"] floating enable 
-for_window [class="zoom"] floating enable
 for_window [class="discord"] floating enable resize set 2560 1440
 
 #################################
 #            Startup            #
 #################################
-exec --no-startup-id ytmdesktop
-exec --no-startup-id discord
-exec --no-startup-id i3-msg workspace 2 
+$exec ytmdesktop
+$exec i3-msg workspace 2
 

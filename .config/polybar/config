@@ -42,14 +42,14 @@ index-sort = true
 enable-click = true
 enable-scroll = false
 wrapping-scroll = false
-reverse-scroll = false
+reverse-scroll = true
 fuzzy-match = true
 
 ws-icon-0 = "0;%{T2}%{T-}   "
-ws-icon-1 = "1;%{T2}拾%{T-}    "
-ws-icon-2 = "2;%{T2}%{T-}    "
-ws-icon-3 = "3;%{T2}ﭮ%{T-}    "
-ws-icon-4 = "4;%{T2}輸%{T-}   "
+ws-icon-1 = "4;%{T2}拾%{T-}    "
+ws-icon-2 = "3;%{T2}%{T-}    "
+ws-icon-3 = "2;%{T2}%{T-}   "
+ws-icon-4 = "1;%{T2}輸%{T-}   "
 
 format = <label-state>
 
