@@ -22,3 +22,5 @@
 
 /* Smoothing factor, override from `smooth_parameters.glsl` */
 #request setsmoothfactor 0.008
+
+#request setgeometry 0 0 500 500

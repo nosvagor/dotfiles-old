@@ -8,7 +8,7 @@
 c1="evolution"
 c2="organic-chemistry"
 c3="organismal-physiology"
-c4="config"
+c4="landing"
 
 # you can customise the rofi command all you want ...
 rofi_command="rofi -show drun -p Notes -theme notes.rasi"
