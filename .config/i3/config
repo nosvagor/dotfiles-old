@@ -116,7 +116,7 @@ for_window [class="discord"] floating enable resize set 2560 1440
 #################################
 exec --no-startup-id ytmdesktop
 exec --no-startup-id discord
-exec --no-startup-id i3-msg workspace 2 && $bg-2
+exec --no-startup-id i3-msg workspace 2 && $bg-2 
 
 
 
