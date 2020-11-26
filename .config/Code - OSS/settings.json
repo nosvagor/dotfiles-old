@@ -250,6 +250,7 @@
         "ceruleus",
         "channelrhodopsin",
         "chemiosmotic",
+        "chktex",
         "chloro",
         "cholecystokinin",
         "cholinergic",
@@ -657,5 +658,6 @@
           ]
         }
     ],
-    "latex-workshop.synctex.afterBuild.enabled": true
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "editor.fontFamily": "'Hack Nerd Font'"
 }
