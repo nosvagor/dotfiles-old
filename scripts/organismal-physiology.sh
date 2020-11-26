@@ -7,5 +7,3 @@ chromium |
 zathura ~/textbooks/Animal-Physiology-4th.pdf |
 zathura ~/Notes/organismal-physiology/org-phys.pdf |
 zathura ~/Notes/organismal-physiology/lecture-concepts.pdf |
-
-exit 0

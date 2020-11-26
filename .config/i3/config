@@ -79,6 +79,8 @@ bindsym $mod+Return $exec $term
 bindsym $mod+t $exec $browser
 bindsym $mod+f $exec $editor
 bindsym $mod+d $exec discord
+bindsym $mod+x $exec zathura 
+bindsym $mod+g $exec alacritty -e ranger
 
 ## screenshots
 bindsym $mod+Shift+b $exec maim -s -u | xclip -selection clipboard -t image/png 
@@ -118,13 +120,10 @@ bindsym $mega+a workspace $ws4; $exec $bg4
 #         Window Rules          #
 #################################
 assign [class="youtube-music-desktop-app"]  $ws4
-
 for_window [class="youtube-music-desktop-app"] floating enable
-for_window [class="discord"] floating enable resize set 2560 1440
 
 #################################
 #            Startup            #
 #################################
 $exec ytmdesktop
 $exec i3-msg workspace 2
-
