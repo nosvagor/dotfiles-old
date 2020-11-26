@@ -1,7 +1,7 @@
 #nav-bar {
-    margin-top: 4px !important;
     background-color: var(--moonlight-gray-2) !important;
     box-shadow: none !important;
+    padding-top: 2px !important;
 }
 
 /* Toolbar buttons */
@@ -70,13 +70,11 @@
 }
 #urlbar #urlbar-background {
     background-color: var(--moonlight-gray-1) !important;
-    border: 1px inset var(--moonlight-gray-2) !important;
+    border: 1px inset var(--moonlight-gray-3) !important;
     border-radius: 12px !important;
     box-shadow: none !important;
 }
 #urlbar[open="true"] #urlbar-background {
-    border: 1px inset var(--moonlight-gray-3) !important;
-    background-color: var(--moonlight-gray-1) !important;
     border-radius: 9px !important;
     margin-bottom: -3px !important;
 }
@@ -122,7 +120,6 @@
 #urlbar-input::placeholder,
 .searchbar-textbox::placeholder {
        opacity: 0 !important;
- 
 }
 
 #urlbar-container [class*="icon"],

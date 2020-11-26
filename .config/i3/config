@@ -63,7 +63,7 @@ exec_always --no-startup-id $bg2
 #################################
 
 bindsym $alt+q kill
-bindsym $alt+space floating toggle
+bindsym Ctrl+space floating toggle
 
 bindsym $mod+a layout tabbed
 bindsym $mod+e layout toggle split
