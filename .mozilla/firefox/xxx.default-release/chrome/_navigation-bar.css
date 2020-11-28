@@ -35,7 +35,6 @@
     border: none !important;
 }
 
-
 /* Remove burger menu spacing */
 #PanelUI-button {
     margin-inline-start: 0 !important;
@@ -87,6 +86,10 @@
 }
 .urlbarView #urlbar-results .urlbarView-row .urlbarView-url {
     color: var(--moonlight-gray-6) !important;
+}
+
+.urlbarView-body-inner {
+    border-top: 0px !important;
 }
 
 /* Url bar Icons */
