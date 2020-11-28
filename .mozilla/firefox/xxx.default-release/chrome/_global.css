@@ -33,3 +33,9 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 #tabbrowser-tabpanels {
     background-color: var(--moonlight-gray-2) !important;
 }
+
+#minimize-button,
+#close-button,
+#restore-button { 
+    visibility: collapse !important;
+}

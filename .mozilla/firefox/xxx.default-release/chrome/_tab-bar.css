@@ -30,29 +30,29 @@
     border: 2px outset var(--moonlight-gray-3) !important;
     margin: 2px 4px 2px 2px !important;
     border-radius: 9px !important;
-    color: var(--moonlight-gray-8) !important;
-    transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+    color: var(--moonlight-gray-10) !important;
+    transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
 .tabbrowser-tab .tab-background {
     border: none !important;
-    transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+    transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
 
 .tabbrowser-tab:hover .tab-stack{
     color: var(--moonlight-blue) !important;
-    border: 1px inset var(--moonlight-gray-3) !important;
+    border: 2px inset var(--moonlight-gray-3) !important;
 }
 .tabbrowser-tab:hover .tab-background {
     background: var(--moonlight-gray-1) !important;
     border-radius: 9px !important;
 }
 .tabbrowser-tab[selected] .tab-stack {
-    border: 1px inset var(--moonlight-gray-3) !important;
+    border: 2px inset var(--moonlight-gray-3) !important;
     color: var(--moonlight-gray-10) !important;
 }
 
 .tabbrowser-tab[selected]:hover .tab-stack {
-    border: 1px inset var(--moonlight-gray-3) !important;
+    border: 2px inset var(--moonlight-gray-3) !important;
     color: var(--moonlight-blue) !important;
 }
 

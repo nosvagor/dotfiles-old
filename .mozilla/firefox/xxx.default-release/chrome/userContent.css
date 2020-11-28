@@ -7,28 +7,21 @@
         background: var(--moonlight-gray-2) !important;
     }
 
-    .search-wrapper input {
-        background-color: var(--moonlight-gray-3) !important;
-        color: var(--moonlight-gray-7) !important;
-        border: none !important;
-        box-shadow: none !important;
-    }
-
-    .search-wrapper input:focus {
-        color: var(--moonlight-gray-9) !important;
-    }
-
-    .search-wrapper .search-button {
-        fill: var(--moonlight-gray-7) !important;
-    }
-
-    .search-wrapper .search-button:focus,
-    .search-wrapper .search-button:hover {
-        background-color: transparent !important;
-        fill: var(--moonlight-gray-9) !important;
-    }
+    .outer-wrapper {
+        background-image: url(https://raw.githubusercontent.com/cullyn-inverba/dotfiles/master/wallpapers/girl-3840x2160.png) !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+   
 }
 
 *:not(select) {
     scrollbar-width: none !important;
+}
+
+@-moz-document url(about:privatebrowsing) {
+	:root{
+		scrollbar-width: none !important;
+	}
 }
