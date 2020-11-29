@@ -6,7 +6,7 @@
 		"password": ""
 	},
 	"settings-app-language": "en",
-	"settings-miniplayer-size": 608,
+	"settings-miniplayer-size": 610,
 	"settings-miniplayer-resizable": false,
 	"settings-miniplayer-show-task": false,
 	"settings-lyrics-provider": "1",
@@ -45,21 +45,22 @@
 	"uuid": "3c98d161-acb2-4643-8ff5-61e99e0494f2",
 	"window-maximized": false,
 	"window-size": {
-		"width": 1348,
-		"height": 1000
+		"width": 1317,
+		"height": 678
 	},
 	"window-position": {
-		"x": 248,
-		"y": 236
+		"x": 9,
+		"y": 753
 	},
 	"settings-discord-rich-presence": true,
-	"settings-keep-background": false,
+	"settings-keep-background": true,
 	"miniplayer-position": {
-		"x": 976,
-		"y": 416
+		"x": 758,
+		"y": 30
 	},
 	"settings-enable-player-bgcolor": true,
 	"settings-volume-media-keys": false,
 	"settings-decibel-volume": true,
-	"settings-show-notifications": true
+	"settings-show-notifications": true,
+	"settings-volume": "69.420",
 }

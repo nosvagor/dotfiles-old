@@ -10,7 +10,7 @@ set fish_greeting
     echo "$g/ \\$g$c$a\\$t$c$a/ \\$t$g$g\\$c$t$t/ \\$c$g$a\\$t$g$g/ \\$t$a$t\\$g$a$t/ \\$t$c$g\\$c$c$g/ \\$a$a$a\\$g$a$c/ \\$c$g$a\\$t$a$a/ \\$c$g$t\\$t$t$g/ \\$a$g$c\\$a$a$a/ \\$g$c$a\\$c$g"
     echo "~   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-`   `-~ `-"
 
-# Start X at login
+# Startx at login
 if status --is-login
   if test -z "$DISPLAY" -a $XDG_VTNR = 1
     exec startx -- -keeptty >~/.xorg.log ^&1
