@@ -1,66 +1,6 @@
 {
-	"titlebar-type": "system",
-	"settings-page-zoom": 100,
-	"last-fm-login": {
-		"username": "",
-		"password": ""
-	},
-	"settings-app-language": "en",
-	"settings-miniplayer-size": 610,
-	"settings-miniplayer-resizable": false,
-	"settings-miniplayer-show-task": false,
-	"settings-lyrics-provider": "1",
-	"settings-companion-server-protect": true,
-	"settings-companion-server-token": "IRWKB",
-	"settings-enable-double-tapping-show-hide": true,
-	"settings-enable-taskbar-progressbar": true,
-	"settings-accelerators": {
-		"media-play-pause": "Super+Shift+Control+Alt+Space",
-		"media-track-next": "Super+Shift+Control+Alt+Y",
-		"media-track-previous": "Super+Shift+Control+Alt+G",
-		"media-volume-up": "Super+Shift+Control+Alt+P",
-		"media-volume-down": "Super+Shift+Control+Alt+L",
-		"miniplayer-open-close": "Super+Shift+Control+Alt+BackSpace"
-	},
-	"has-updated": false,
-	"discord-presence-settings": {
-		"details": true,
-		"state": true,
-		"time": true,
-		"hideIdle": true
-	},
-	"settings-disable-hardware-acceleration": false,
-	"settings-windows10-media-service": false,
-	"settings-windows10-media-service-show-info": false,
-	"settings-shortcut-buttons": {
-		"miniplayer": true,
-		"lyrics": true,
-		"add-to-library": true,
-		"add-to-playlist": true
-	},
-	"settings-skip-track-disliked": false,
-	"settings-skip-track-shorter-than": "0",
-	"settings-clipboard-always-ask-read": true,
-	"settings-tray-icon": false,
-	"uuid": "3c98d161-acb2-4643-8ff5-61e99e0494f2",
-	"window-maximized": false,
-	"window-size": {
-		"width": 1317,
-		"height": 678
-	},
 	"window-position": {
-		"x": 9,
-		"y": 753
-	},
-	"settings-discord-rich-presence": true,
-	"settings-keep-background": true,
-	"miniplayer-position": {
-		"x": 758,
-		"y": 30
-	},
-	"settings-enable-player-bgcolor": true,
-	"settings-volume-media-keys": false,
-	"settings-decibel-volume": true,
-	"settings-show-notifications": true,
-	"settings-volume": "69.420",
+		"x": 1336,
+		"y": 9
+	}
 }
