@@ -1,0 +1,58 @@
+{
+	"titlebar-type": "none",
+	"settings-page-zoom": 100,
+	"last-fm-login": {
+		"username": "",
+		"password": ""
+	},
+	"settings-app-language": "en",
+	"settings-miniplayer-size": "200",
+	"settings-miniplayer-resizable": false,
+	"settings-miniplayer-show-task": false,
+	"settings-lyrics-provider": "1",
+	"settings-companion-server-protect": true,
+	"settings-enable-player-bgcolor": true,
+	"settings-companion-server-token": "0UMV0",
+	"settings-enable-double-tapping-show-hide": true,
+	"settings-enable-taskbar-progressbar": true,
+	"settings-accelerators": {
+		"media-play-pause": "Super+Shift+Control+Alt+Space",
+		"media-track-next": "Super+Shift+Control+Alt+Y",
+		"media-track-previous": "Super+Shift+Control+Alt+G",
+		"media-volume-up": "Super+Shift+Control+Alt+P",
+		"media-volume-down": "Super+Shift+Control+Alt+L",
+		"miniplayer-open-close": "Super+Shift+Control+Alt+BackSpace"
+	},
+	"has-updated": false,
+	"discord-presence-settings": {
+		"details": true,
+		"state": true,
+		"time": true,
+		"hideIdle": true
+	},
+	"settings-disable-hardware-acceleration": false,
+	"settings-windows10-media-service": false,
+	"settings-windows10-media-service-show-info": false,
+	"settings-shortcut-buttons": {
+		"miniplayer": true,
+		"lyrics": true,
+		"add-to-library": true,
+		"add-to-playlist": true
+	},
+	"settings-skip-track-disliked": false,
+	"settings-skip-track-shorter-than": "0",
+	"settings-clipboard-always-ask-read": true,
+	"settings-tray-icon": true,
+	"settings-volume": "69.420",
+	"settings-volume-media-keys": false,
+	"settings-decibel-volume": true,
+	"uuid": "3a987c57-ac6c-4065-81d6-c3890812494f",
+	"window-url": "https://music.youtube.com/watch?v=7y72oojppQg&list=RDTMAK5uy_kset8DisdE7LSD4TNjEVvrKRTmG7a56sY",
+	"window-maximized": false,
+	"window-size": {
+		"width": 1317,
+		"height": 1422
+	},
+	"settings-show-notifications": true,
+	"settings-custom-css-page": true
+}
