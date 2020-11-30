@@ -3,10 +3,7 @@
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
-    width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
-    height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
-    margin-top: 1px !important;
-    margin-left: -2px !important;
+  visibility: collapse !important;
 }
 
 .tabbrowser-tab .tab-close-button {

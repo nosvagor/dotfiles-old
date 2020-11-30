@@ -4,5 +4,9 @@ Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
 Xft.autohint: false
-Xft.hintstyle: hintslight
+Xft.hintstyle: hintsfull
 Xft.lcdfilter: lcddefault
+
+
+!Colors
+!#include "/home/cullyn/dotfiles/inVerba-colors"

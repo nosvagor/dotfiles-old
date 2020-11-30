@@ -50,4 +50,4 @@ fi
 
 xinput --set-prop 'ROCCAT ROCCAT Kova Mouse' 'libinput Accel Speed' 0.8
 xset r rate 196 36
-exec bspwm
+exec i3
