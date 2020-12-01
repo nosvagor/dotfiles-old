@@ -9,7 +9,12 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal"
-    }
+        "key": "ctrl+t ctrl+t",
+        "command": "latex-workshop.shortcut.emph",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    {
+        "key": "ctrl+t ctrl+f",
+        "command": "workbench.action.files.openFile"
+    },
 ]
