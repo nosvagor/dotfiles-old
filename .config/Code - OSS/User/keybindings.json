@@ -17,4 +17,13 @@
         "key": "ctrl+t ctrl+f",
         "command": "workbench.action.files.openFile"
     },
+    {
+        "key": "ctrl+t ctrl+x",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+t ctrl+w",
+        "command": "latex-workshop.surround",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
+    },
 ]
