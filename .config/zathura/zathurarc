@@ -36,8 +36,8 @@ set inputbar-fg "#FF9646"
 set notification-bg "#212121"
 set notification-fg "#e6eef1"
 
-set recolor-lightcolor "#212121"
-set recolor-darkcolor "#d6d6d6"
+set recolor-lightcolor "#1f1f1f"
+set recolor-darkcolor "#b0b0b0"
 set recolor-keephue "true"
 set reccolor-reverse-video "true"
 
