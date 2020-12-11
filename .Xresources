@@ -6,7 +6,3 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintsfull
 Xft.lcdfilter: lcddefault
-
-
-!Colors
-!#include "/home/cullyn/resources/inVerba-colors"

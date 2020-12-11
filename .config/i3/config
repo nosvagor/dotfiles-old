@@ -11,7 +11,7 @@
 set $exec exec --no-startup-id
 
 ## program preferences
-set $term alacritty 
+set $term kitty
 set $browser firefox
 set $editor code 
 
