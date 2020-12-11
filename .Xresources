@@ -9,4 +9,4 @@ Xft.lcdfilter: lcddefault
 
 
 !Colors
-!#include "/home/cullyn/dotfiles/inVerba-colors"
+!#include "/home/cullyn/resources/inVerba-colors"
