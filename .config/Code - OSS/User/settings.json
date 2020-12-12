@@ -66,7 +66,6 @@
         "statusBarItem.remoteBackground": "#FF7042"
     },
     "materialTheme.accent": "Orange",
-    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
     "python.dataScience.themeMatplotlibPlots": true,
     "editor.hover.delay": 142,
     "workbench.editor.highlightModifiedTabs": true,
@@ -99,4 +98,5 @@
     ],
     "latex-workshop.synctex.afterBuild.enabled": true,
     "editor.fontFamily": "'Hack Nerd Font'",
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
 }

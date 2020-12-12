@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
-super + @space
-	dmenu_run
+super + f
+	rofi -show run
 
 # Brightness down
 
