@@ -1,32 +1,85 @@
 #! /bin/sh
 
-#     __                                          
-#    / /_  _________ _      ______ ___  __________
-#   / __ \/ ___/ __ \ | /| / / __ `__ \/ ___/ ___/
-#  / /_/ (__  ) /_/ / |/ |/ / / / / / / /  / /__  
-# /_.___/____/ .___/|__/|__/_/ /_/ /_/_/   \___/
-#
-# Influence from: https://github.com/Barbarossa93/Forester/blob/main/.config/bspwm/bspwmrc
-# My dofiles: My dotfiles: https://github.com/cullyn-inverba/dotfiles
+# ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗  ██████╗
+# ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗██╔════╝
+# ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝██║     
+# ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗██║     
+# ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██║  ██║╚██████╗
+# ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
 
-pgrep -x sxhkd > /dev/null || sxhkd & ~/.config/bspwm/borders
+# .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
+#|:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+#|::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
+#|:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+#        `--'      `.-'      `--'      `--'      `--'      `-.'      `
 
-bspc monitor -d 1 2 3 4
+# ╦╔═┬┬  ┬  ╔═╗┌─┐┬─┐┬┌─┐┌┬┐
+# ╠╩╗││  │  ╚═╗│  ├┬┘│├─┘ │ 
+# ╩ ╩┴┴─┘┴─┘╚═╝└─┘┴└─┴┴   ┴
+bspc rule -r '*'
+killall "picom"
+picom  & 
+killall "dunst"
+dunst &
+killall "sxhkd"
+sxhkd &
+killall "polybar"
+~/.config/polybar/launch.sh &
 
-bspc config border_width        12
-bspc config top_padding         36
-bspc config right_padding       -4
-bspc config left_padding        -4
-bspc config bottom_padding      -4
-bspc config window_gap          16
-bspc config top_monocle_padding  0
-bspc config right_monocle_padding 0
-bspc config left_monocle_padding 0
-bspc config bottom_monocle_padding 0
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# ╔╦╗┌─┐┌─┐┬┌─┌┬┐┌─┐┌─┐┌─┐
+#  ║║├┤ └─┐├┴┐ │ │ │├─┘└─┐
+# ═╩╝└─┘└─┘┴ ┴ ┴ └─┘┴  └─┘
+bspc monitor -d 1 2 3 4 5
+bspc rule -a youtube-music-desktop-app desktop='^4' state=floating
+bspc rule -a Zathura state=tiled
 
-bspc rule -a youtube-music-desktop-app desktop='^2'state=floating 
-bspc rule -a Chromium desktop='^1'
+
+# ╔╗ ┌─┐┬ ┬┌─┐┬  ┬┬┌─┐┬─┐
+# ╠╩╗├┤ ├─┤├─┤└┐┌┘││ │├┬┘
+# ╚═╝└─┘┴ ┴┴ ┴ └┘ ┴└─┘┴└─
+bspc config focus_follows_pointer   true 
+bspc config split_ratio             0.52
+
+# ╔╗ ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
+# ╠╩╗│ │├┬┘ ││├┤ ├┬┘└─┐
+# ╚═╝└─┘┴└──┴┘└─┘┴└─└─┘
+bspc config focused_border_color    "#f5b17a"
+bspc config normal_border_color     "#1f1f1f"
+bspc config border_width            2
+
+# ╦  ┌─┐┬ ┬┌─┐┬ ┬┌┬┐
+# ║  ├─┤└┬┘│ ││ │ │ 
+# ╩═╝┴ ┴ ┴ └─┘└─┘ ┴
+bspc config window_gap          18r
+bspc config top_padding         48
+bspc config right_padding       4
+bspc config left_padding        4
+bspc config bottom_padding      4
+
+# ╔╦╗┌─┐┌┐┌┌─┐┌─┐┬  ┌─┐
+# ║║║│ │││││ ││  │  ├┤ 
+# ╩ ╩└─┘┘└┘└─┘└─┘┴─┘└─┘
+bspc config borderless_monocle      false
+bspc config gapless_monocle         false
+bspc config paddingless_monocle     false
+bspc config top_monocle_padding     169
+bspc config right_monocle_padding   420
+bspc config left_monocle_padding    420
+bspc config bottom_monocle_padding  169
+
+# ╔═╗┬ ┬┌┬┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌┬┐
+# ╠═╣│ │ │ │ │└─┐ │ ├─┤├┬┘ │ 
+# ╩ ╩└─┘ ┴ └─┘└─┘ ┴ ┴ ┴┴└─ ┴ 
+
+feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg' &
+
+
+
+
+
+
+
+
+
+notify-send bspwmrc restarted
