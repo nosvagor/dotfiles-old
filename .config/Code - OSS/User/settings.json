@@ -99,4 +99,5 @@
     "latex-workshop.synctex.afterBuild.enabled": true,
     "editor.fontFamily": "'Hack Nerd Font'",
     "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+    "terminal.integrated.shell.linux": "/bin/zsh",
 }

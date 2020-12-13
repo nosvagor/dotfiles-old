@@ -7,27 +7,29 @@ super + Return
 	kitty
 
 # program launcher
-super + f
-	rofi -show run
+super + space
+	dmenu_run
 
-# Brightness down
+super + shift + r
+	~/dotfiles/.config/bspwm/bspwmrc
 
+# screenshots
+super + shift + b
+	maim -s -u | xclip -selection clipboard -t image/png
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd && notify-send -u normal "Sxhkd reloaded"
+	pkill -USR1 -x sxhkd & notify-send sxhkd restarted
 
-#
 # bspwm hotkeys
-#
 
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# close and kill
-super + {_,shift + }w
-	bspc node -{c,k}
+#rofi
+super + shift + ctrl + alt + f
+	~/.config/rofi/launcher.sh
 
 # kill
 alt + q
@@ -56,6 +58,10 @@ super + {t,shift + t,s,f}
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
+	
+super + alt + Escape
+  bspc quit
+
 
 #
 # focus/swap

@@ -28,10 +28,10 @@ set $ws3 "2"
 set $ws4 "1"
 
 ## backgrounds 
-set $bg1 feh --bg-scale ~/wallpapers/'jelly-3840x2160.jpg'
-set $bg2 feh --bg-scale ~/wallpapers/'arrival-3840x2160.jpg'
-set $bg3 feh --bg-scale ~/wallpapers/'spirited-3840x2160.png'
-set $bg4 feh --bg-scale ~/wallpapers/'girl-3840x2160.png'
+set $bg1 feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg'
+set $bg2 feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg'
+set $bg3 feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png'
+set $bg4 feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png'
 
 #################################
 #            Display            #
