@@ -17,3 +17,7 @@ bindkey '^[[H' beginning-of-line     # Home
 bindkey '^[[F' end-of-line     # End
 bindkey '^[[3~' delete-char     # Delete
 bindkey '^?' backward-delete-char     # Backspace
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+startx
+fi
