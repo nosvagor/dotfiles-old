@@ -14,12 +14,12 @@
 
   #1f1f1f background
 
-  #f5b17a emph
+  #f5b17a emph #b08058
   #ff9e4f stress
 
-  #4ca9f5 #1
+  #4ca9f5 #1 
   #7abef5 #2
-  #b0d0eb #3
+  #b0d0eb #3 #849cb0
   #cedeeb #4
 
   #99e09b hyper-link
