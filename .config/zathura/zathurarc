@@ -1,13 +1,20 @@
-#  _____         __  __                                            _____      
-# /__  /  ____ _/ /_/ /_  __  ___________ _      _________  ____  / __(_)___ _
-#   / /  / __ `/ __/ __ \/ / / / ___/ __ `/_____/ ___/ __ \/ __ \/ /_/ / __ `/
-#  / /__/ /_/ / /_/ / / / /_/ / /  / /_/ /_____/ /__/ /_/ / / / / __/ / /_/ / 
-# /____/\__,_/\__/_/ /_/\__,_/_/   \__,_/      \___/\____/_/ /_/_/ /_/\__, /  
-#                                                                    /____/  
+# ███████╗ █████╗ ████████╗██╗  ██╗██╗   ██╗██████╗  █████╗ ██████╗  ██████╗
+# ╚══███╔╝██╔══██╗╚══██╔══╝██║  ██║██║   ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝
+#   ███╔╝ ███████║   ██║   ███████║██║   ██║██████╔╝███████║██████╔╝██║     
+#  ███╔╝  ██╔══██║   ██║   ██╔══██║██║   ██║██╔══██╗██╔══██║██╔══██╗██║     
+# ███████╗██║  ██║   ██║   ██║  ██║╚██████╔╝██║  ██║██║  ██║██║  ██║╚██████╗
+# ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ 
 
-#################################
-#            General            #
-#################################
+# .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
+#|:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+#|::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
+#|:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+#        `--'      `.-'      `--'      `--'      `--'      `-.'      `
+
+# ╔═╗┌─┐┌┐┌┌─┐┬─┐┌─┐┬  
+# ║ ╦├┤ │││├┤ ├┬┘├─┤│  
+# ╚═╝└─┘┘└┘└─┘┴└─┴ ┴┴─┘
+
 set adjust-open width
 set zoom 
 set zoom-step 5
@@ -21,9 +28,10 @@ set search-hadjust "false"
 
 set window-title-basename "true"
 
-#################################
-#            Dispaly            #
-#################################
+# ╔╦╗┬┌─┐┌─┐┬  ┌─┐┬ ┬
+#  ║║│└─┐├─┘│  ├─┤└┬┘
+# ═╩╝┴└─┘┴  ┴─┘┴ ┴ ┴
+
 set highlight-color "#ffb981"
 set highlight-active-color '#406de3'
 set highlight-transparency 0.42
@@ -31,32 +39,32 @@ set highlight-transparency 0.42
 set guioptions ""
 set font "Open Sans 12" 
 
-set inputbar-fg "#FF9646"
+set inputbar-fg "#ff9e4f"
 
-set notification-bg "#212121"
-set notification-fg "#e6eef1"
+set notification-bg "#1f1f1f"
+set notification-fg "#e0e0e0"
 
 set recolor-lightcolor "#1f1f1f"
 set recolor-darkcolor "#b0b0b0"
 set recolor-keephue "true"
 set reccolor-reverse-video "true"
 
-set tabbar-fg "#e6eef1" 
-set tabbar-bg "#212121"
+set tabbar-fg "#e0e0e0" 
+set tabbar-bg "#1f1f1f"
 
-tabbar-focus-fg "#FF9646"
-tabbar-focus-bg "#212121"
+tabbar-focus-fg "#ff9e4f"
+tabbar-focus-bg "#1f1f1f"
 
-set completion-highlight-fg "#212121"
-set completion-highlight-bg "#FF9646"
+set completion-highlight-fg "#1f1f1f"
+set completion-highlight-bg "#ff9e4f"
 
-set index-active-fg "#212121"
-set index-active-bg "#FF9646"
+set index-active-fg "#1f1f1f"
+set index-active-bg "#ff9e4f"
 
+# ╦╔═┌─┐┬ ┬  ╔╦╗┌─┐┌─┐┌─┐
+# ╠╩╗├┤ └┬┘  ║║║├─┤├─┘└─┐
+# ╩ ╩└─┘ ┴   ╩ ╩┴ ┴┴  └─┘
 
-#################################
-#           Key maps            #
-#################################
 unmap s
 unmap a   
 unmap r
