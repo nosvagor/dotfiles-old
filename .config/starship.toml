@@ -1,0 +1,36 @@
+format = """
+[╭╼═╾ $username ╼═╾ $hostname ╼─╼─╼─╼─╼─╼─╼─╼─╼─╼─╼─](yellow) $cmd_duration
+[╞╾ ](yellow)$directory$git_branch$git_commit$git_state$git_status$hg_branch
+[╰╾](yellow) $character"""
+
+[directory]
+truncation_length = 2
+truncation_symbol = " "
+style = "bold #7abef5"
+read_only = ""
+disabled = false
+
+[username]
+style_user = "bold #ff9e4f"
+style_root = "bold #eb4972"
+show_always = true
+format = "[$user]($style)"
+disabled = false
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+trim_at = "."
+style = "bold yellow"
+disabled = false
+
+[character]
+success_symbol = "[◈](bold yellow)"
+error_symbol = "[◈](bold red)"
+disabled = false
+
+[cmd_duration]
+min_time = 420
+show_milliseconds = true
+format = "[$duration](bold yellow)"
+disabled = false
