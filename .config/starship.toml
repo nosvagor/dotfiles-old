@@ -31,6 +31,33 @@ disabled = false
 
 [cmd_duration]
 min_time = 420
-show_milliseconds = true
+show_milliseconds = false
 format = "[$duration](bold yellow)"
 disabled = false
+
+[git_branch]
+truncation_length = 12
+style = "bold #b0d0eb"
+truncation_symbol = "..."
+disabled = false
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+tag_disabled = false
+only_detached = true
+
+[git_status]
+format = '([\[$conflicted$stashed$modified$staged$untracked$renamed$deleted$ahead$diverged$behind\]]($style) )'
+conflicted = "ﲅ "
+stashed = " "
+modified = " "
+staged = '[ $count ](bold green)'
+untracked = '[‍ $count](bold #f0dd86)'
+renamed = " "
+deleted = " "
+ahead = '[ ${count}](bold #57d9c3)'
+diverged = '[ ](bold purple)'
+behind = '[丹 ${count}](bold #eb4972)'
+
+style = "bold #cedeeb"
