@@ -32,7 +32,7 @@ discord &
 #  ║║├┤ └─┐├┴┐ │ │ │├─┘└─┐
 # ═╩╝└─┘└─┘┴ ┴ ┴ └─┘┴  └─┘
 bspc monitor -d 1 2 3 4
-bspc rule -a youtube-music-desktop-app desktop='^4' state=floatingd
+bspc rule -a youtube-music-desktop-app desktop='^4' state=floating
 
 bspc rule -a Zathura state=tiled 
 bspc rule -a vlc state=floating
