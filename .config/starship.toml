@@ -1,7 +1,7 @@
 format = """
-[╭╼═╾ $username ╼═╾ $hostname ╼─╼─╼─╼─╼─╼─╼─╼─╼─╼─╼─](yellow) $cmd_duration
+[╭╼╾ $username ╼╾ $hostname ╼╾ $memory_usage ╼╾ $time ╼─╼─╼─╼─](yellow) $cmd_duration
 [╞╾ ](yellow)$directory$git_branch$git_commit$git_state$git_status$hg_branch
-[╰╾](yellow) $character"""
+[╰╼╾](yellow) $status$character"""
 
 [directory]
 truncation_length = 2
@@ -32,7 +32,7 @@ disabled = false
 [cmd_duration]
 min_time = 420
 show_milliseconds = false
-format = "[$duration](bold yellow)"
+format = "[$duration](dimmed yellow)"
 disabled = false
 
 [git_branch]
@@ -46,18 +46,38 @@ commit_hash_length = 4
 tag_symbol = "🔖 "
 tag_disabled = false
 only_detached = true
+disabled = false
 
 [git_status]
-format = '([\[$conflicted$stashed$modified$staged$untracked$renamed$deleted$ahead$diverged$behind\]]($style) )'
+format = '([ $conflicted$stashed$modified$staged$untracked$renamed$deleted$ahead$diverged$behind ]($style))'
 conflicted = "ﲅ "
 stashed = " "
 modified = " "
-staged = '[ $count ](bold green)'
+staged = '[ $count](bold green)'
 untracked = '[‍ $count](bold #f0dd86)'
 renamed = " "
 deleted = " "
 ahead = '[ ${count}](bold #57d9c3)'
 diverged = '[ ](bold purple)'
 behind = '[丹 ${count}](bold #eb4972)'
-
 style = "bold #cedeeb"
+disabled = false
+
+[memory_usage]
+format = "[${ram}]($style)"
+threshold = -1
+symbol = ""
+style = "dimmed yellow"
+disabled = false
+
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = "%T"
+style = "dimmed yellow"
+
+[status]
+format = '[$symbol$status]($style) '
+style = "bold red"
+symbol = " "
+disabled = false
