@@ -68,10 +68,10 @@ border-color = ${colors.sub}
 bottom = false 
 
 
-font-0 = "Open Sans:style=Regular:pixelsize=16:antialias=true;"
-font-1 = "Hack Nerd Font:style=Regular:pixelsize=18:antialias=true;1"
-font-2 = "Hack Nerd Font:style=Regular:pixelsize=24:antialias=true;3.5"
-font-3 = "Hack Nerd Font:style=Regular:pixelsize=16:antialias=true;2"
+font-0 = "Open Sans:style=Regular:pixelsize=16:antialias=true;2"
+font-1 = "Hack Nerd Font:style=Regular:pixelsize=18:antialias=true;3"
+font-2 = "Hack Nerd Font:style=Regular:pixelsize=24:antialias=true;4.5"
+font-3 = "Hack Nerd Font:style=Regular:pixelsize=16:antialias=true;3"
 font-4 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-2"
 font-5 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-7"
 font-6 = "Open Sans:style=Regular:pixelsize=20:antialias=true;1"
