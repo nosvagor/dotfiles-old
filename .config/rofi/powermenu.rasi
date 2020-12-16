@@ -8,9 +8,10 @@
  */
 
 configuration {
-	yoffset: -100;
+  location: 3;
+	yoffset: 48;
   xoffset: 0;
-	columns: 1;
+	columns: 5;
 	hide-scrollbar: true;
 }
 
@@ -20,9 +21,9 @@ configuration {
   text-font:                            "Open Sans 18";
 
   inputbar-margin:                      3px 3px;
-  prompt-padding:                       10px 10px;
+  prompt-padding:                       10px 15px;
   entry-padding:                        10px 0px 10px 0px;
-  list-element-padding:                 10px;
+  list-element-padding:                 10px 8px 10px 12px;
   list-element-margin:                  @inputbar-margin;
   list-element-border:                  0px 4px 0px 4px;
 
@@ -30,10 +31,10 @@ configuration {
 }
 
 #window {
-  width: 10%;
-  height: 15.8%;
-  padding: 15px 15px;
-  border: 0px;
+  width: 12%;
+  height: 6.2%;
+  padding: 0px 5px;
+  border: 2px;
   border-radius: 0px;
 }
 
@@ -59,18 +60,18 @@ entry {
 
 #prompt {
   padding: @prompt-padding;
-  background-color: @accent;
+  background-color: #4ca9f5;
   text-color: @background;
 }
 
 #textbox-prompt-colon {
   expand: false;
-  str: "  ⏻  ";
+  str: "  ";
   padding: @apps-textbox-prompt-colon-padding;
 }
 
 #entry {
-  text-color: @accent;
+  text-color: @accent3;
   padding: @entry-padding;
 }
 
@@ -85,7 +86,7 @@ entry {
 
 #element.selected {
   background-color: @background-focus;
-  text-color: @accent;
-  border-color: @accent;
+  text-color: @accent2;
+  border-color: @accent3;
   border-radius: 10px;
 }

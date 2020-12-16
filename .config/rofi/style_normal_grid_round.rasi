@@ -11,11 +11,11 @@ configuration {
     drun-display-format: "{icon} {name}";
     display-drun: "Run";
 	show-icons: true;
-	icon-theme: "Papirus";
-	location: 0;
-	yoffset: -770;
-  xoffset: -1420;
-	columns: 2;
+	icon-theme: "Vimix";
+	location: 1;
+	yoffset: 48;
+  xoffset: 0;
+	columns: 3;
 	fake-transparency: false;
 	hide-scrollbar: true;
 	bw: 0;
@@ -41,9 +41,9 @@ configuration {
 }
 
 #window {
-  width: 25%;
-  height: 24%;
-  padding: 0px 10px;
+  width: 30%;
+  height: 15%;
+  padding: 0px 5px;
   border: 2px;
   border-radius: 0px;
 }
@@ -70,18 +70,18 @@ entry {
 
 #prompt {
   padding: @prompt-padding;
-  background-color: @accent;
+  background-color: #4ca9f5;
   text-color: @background;
 }
 
 #textbox-prompt-colon {
   expand: false;
-  str: "    ";
+  str: "  ";
   padding: @apps-textbox-prompt-colon-padding;
 }
 
 #entry {
-  text-color: @accent;
+  text-color: @accent3;
   padding: @entry-padding;
 }
 
@@ -96,7 +96,7 @@ entry {
 
 #element.selected {
   background-color: @background-focus;
-  text-color: @accent;
-  border-color: @accent;
+  text-color: @accent2;
+  border-color: @accent3;
   border-radius: 10px;
 }
