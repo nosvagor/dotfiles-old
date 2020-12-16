@@ -1,0 +1,188 @@
+#!/bin/zsh
+
+.autocomplete.compinit.zle-f() {
+  exec {1}<&-
+  zle -F $1 2>/dev/null
+}
+
+.autocomplete.compinit.precmd() {
+  emulate -L zsh -o extendedglob
+  add-zsh-hook -d precmd .autocomplete.compinit.precmd
+
+  local dumpfile=${_comp_dumpfile:-${ZSH_COMPDUMP:-$XDG_CACHE_HOME/zcompdump}}
+  local f; for f in $^fpath/_*~*.zwc(N-.); do
+    if [[ -v _comp_dumpfile && ! -v functions[$f] ||
+        -f $dumpfile && $f -nt $dumpfile ]]; then
+      # Decrease Oh My Zsh start-up time. See below.
+      [[ -v ZSH_COMPDUMP ]] &&
+        local -a omzdump=( ${(f)"$(<$ZSH_COMPDUMP)"} )
+      zmodload -F zsh/files b:zf_rm
+      zf_rm -f $dumpfile
+      break
+    fi
+  done
+  if [[ ! -v _comp_dumpfile || ! -f $dumpfile ]]; then
+    zmodload zsh/complist
+    unfunction compinit 2>/dev/null
+    builtin autoload -Uz compinit
+    compinit -C -d $dumpfile
+    local -i fd
+    exec {fd}< <(
+      local bin=$_comp_dumpfile.zwc
+      if [[ ! -e $bin || $bin -ot $_comp_dumpfile ]]; then
+        zcompile -Uz $_comp_dumpfile 2>/dev/null
+      fi
+
+      # Prevent Oh My Zsh from deleting comp dump file.
+      (( $#omzdump > 0 )) &&
+        tee -a "$ZSH_COMPDUMP" &>/dev/null <<EOF
+$omzdump[-2]
+$omzdump[-1]
+EOF
+    )
+    zle -F "$fd" .autocomplete.compinit.zle-f
+  fi
+
+  local cache_dir; zstyle -s ':completion:*' cache-path cache_dir && () {
+    local src bin
+    for src in $cache_dir/*~*.zwc(N-.); do
+      bin=$src.zwc
+      if [[ ! -e $bin || $bin -ot $src ]]; then
+        zcompile -Uz $src
+      fi
+    done
+  }
+
+  local args; for args in $_autocomplete__compdef[@]; do
+    compdef "${(z@)${(Q)args}}"
+  done
+
+  _comp_options+=(
+    functionargzero globdots globstarshort nullglob numericglobsort
+    NO_alwaystoend NO_caseglob NO_completealiases
+    NO_globcomplete NO_listbeep NO_listtypes NO_markdirs
+  )
+
+  .autocomplete.compadd() {
+    if [[ $_completer == expand* ]]; then
+      builtin compadd -f -W "${${${words[CURRENT]:#[~/]*}:+$PWD/}:-/}" "$@"
+    else
+      builtin compadd "$@"
+    fi
+  }
+
+  builtin autoload -Uz .autocomplete.patch
+
+  .autocomplete.patch _main_complete
+  _main_complete() {
+    local -i _autocomplete__reserved_lines=0
+
+    local +h -a comppostfuncs=(
+      _autocomplete.extras
+      "$comppostfuncs[@]"
+    )
+    compstate[insert]=''
+    compstate[list]='list force'
+    {
+      # Don't break `_complete_help` widget.
+      [[ -v functions[compadd] ]] ||
+        functions[compadd]=$functions[.autocomplete.compadd]
+
+      .autocomplete._main_complete "$@"
+
+    } always {
+      # Don't break `_complete_help` widget.
+      [[ $functions[compadd] == $functions[.autocomplete.compadd] ]] &&
+        unfunction compadd
+    }
+    typeset -gHi _autocomplete__current=$CURRENT
+    typeset -gH _autocomplete__words="$words"
+    compstate[list_max]=0
+    (( compstate[nmatches] > 0 ))
+  }
+
+  .autocomplete.patch _description
+  _description() {
+    .autocomplete._description "$@"; local -i ret=$?
+    _lastdescr=( ${(@)_lastdescr[@]:#(corrections|history word)} )
+    [[ ${${:-$PREFIX$SUFFIX}:h} == . ]] ||
+      _lastdescr=( ${(@)_lastdescr[@]:#recent directory} )
+    return ret
+  }
+
+  .autocomplete.patch _path_files
+  _path_files() {
+    .autocomplete._path_files "$@"; local -i ret=$?
+    _autocomplete.recent_paths
+    return ret
+  }
+
+  .autocomplete.patch _complete
+  _complete() {
+    .autocomplete._complete "$@"; local -i ret=$?
+    (( ret > 0 )) &&
+      _comp_mesg=''
+    return ret
+  }
+
+  .autocomplete.builtin() {
+    [[ -v functions[builtin] ]] &&
+      unfunction builtin
+    {
+      if [[ $1 == compadd && $funcstack[2] == compadd ]]; then
+        shift $(( $#_correct_expl[@] + 1 ))
+        builtin compadd "$@"
+      else
+        builtin "$@"
+      fi
+    } always {
+      functions[builtin]=$functions[.autocomplete.builtin]
+    }
+  }
+
+  .autocomplete.patch _approximate
+  .autocomplete.patch _correct
+  _approximate _correct () {
+    [[ -z $words[CURRENT] ]] &&
+      return 1
+    [[ -v compstate[quote] ]] &&
+      return 1
+    [[ -o banghist && $words[CURRENT] == [$histchars]* ]] &&
+      return 1
+    _autocomplete.is_glob &&
+      return 1
+
+    local -i ret=1
+    {
+      if [[ -v functions[compadd] ]]; then
+        functions[.autocomplete.__tmp__]=$functions[compadd]
+        unfunction compadd
+      fi
+      functions[builtin]=$functions[.autocomplete.builtin]
+
+      .autocomplete.$0 "$@"; ret=$?
+
+    } always {
+      [[ -v functions[builtin] ]] &&
+        unfunction builtin
+      if [[ -v functions[.autocomplete.__tmp__] ]]; then
+        functions[compadd]=$functions[.autocomplete.__tmp__]
+        unfunction .autocomplete.__tmp__
+      fi
+
+      functions[compadd]=$functions[.autocomplete.compadd]
+    }
+    return ret
+  }
+
+  .autocomplete.patch _expand
+  _expand() {
+    if _autocomplete.is_glob && [[ $WIDGET != _complete_help ]]; then
+      [[ $words[CURRENT] == *[^*] ]] &&
+        local ISUFFIX="*"
+    fi
+    .autocomplete._expand "$@"
+  }
+}
+
+add-zsh-hook precmd .autocomplete.compinit.precmd

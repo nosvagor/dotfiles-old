@@ -1,0 +1,13 @@
+#!/bin/zsh
+zmodload -F zsh/terminfo b:echoti
+
+.autocomplete.screen-space() {
+  emulate -L zsh -o extendedglob
+
+  echoti sc
+  print -r $'\e[6n'; IFS=$'\e[;' read -Asd R
+  echoti rc
+  _autocomplete__screen_space=$(( LINES - reply[-2] ))
+}
+
+.autocomplete.screen-space "$@"
