@@ -83,7 +83,11 @@ modules-left = launcher htop date  pulseaudio
 modules-center = spacer bspwm
 modules-right = temperature cpu memory power
 
-pseudo-transparency = true
+pseudo-transparency = false
+
+tray-position = none 
+tray-maxsize = 24
+tray-offset-x = 3%
 
 
 ; ╔═╗┬ ┬┌─┐┌┬┐┌─┐┌┬┐
@@ -126,8 +130,7 @@ hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst
 [module/spacer]
 type = custom/text
 content = " "
-content-margin = 10
-
+content-margin = 7
 
 ; [module/arrow1]
 ; type = custom/text
