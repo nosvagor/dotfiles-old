@@ -312,8 +312,8 @@ format-padding = 2
 
 date = "%A, %B %d"
 time = "%H:%M"
-date-alt = "%m-%d-%y"
-time-alt = "%H:%M:%S"
+; date-alt = "%m-%d-%y"
+; time-alt = "%H:%M:%S" 
 
 label-background = ${colors.background}
 label-foreground = ${colors.foreground}
