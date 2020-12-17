@@ -17,7 +17,7 @@
 # ═╩╝┴└─┘┴  ┴ ┴┴─┘┴ 
 monitor = 0
 follow = mouse
-geometry = "1215x1+655+7"
+geometry = "1215x1+655+8"
 progress_bar = false
 indicate_hidden = true
 shrink = true
@@ -35,10 +35,10 @@ idle_threshold = 0
 # ╔╦╗┌─┐─┐ ┬┌┬┐
 #  ║ ├┤ ┌┴┬┘ │ 
 #  ╩ └─┘┴ └─ ┴ 
-font = "Open Sans 11"
+font = "Open Sans 10"
 line_height = 0
 markup = full
-format = <span foreground="#b0d0eb"><b>%b</b></span>  %s
+format = <span foreground="#b0d0eb"><b>%b</b></span> · %s
 alignment = left
 vertical_alignment = center
 show_age_threshold = -1
