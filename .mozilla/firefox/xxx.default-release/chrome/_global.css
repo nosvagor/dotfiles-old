@@ -5,7 +5,7 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
 */
 :root[tabsintitlebar][sizemode="maximized"] #navigator-toolbox {
     -moz-appearance: none !important;
-    padding-top: 12px !important;
+    padding-top: 12px !important;   
 }
 /* Fix the FUllscreen changing padding on other bars. */
 :root[tabsintitlebar][sizemode="maximized"] #titlebar {
@@ -23,15 +23,15 @@ change (#navigator-toolbox) with your top bar (in this case #nav-bar) and use
     -moz-box-ordinal-group: 1 !important;
 }
 
-/* Change bottom border color */
 #navigator-toolbox {
     border: none !important;
-    background-color: var(--moonlight-gray-2) !important;
+    background-color: var(--inVerba-gray-2) !important;
     padding: 0 3px 3px 3px !important;
+    z-index: 100 !important;;
 }
 
 #tabbrowser-tabpanels {
-    background-color: var(--moonlight-gray-2) !important;
+    background-color: var(--inVerba-gray-2) !important;
 }
 
 #minimize-button,

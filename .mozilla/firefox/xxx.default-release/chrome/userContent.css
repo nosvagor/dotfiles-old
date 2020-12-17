@@ -1,65 +1,73 @@
 @import "_variables.css";
-
+/* 
+╔═╗┌┐ ┌─┐┬ ┬┌┬┐  ╔═╗┌─┐┌─┐┌─┐┌─┐
+╠═╣├┴┐│ ││ │ │   ╠═╝├─┤│ ┬├┤ └─┐
+╩ ╩└─┘└─┘└─┘ ┴   ╩  ┴ ┴└─┘└─┘└─┘ 
+*/
 @-moz-document url-prefix(about:) {
     html:not(#ublock0-epicker),
     html:not(#ublock0-epicker) body,
     #newtab-customize-overlay {
-        background: var(--moonlight-gray-2) !important;
+        background: var(--inVerba-gray-2) !important;
     }
 
     .outer-wrapper {
-        background-image: url(https://raw.githubusercontent.com/cullyn-inverba/dotfiles/master/wallpapers/girl-3840x2160.png) !important;
-        background-position: center;
+        background-image: url(https://raw.githubusercontent.com/cullyn-inverba/dotfiles/master/resources/wallpapers/girl-3840x2160.png) !important;
+        background-position: 80% !important;
         background-repeat: no-repeat;
         background-size: cover;
       }
     
     #search-container {
-        background-color: var(--moonlight-gray-2) !important;
+        background-color: var(--inVerba-gray-2) !important;
     }
 
     #about-config-search {
-        background: var(--moonlight-gray-1) !important;
-        border: 1.5px inset var(--moonlight-gray-3) !important;
+        background: var(--inVerba-gray-1) !important;
+        border: 1.5px inset var(--inVerba-gray-3) !important;
         border-radius: 9px !important;
-        color: var(--moonlight-gray-10) !important;
-        transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+        color: var(--inVerba-gray-10) !important;
+        transition: var(--inVerba-move) !important;
     }
 
     #about-config-search:focus {
-        background: var(--moonlight-gray-1) !important;
-        border: 1.5px inset var(--moonlight-gray-4) !important;
-        color: var(--moonlight-blue) !important;
+        background: var(--inVerba-gray-1) !important;
+        border: 1.5px inset var(--inVerba-gray-4) !important;
+        color: var(--inVerba-blue) !important;
     }
 
 
     #prefs {
-        background-color: var(--moonlight-gray-1) !important;
-        border: 1.5px inset var(--moonlight-gray-3) !important;
+        background-color: var(--inVerba-gray-1) !important;
+        border: 1.5px inset var(--inVerba-gray-3) !important;
         border-radius: 9px !important;
-        transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+        transition: var(--inVerba-move) !important;
     }
 
     .ghost-button {
-        background: var(--moonlight-gray-2) !important;
-        border: 1.5px outset var(--moonlight-gray-2) !important;
+        background: var(--inVerba-gray-2) !important;
+        border: 1.5px outset var(--inVerba-gray-2) !important;
         border-radius: 9px !important;
-        transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+        transition: var(--inVerba-move) !important;
     }
 
     .ghost-button:hover,
     .ghost-button[open=true] {
-        background: var(--moonlight-gray-1) !important;
-        border: 1.5px inset var(--moonlight-gray-3) !important;
+        background: var(--inVerba-gray-1) !important;
+        border: 1.5px inset var(--inVerba-gray-3) !important;
     }
 
     .sticky-container {
-        background-color: var(--moonlight-gray-2) !important;
+        background-color: var(--inVerba-gray-2) !important;
     }
 
 
 }
-
+/* 
+╔═╗┌─┐┬─┐┌─┐┬  ┬  ┌┐ ┌─┐┬─┐
+╚═╗│  ├┬┘│ ││  │  ├┴┐├─┤├┬┘
+╚═╝└─┘┴└─└─┘┴─┘┴─┘└─┘┴ ┴┴└─ 
+*/
 *:not(select) {
     scrollbar-width: none !important;
 }

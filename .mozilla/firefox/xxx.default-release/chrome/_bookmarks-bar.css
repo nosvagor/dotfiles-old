@@ -1,19 +1,31 @@
 #PersonalToolbar {
-    background-color: var(--moonlight-gray-2) !important;
+    background-color: var(--inVerba-gray-2) !important;
 }
 #PersonalToolbar toolbarbutton.bookmark-item {
-    padding: 3px 6px 3px 6px !important;  
-    margin-right: 5px !important;
-    background: var(--moonlight-gray-2) !important;
-    border: 1.5px outset var(--moonlight-gray-4) !important;
-    border-radius: 9px !important;
-    color: var(--moonlight-gray-10) !important;
-    transition: 324ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+    padding: 3px 9px !important;  
+    margin-right: 6px !important;
+    margin-bottom: 3px !important;
+    background: var(--inVerba-gray-2) !important;
+    border: 1px outset var(--inVerba-sub-3) !important;
+    border-radius: 4px !important;
+    color: var(--inVerba-bold) !important;
+    font-family: serif, monospace !important;
+    transition: var(--inVerba-move) !important;
 }
-#PersonalToolbar toolbarbutton.bookmark-item:hover,
+#PersonalToolbar toolbarbutton.bookmark-item:hover
+{
+    background: var(--inVerba-gray-2) !important;
+    border: 1px outset var(--inVerba-emph-2) !important;
+    color: var(--inVerba-emph) !important;
+    transition: var(--inVerba-move) !important;
+}
+
 #PersonalToolbar toolbarbutton.bookmark-item[open=true]
 {
-    background: var(--moonlight-gray-1) !important;
-    border: 1.5px inset var(--moonlight-gray-3) !important;
-    color: var(--moonlight-blue) !important;
+    background: var(--inVerba-gray-1) !important;
+    border: 1px outset var(--inVerba-emph-2) !important;
+    color: var(--inVerba-emph) !important;
 }
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+    display: none! important;
+} 

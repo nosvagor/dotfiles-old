@@ -2,9 +2,9 @@
 #bookmarks-view,
 #historyTree,
 [lwt-sidebar] {
-  background-color: var(--moonlight-gray-2) !important;
-  color: var(--moonlight-gray-10) !important;
-  transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  background-color: var(--inVerba-gray-2) !important;
+  color: var(--inVerba-gray-10) !important;
+  transition: var(--inVerba-move) !important;
 }
 
 #sidebar-splitter{ 
@@ -15,9 +15,9 @@
   position: relative !important;
   min-width: 180px !important;
   border: none !important;
-  background-color: var(--moonlight-gray-2) !important;
-  color: var(--moonlight-gray-10) !important;
-  transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  background-color: var(--inVerba-gray-2) !important;
+  color: var(--inVerba-gray-10) !important;
+  transition: var(--inVerba-move) !important;
 }
 
 
@@ -26,12 +26,12 @@
 }
 
 #sidebar-box #sidebar-header #sidebar-switcher-target {
-  transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  transition: var(--inVerba-move) !important;
   margin: -10px 0px -8px 0px !important;
 }
 
 #sidebar-box #sidebar-header #sidebar-switcher-target:hover {
-  color: var(--moonlight-blue) !important;
+  color: var(--inVerba-sec) !important;
   background-color: transparent !important;
 }
 #sidebar-box #sidebar-header #sidebar-close {
@@ -40,15 +40,15 @@
 
 #sidebar-search-container #search-box {
   -moz-appearance: none !important;
-  background-color: var(--moonlight-gray-1) !important;
-  border: 1px inset var(--moonlight-gray-3) !important;
-  color: var(--moonlight-gray-6) !important;
-  border-radius: 9px !important;
-  transition: 250ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  background-color: var(--inVerba-gray-1) !important;
+  border: 1px inset var(--inVerba-gray-3) !important;
+  color: var(--inVerba-gray-6) !important;
+  border-radius: 4px !important;
+  transition: var(--inVerba-move) !important;
 }
 
 #sidebar-search-container #search-box:focus-within {
-  color: var(--moonlight-blue) !important;
+  color: var(--inVerba-sec) !important;
 }
 
 #sidebar-search-container #viewButton {
