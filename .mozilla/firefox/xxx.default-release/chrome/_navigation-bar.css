@@ -109,7 +109,9 @@
    background: none !important;
 }
 
-.urlbar-icon {
+.urlbar-icon,
+#identity-box,
+#tracking-protection-icon-container {
     color: var(--inVerba-gray-9) !important;   
     background: none !important;    
     transition: var(--inVerba-move) !important;
@@ -119,13 +121,18 @@
     background: var(--inVerba-gray-1) !important;
 }   
 
-.urlbar-icon:hover, #star-button:hover {
-    fill-opacity: 1 !important;
+.urlbar-icon:hover, 
+#star-button:hover,
+#identity-box:hover,
+#star-button[starred]:hover,
+#tracking-protection-icon-container:hover
+{
+    fill-opacity: 0.9 !important;
     fill: var(--inVerba-emph) !important;
 }
 
 #star-button[starred] {
-    fill: var(--inVerba-emph-2) !important;
+    fill: var(--inVerba-sub) !important;
 }
 
 
