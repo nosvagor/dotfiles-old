@@ -68,8 +68,8 @@ border-color = ${colors.sub}
 bottom = false 
 
 font-0 = "Open Sans:style=Regular:pixelsize=16:antialias=true;4"
-font-1 = "Open Sans:style=Regular:pixelsize=18:antialias=true;4"
-font-2 = "Open Sans:style=Regular:pixelsize=20:antialias=true;4"
+font-1 = "Open Sans:style=Regular:pixelsize=18:antialias=true;5"
+font-2 = "Open Sans:weight=bold:pixelsize=20:antialias=true;5"
 
 font-3 = "Hack Nerd Font:style=Regular:pixelsize=16:antialias=true;5"
 font-4 = "Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;4"
@@ -80,7 +80,7 @@ font-8 = "Hack Nerd Font:style=Regular:pixelsize=26:antialias=true;6"
 font-9 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-2"
 font-10 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-7"
 font-11 = "Hack Nerd Font:style=Regular:pixelsize=12:antialias=true;4"
-font-12 = "Hack Nerd Font:style=Regular:pixelsize=25:antialias=true;7"
+font-12 = "Hack Nerd Font:style=Regular:pixelsize=24:antialias=true;7"
 
 wm-restack = bspwm
 override-redirect = true
@@ -147,7 +147,7 @@ hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst
 
 [module/spacer]
 type = custom/text
-content = "       "
+content = "    "
 content-margin = 7
 
 ; [module/arrow1]
@@ -327,15 +327,14 @@ ramp-font = 5
 [module/date]
 type = internal/date
 interval = 1
-format = %{F#b0d0eb}%{T7}%{T-}%{F-}   <label>
-format-font = 5
+format = %{F#7abef5}%{T7}%{T-}%{F-}  <label>
 
+date = "%{T2}%A, %B %d%{T-}"
+time = "%{T3}%H:%M%{T-}"
 
-date = "%A, %B %d"
-time = "%H:%M%"
 ; date-alt = "%m-%d-%y"
 ; time-alt = "%H:%M:%S" 
 
 label-background = ${colors.background}
 label-foreground = ${colors.foreground}
-label = %date%  %{F#b0d0eb}%{T13}%{T-}%{F-}  %time%
+label = %date%   %{F#7abef5}%{T13}%{T-}%{F-}  %time%
