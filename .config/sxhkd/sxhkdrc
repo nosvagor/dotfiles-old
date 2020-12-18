@@ -71,7 +71,7 @@ super + bracket{left,right}
 super + Tab
 	bspc desktop -f last
 
-# focus or send to the given desktop
+# focus desktop
 super + a
 	bspc desktop -f ^1; feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg'
 super + s

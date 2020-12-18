@@ -17,7 +17,7 @@
 # ═╩╝┴└─┘┴  ┴ ┴┴─┘┴ 
 monitor = 0
 follow = mouse
-geometry = "1215x1+655+8"
+geometry = "1280x1+506+9"
 progress_bar = false
 indicate_hidden = true
 shrink = true
@@ -71,7 +71,7 @@ browser = /usr/bin/firefox -new-tab
 always_run_script = true
 title = Dunst
 class = Dunst
-startup_notification = false
+startup_notification = true
 verbosity = mesg
 corner_radius = 0
 ignore_dbusclose = false

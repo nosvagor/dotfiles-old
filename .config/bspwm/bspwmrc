@@ -25,7 +25,7 @@ sxhkd &
 killall "borders"
 ~/.config/bspwm/borders &
 feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg' &
-#ytmdesktop &
+ytmdesktop &
 #notify-send -u low bspwm restarted &
 
 # ╔╦╗┌─┐┌─┐┬┌─┌┬┐┌─┐┌─┐┌─┐
