@@ -120,9 +120,56 @@ panel panelview {
     transition: var(--inVerba-move) !important;
 }
 
-#context-navigation menuitem:hover {
+#context-navigation menuitem:hover,
+#contentAreaContextMenu menu:hover {
     color: var(--inVerba-emph) !important;
-    
+}
+
+#context-navigation #context-back,
+#context-navigation #context-forward,
+#context-navigation #context-reload,
+#context-navigation #context-bookmarkpage {
+   display: none !important;
+}
+
+#contentAreaContextMenu{ 
+    margin: 5px 0px 0px 5px !important;      
+}
+
+#contentAreaContextMenu menuitem label {
+    margin-left: 15px !important;   
+}
+
+#contentAreaContextMenu image{
+    visibility: collapse !important;
+}
+
+/* Bitwarden is messed up? */
+#contentAreaContextMenu menu {
+   margin-left: -3px !important;
+   margin-right: 9px !important;
+   color:  var(--inVerba-sec) !important;
+}
+
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_generate-password {
+   color:  var(--inVerba-sec) !important;
+   margin-left: 3px !important;
+}
+
+#ublock0_raymondhill_net-menuitem-_uBlock0-blockElement {
+   color:  var(--inVerba-sec) !important;
+}
+
+/* Waste of space */
+#screenshots_mozilla_org-menuitem-_create-screenshot, 
+#context-print-selection,
+#context-copy,    
+#context-selectall {
+    visibility: collapse !important;
+}
+
+.menuitem-iconic {
+   margin-left: -18px !important;
 }
 
 #appMenu-zoomReset-button {
