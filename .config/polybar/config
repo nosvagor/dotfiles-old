@@ -34,6 +34,7 @@ margin-bottom = 0
 foreground  = #e0e0e0 
 minor       = #b0b0b0 
 minimal     = #6b6b6b 
+inactive    = #3f3f3f
 background  = #1f1f1f 
 emphasis    = #f5b17a
 stress      = #ff9e4f 
@@ -46,7 +47,7 @@ sucess      = #57d9c3
 warn        = #eb4972
 positive    = #f5736c
 negative    = #5f89f5
-trans       = #1f1f1f
+trans       = #00ff0000 
 
 ; ╔╗ ┌─┐┬─┐
 ; ╠╩╗├─┤├┬┘
@@ -61,26 +62,27 @@ enable-ipc = true
 padding = 0
 module-margin = 0
 
-background = ${colors.trans}
+background = ${colors.background}
 foreground = ${colors.foreground}
 border-bottom-size = 1
 border-color = ${colors.sub}
 bottom = false 
 
-font-0 = "Open Sans:style=Regular:pixelsize=16:antialias=true;4"
-font-1 = "Open Sans:style=Regular:pixelsize=18:antialias=true;5"
-font-2 = "Open Sans:weight=bold:pixelsize=20:antialias=true;5"
+font-0 = "Open Sans:pixelsize=16;3"
+font-1 = "Open Sans:pixelsize=18;4"
+font-2 = "Open Sans:weight=bold:pixelsize=18;4"
 
-font-3 = "Hack Nerd Font:style=Regular:pixelsize=16:antialias=true;5"
-font-4 = "Hack Nerd Font:style=Regular:pixelsize=17:antialias=true;4"
-font-5 = "Hack Nerd Font:style=Regular:pixelsize=18:antialias=true;5"
-font-6 = "Hack Nerd Font:style=Regular:pixelsize=20:antialias=true;5"
-font-7 = "Hack Nerd Font:style=Regular:pixelsize=24:antialias=true;5"
-font-8 = "Hack Nerd Font:style=Regular:pixelsize=26:antialias=true;6"
-font-9 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-2"
-font-10 = "Hack Nerd Font:style=Regular:pixelsize=60:antialias=true;-7"
-font-11 = "Hack Nerd Font:style=Regular:pixelsize=12:antialias=true;4"
-font-12 = "Hack Nerd Font:style=Regular:pixelsize=24:antialias=true;7"
+font-3 = "Hack Nerd Font:pixelsize=16;3.5"
+font-4 = "Hack Nerd Font:pixelsize=17;3.5"
+font-5 = "Hack Nerd Font:pixelsize=18;4"
+font-6 = "Hack Nerd Font:pixelsize=21;4"
+font-7 = "Hack Nerd Font:pixelsize=24;4"
+font-8 = "Hack Nerd Font:pixelsize=26;4"
+font-9 = "Hack Nerd Font:pixelsize=60;-2"
+font-10 = "Hack Nerd Font:pixelsize=60;-7"
+font-11 = "Hack Nerd Font:pixelsize=12;4"
+font-12 = "Hack Nerd Font:pixelsize=24;6"
+font-13 = "Hack Nerd Font:pixelsize=2;0"
 
 wm-restack = bspwm
 override-redirect = true
@@ -101,16 +103,16 @@ tray-offset-x = 3%
 ; ╚═╝└─┘└─┘ ┴ └─┘┴ ┴                       
 [module/launcher]
 type=custom/text
-content = 
+content = %{O2}
 content-margin = 3
 content-foreground = ${colors.sec}
 content-background = ${colors.background}
 content-font = 8
-click-left= ~/.config/rofi/launcher.sh
+click-left= rofi -no-lazy-grab -normal-window -show drun -theme ~/.config/rofi/launcher.rasi
 
 [module/power]
 type=custom/text
-content = 拉
+content = 拉%{O2}
 content-margin = 3
 content-foreground = ${colors.sec}
 content-background = ${colors.background}
@@ -119,7 +121,7 @@ click-left = ~/.config/rofi/powermenu.sh
 
 [module/htop]
 type=custom/text
-content = ╼╾
+content = %{O1}╼╾
 content-margin = 1
 content-font = 6
 content-foreground = ${colors.sub}
@@ -142,8 +144,8 @@ format-foreground = ${colors.sub}
 format-margin = 1
 format-font = 5
 
-hook-0 = echo "%{A1:notify-send "DUNST_COMMAND_PAUSE" && polybar-msg hook dunst 2:}  %{A}" &
-hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst 1:}%{F#4f4f4f}  %{A}" &
+hook-0 = echo "%{A1:polybar-msg hook dunst 2 && killall -SIGUSR1 dunst:}%{O-2}  %{A}" &
+hook-1 = echo "%{A1:killall -SIGUSR2 dunst && notify-send -t 3000 Resumed Dunst &&  polybar-msg hook dunst 1:}%{F#4f4f4f}%{O-2}  %{A}" &
 
 [module/spacer]
 type = custom/text
@@ -192,11 +194,11 @@ label-occupied-font = 7
 label-occupied-foreground = ${colors.sub}
 label-occupied-margin = 3
 
-ws-icon-0 = 1;
-ws-icon-1 = 1;
-ws-icon-2 = 2;
-ws-icon-3 = 3;﬏
-ws-icon-4 = 4;
+ws-icon-0 = 1;%{A2:firefox & bspc desktop \-f \^1:}%{O1}%{A}
+ws-icon-1 = 1;
+ws-icon-2 = 2;%{O1}
+ws-icon-3 = 3;%{A2:code & bspc desktop \-f \^3:}%{O5}﬏%{A}
+ws-icon-4 = 4;%{O-3}
 
 ; ╔═╗┬ ┬┌┬┐┬┌─┐
 ; ╠═╣│ │ ││││ │
@@ -223,9 +225,9 @@ ramp-volume-4 = " "
 ramp-volume-4-foreground= ${colors.main}
 
 
-label-muted = "%{T0}    %{T-}%{T3}━━━━━━━━━━━%{T-}"  
+label-muted = "%{T0}    %{O2}%{T-}%{T3}━━━━━━━━━━━%{T-}"  
 format-muted-margin = 3
-format-muted-foreground = #3f3f3f
+format-muted-foreground = ${colors.inactive}
 format-muted-font = 7
 format-muted-background = ${colors.background}
 
@@ -248,7 +250,7 @@ bar-volume-fill = ━
 bar-volume-fill-font = 4
 bar-volume-empty = ━
 bar-volume-empty-font = 4
-bar-volume-empty-foreground = #3f3f3f
+bar-volume-empty-foreground = ${colors.inactive}
 
 click-right = pavucontrol
 click-middle = kitty -e alsamixer
@@ -261,7 +263,7 @@ type = internal/cpu
 interval = 0.5
 format = <label> <ramp-coreload>
 label = "%{F#b0d0eb}%{T5}﬙%{T-}%{F-}  %percentage%% "
-format-margin = 2
+format-margin = 1
 
 ramp-coreload-font = 12
 ramp-coreload-spacing = 1
@@ -293,7 +295,7 @@ bar-used-foreground-2 = ${colors.emphasis}
 bar-used-foreground-3 = ${colors.positive}
 bar-used-fill = ⏽
 bar-used-empty = ⏽
-bar-used-empty-foreground = #3f3f3f
+bar-used-empty-foreground = ${colors.inactive}
 
 ; ╔╦╗┌─┐┌┬┐┌─┐
 ;  ║ ├┤ │││├─┘
@@ -302,7 +304,7 @@ bar-used-empty-foreground = #3f3f3f
 type = internal/temperature
 hwmon-path = /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/hwmon/hwmon0/temp1_input
 units = true
-format-padding = 1
+format-margin = 2
 
 base-temperature = 25
 thermal-zone = 0
@@ -327,7 +329,7 @@ ramp-font = 5
 [module/date]
 type = internal/date
 interval = 1
-format = %{F#7abef5}%{T7}%{T-}%{F-}  <label>
+format = %{F#7abef5}%{T7}%{O3}%{T-}%{F-}  <label>
 
 date = "%{T2}%A, %B %d%{T-}"
 time = "%{T3}%H:%M%{T-}"
@@ -337,4 +339,4 @@ time = "%{T3}%H:%M%{T-}"
 
 label-background = ${colors.background}
 label-foreground = ${colors.foreground}
-label = %date%   %{F#7abef5}%{T13}%{T-}%{F-}  %time%
+label = %date%   %{F#7abef5}%{T13}%{O6}%{T-}%{F-} %time%
