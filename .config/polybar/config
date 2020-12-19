@@ -22,7 +22,6 @@ compositing-border = over
 
 pseudo-transparency = false
 
-
 [global/wm]
 margin-top = 0
 margin-bottom = 0
@@ -64,7 +63,7 @@ module-margin = 0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-border-bottom-size = 1
+border-bottom-size = 0
 border-color = ${colors.sub}
 bottom = false 
 
@@ -96,7 +95,6 @@ pseudo-transparency = false
 tray-position = none 
 tray-maxsize = 24
 tray-offset-x = 3%
-
 
 ; ╔═╗┬ ┬┌─┐┌┬┐┌─┐┌┬┐
 ; ║  │ │└─┐ │ │ ││││
@@ -194,11 +192,11 @@ label-occupied-font = 7
 label-occupied-foreground = ${colors.sub}
 label-occupied-margin = 3
 
-ws-icon-0 = 1;%{A2:firefox & bspc desktop \-f \^1:}%{O1}%{A}
+ws-icon-0 = 1;%{O1}%{A2:firefox & bspc desktop -f \^1 & bspc desktop -l next & feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg':}%{A}
 ws-icon-1 = 1;
 ws-icon-2 = 2;%{O1}
-ws-icon-3 = 3;%{A2:code & bspc desktop \-f \^3:}%{O5}﬏%{A}
-ws-icon-4 = 4;%{O-3}
+ws-icon-3 = 3;%{O5}%{A2:code & bspc desktop -f \^3 & feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg':}﬏%{A}
+ws-icon-4 = 4;%{O-3}%{A1:bspc desktop -f \^4 & feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png':}%{A}
 
 ; ╔═╗┬ ┬┌┬┐┬┌─┐
 ; ╠═╣│ │ ││││ │
@@ -223,7 +221,6 @@ ramp-volume-3 = "墳 "
 ramp-volume-3-foreground= ${colors.sec}
 ramp-volume-4 = " "
 ramp-volume-4-foreground= ${colors.main}
-
 
 label-muted = "%{T0}    %{O2}%{T-}%{T3}━━━━━━━━━━━%{T-}"  
 format-muted-margin = 3
@@ -261,7 +258,7 @@ click-middle = kitty -e alsamixer
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label> <ramp-coreload>
+format = %{A1:bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e s-tui:}<label> <ramp-coreload>%{Ar}
 label = "%{F#b0d0eb}%{T5}﬙%{T-}%{F-}  %percentage%% "
 format-margin = 1
 
@@ -282,7 +279,7 @@ ramp-coreload-7 = %{F#eb4972}█%{F-}
 [module/memory]
 type = internal/memory
 interval = 1
-format = <label> <bar-used>
+format = %{A1:bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e s-tui:}<label> <bar-used>%{A}
 label = "%{F#b0d0eb}%{T6}%{T-}%{F-}  %gb_used% "
 format-background = ${colors.background}
 format-margin = 2
@@ -310,7 +307,7 @@ base-temperature = 25
 thermal-zone = 0
 warn-temperature = 69
 
-format = <ramp>  <label> 
+format = %{A1:bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e s-tui:}<ramp>  <label>%{A}
 format-warn = <ramp> <label-warn> 
 
 label = %temperature-c%
