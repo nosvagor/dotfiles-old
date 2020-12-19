@@ -26,7 +26,7 @@ lxsession &
 ~/.config/polybar/launch.sh &
 killall "borders"
 ~/.config/bspwm/borders &
-feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.jpg' &
+feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png' &
 ytmdesktop &
 #notify-send -u low bspwm restarted &
 
