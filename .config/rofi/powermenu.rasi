@@ -18,7 +18,7 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "styles/colors.rasi"
+@import "inVerba.rasi"
 
 window {
     transparency:                   "real";

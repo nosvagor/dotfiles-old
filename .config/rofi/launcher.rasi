@@ -4,11 +4,11 @@
  * Mail    : adi1090x@gmail.com
  * Github  : @adi1090x
  * Twitter : @adi1090x
- *
+ * https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown
  */
 
 configuration {
-	font:							"FantasqueSansMono Nerd Font 10";
+	font:							"Open Sans 14";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -19,20 +19,31 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "styles/colors.rasi"
+@import "inVerba.rasi"
 
 window {
-    transparency:                   "real";
+    transparency:                   "screenshot";
     background-color:               @background;
     text-color:                     @foreground;
-	border:							0% 0% 0% 1.5%;
+	border:							0% 0.5% 0.5% 0.5%;
 	border-color:					@border;
-    border-radius:                  0% 0% 0% 2.5%;
-    height:                         49.50%;
-    width:                          40%;
-    location:                       center;
-    x-offset:                       0;
-    y-offset:                       0;
+    border-radius:                  0% 40% 5% 35%;
+    height:                         42%;
+    width:                          33%;
+    location:                       north west;
+    x-offset:                       -10;
+    y-offset:                       48;
+}
+
+
+mainbox {
+    background-color:               @background;
+	border:							0% 0.4% 0.6% 0.3%;
+    border-radius:                  10% 30% 4.2% 20%;
+	border-color:					@border-alt;
+    children:                       [ inputbar, listview ];
+    spacing:                        2%;
+    padding:                        2.5% 2% 2.5% 2%;
 }
 
 prompt {
@@ -40,7 +51,7 @@ prompt {
 	padding: 						0% 1% 0% 0%;
 	background-color: 				@background;
 	text-color: 					@foreground;
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:							"Hack Nerd Font 20";
 }
 
 entry {
@@ -74,16 +85,6 @@ listview {
     cycle:                          false;
     dynamic:                        true;
     layout:                         vertical;
-}
-
-mainbox {
-    background-color:               @background;
-	border:							0% 0% 0% 1.5%;
-    border-radius:                  0% 0% 0% 2.5%;
-	border-color:					@border-alt;
-    children:                       [ inputbar, listview ];
-    spacing:                       	2%;
-    padding:                        2.5% 2% 2.5% 2%;
 }
 
 element {
