@@ -4,7 +4,6 @@
 # ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
 # ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
 # ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
-
 # .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
 #|:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
 #|::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
@@ -43,7 +42,7 @@ super + shift + d
 	
 #rofi
 super + shift + ctrl + alt + n
-	~/.config/rofi/launcher.sh
+	rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launcher.rasi
 super + shift + ctrl + alt + Escape
 	~/.config/rofi/powermenu.sh
 
@@ -52,8 +51,14 @@ super + shift + ctrl + alt + Escape
 # ╚═╝└─┘┴  └┴┘┴ ┴
 
 # alternate between the tiled and monocle layout
-super + y
+super + space
 	bspc desktop -l next
+
+super + Prior
+	bspc node -f prev
+
+super + Next
+	bspc node -f next
 
 # swap the current node and the biggest window
 super + g
