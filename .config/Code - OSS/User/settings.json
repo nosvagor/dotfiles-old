@@ -63,7 +63,7 @@
         "menubar.selectionForeground": "#ff9e4f",
         "editor.findMatchBorder": "#ff9e4f",
         "selection.background": "#ff9e4f40",
-        "statusBarItem.remoteBackground": "#ff9e4f"
+        "statusBarItem.remoteBackground": "#ff9e4f",
     },
     "materialTheme.accent": "Orange",
     "python.dataScience.themeMatplotlibPlots": true,

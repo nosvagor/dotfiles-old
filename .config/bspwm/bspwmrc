@@ -21,6 +21,8 @@ killall "dunst"
 dunst &
 killall "sxhkd"
 sxhkd &
+killall "lxsession"
+lxsession &
 ~/.config/polybar/launch.sh &
 killall "borders"
 ~/.config/bspwm/borders &
@@ -33,7 +35,7 @@ ytmdesktop &
 # ═╩╝└─┘└─┘┴ ┴ ┴ └─┘┴  └─┘
 bspc monitor -d 1 2 3 4
 bspc rule -a youtube-music-desktop-app desktop='^4' state=floating
-
+bspc rule -a Gpick state=floating
 bspc rule -a Zathura state=tiled 
 bspc rule -a vlc state=floating
 
