@@ -17,10 +17,10 @@
 # ═╩╝┴└─┘┴  ┴ ┴┴─┘┴ 
 monitor = 0
 follow = mouse
-geometry = "1260x1+507+9"
+geometry = "1200x1+507+9"
 progress_bar = false
 indicate_hidden = true
-shrink = false
+shrink = true
 transparency = 1
 notification_height = 0
 separator_height = 2

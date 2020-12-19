@@ -75,6 +75,7 @@
         "[Community Material Theme Darker High Contrast]": {
             "editor.background": "#1f1f1f",
         },
+        "tab.border": "#1A1A1A",
         "tab.hoverForeground": "#ff9e4f",
         "editorGroupHeader.tabsBackground": "#1A1A1A",
         "tab.activeBackground": "#1A1A1A",
