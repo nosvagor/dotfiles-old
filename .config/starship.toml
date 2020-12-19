@@ -55,11 +55,11 @@ stashed = " "
 modified = "⌨ "
 staged = '[ ${count} ](bold #99e09b)'
 untracked = '[‍ ${count} ](bold #f0dd86)'
-renamed = " "
-deleted = " "
-ahead = "[ ${count} ](bold #57d9c3)"
-diverged = '[ ](bold #c28bf0)'
-behind = '[丹 ${count} ](bold #eb4972)'
+renamed = " "
+deleted = " "
+ahead = "[ ${count} ](bold #57d9c3)"
+diverged = '[ [${ahead_count}](bold #57d9c3) [${behind_count} ](bold #eb4972)](bold #c28bf0)'
+behind = '[ ${count} ](bold #eb4972)'
 style = "bold #cedeeb"
 disabled = false
 
