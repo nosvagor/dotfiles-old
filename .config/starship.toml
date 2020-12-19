@@ -49,8 +49,8 @@ only_detached = true
 disabled = false
 
 [git_status]
-format = '([ $conflicted$stashed$staged$untracked$renamed$deleted$ahead_behind$modified ]($style))'
-conflicted = "ﲅ "
+format = '([ $conflicted$staged$untracked$renamed$deleted$ahead_behind$modified$stashed ]($style))'
+conflicted = "[ ](bold #eb4972)"
 stashed = " "
 modified = "⌨ "
 staged = '[ ${count} ](bold #99e09b)'

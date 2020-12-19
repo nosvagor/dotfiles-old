@@ -87,7 +87,7 @@ wm-restack = bspwm
 override-redirect = true
 
 modules-left = launcher layout bspwm pulseaudio dunst
-modules-center = spacer date
+modules-center = date
 modules-right = temperature cpu memory htop power
 
 pseudo-transparency = false
@@ -326,7 +326,7 @@ ramp-font = 5
 [module/date]
 type = internal/date
 interval = 1
-format = %{F#7abef5}%{T7}%{O3}%{T-}%{F-}  <label>
+format = %{F#7abef5}%{T7}%{O14}%{T-}%{F-}<label>
 
 date = "%{T2}%A, %B %d%{T-}"
 time = "%{T3}%H:%M%{T-}"

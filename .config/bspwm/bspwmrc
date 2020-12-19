@@ -26,7 +26,7 @@ lxsession &
 ~/.config/polybar/launch.sh &
 killall "borders"
 ~/.config/bspwm/borders &
-feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg' &
+feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.jpg' &
 ytmdesktop &
 #notify-send -u low bspwm restarted &
 
@@ -43,7 +43,7 @@ bspc rule -a vlc state=floating
 # ╠╩╗├┤ ├─┤├─┤└┐┌┘││ │├┬┘
 # ╚═╝└─┘┴ ┴┴ ┴ └┘ ┴└─┘┴└─
 bspc config focus_follows_pointer   true 
-bspc config split_ratio             0.52
+bspc config split_ratio             0.50
 
 # ╔╗ ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
 # ╠╩╗│ │├┬┘ ││├┤ ├┬┘└─┐
