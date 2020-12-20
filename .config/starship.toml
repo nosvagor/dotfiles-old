@@ -49,14 +49,14 @@ only_detached = true
 disabled = false
 
 [git_status]
-format = '([ $conflicted$staged$untracked$renamed$deleted$ahead_behind$modified$stashed ]($style))'
+format = '([ $conflicted$staged$untracked$ahead_behind$renamed$deleted$modified$stashed]($style))'
 conflicted = "[ ](bold #eb4972)"
 stashed = " "
-modified = "⌨ "
+modified = "⌨  "
 staged = '[ ${count} ](bold #99e09b)'
 untracked = '[‍ ${count} ](bold #f0dd86)'
-renamed = " "
-deleted = " "
+renamed = "凜"
+deleted = " "
 ahead = "[ ${count} ](bold #57d9c3)"
 diverged = '[ [${ahead_count}](bold #57d9c3) [${behind_count} ](bold #eb4972)](bold #c28bf0)'
 behind = '[ ${count} ](bold #eb4972)'
