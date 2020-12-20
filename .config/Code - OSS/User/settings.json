@@ -119,4 +119,5 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "kitty",
+    "editor.mouseWheelZoom": true,
 }
