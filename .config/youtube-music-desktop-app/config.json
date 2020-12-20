@@ -20,8 +20,7 @@
 		"media-track-next": "Super+Shift+Control+Alt+Y",
 		"media-track-previous": "Super+Shift+Control+Alt+G",
 		"media-volume-up": "Super+Shift+Control+Alt+P",
-		"media-volume-down": "Super+Shift+Control+Alt+L",
-		"miniplayer-open-close": "Super+Shift+Control+Alt+BackSpace"
+		"media-volume-down": "Super+Shift+Control+Alt+L"
 	},
 	"has-updated": false,
 	"discord-presence-settings": {
