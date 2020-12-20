@@ -55,23 +55,16 @@ super + shift + ctrl + alt + BackSpace
 super + space
 	bspc desktop -l next
 
-super + Prior
-	bspc node -f prev
-
-super + Next
-	bspc node -f next
+super + {Prior, Next}
+	bspc node -f {prev,next}
 
 # swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
+super + {g,comma}
+	bspc node -s {biggest,smallest}.local
 
 # set the window state
 super + {w,r}
 	bspc node -t {tiled,floating}
-
-# focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
 
 # focus the last desktop
 super + Tab
@@ -86,6 +79,17 @@ super + e
 	bspc desktop -f ^3; feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg'
 super + t
 	bspc desktop -f ^4; feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png'
+
+# move focused window to next desktop then switch
+super + {Up, Down}
+	DIR={next,prev}; \
+    bspc node -d "$DIR"; \
+    bspc desktop -f "$DIR"
+
+# switch to next/prev desktop
+super + {Left, Right}
+	DIR={prev,next}; \
+	bspc desktop -f "$DIR"
 
 # ╦  ╦┌─┐┬  ┬ ┬┌┬┐┌─┐
 # ╚╗╔╝│ ││  │ ││││├┤ 
