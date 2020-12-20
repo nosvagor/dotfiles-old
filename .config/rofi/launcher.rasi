@@ -1,16 +1,24 @@
 /*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- * https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown
- */
+██╗      █████╗ ██╗   ██╗███╗   ██╗ ██████╗██╗  ██╗███████╗██████╗ 
+██║     ██╔══██╗██║   ██║████╗  ██║██╔════╝██║  ██║██╔════╝██╔══██╗
+██║     ███████║██║   ██║██╔██╗ ██║██║     ███████║█████╗  ██████╔╝
+██║     ██╔══██║██║   ██║██║╚██╗██║██║     ██╔══██║██╔══╝  ██╔══██╗
+███████╗██║  ██║╚██████╔╝██║ ╚████║╚██████╗██║  ██║███████╗██║  ██║
+╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+ .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
+|:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+|::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
+|:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+        `--'      `.-'      `--'      `--'      `--'      `-.'     
+Modified from: Aditya Shakya - https://github.com/adi1090x/rofi
+Theming: https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown
+Widgets: https://github.com/davatorium/rofi/blob/next/doc/rofi-theme.5.markdown#all-widgets
+*/
 
 configuration {
-	font:							"Open Sans 14";
+	font:							"Open Sans 16";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Vimix";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
@@ -25,44 +33,43 @@ window {
     transparency:                   "screenshot";
     background-color:               @background;
     text-color:                     @foreground;
-	border:							0% 0.5% 0.5% 0.5%;
-	border-color:					@border;
-    border-radius:                  0% 40% 5% 35%;
-    height:                         42%;
-    width:                          33%;
+	border:							0% 0.2% 0.3% 0%;
+	border-color:					@sec;
+    border-radius:                  0% 9% 8% 6%;
     location:                       north west;
-    x-offset:                       -10;
+    width:                          30%;
+    x-offset:                       -12;
     y-offset:                       48;
 }
 
 
 mainbox {
     background-color:               @background;
-	border:							0% 0.4% 0.6% 0.3%;
-    border-radius:                  10% 30% 4.2% 20%;
-	border-color:					@border-alt;
+	border:							0% 0.2% 0.3% 0%;
+    border-radius:                  0% 8.9% 7.4% 5.9%;
+	border-color:					@sub;
     children:                       [ inputbar, listview ];
     spacing:                        2%;
-    padding:                        2.5% 2% 2.5% 2%;
+    padding:                        0% 2% 3% 0.5%;
 }
 
 prompt {
     enabled: 						true;
-	padding: 						0% 1% 0% 0%;
+	padding: 						-0.25% 0.69% 0% 0.4%;
 	background-color: 				@background;
-	text-color: 					@foreground;
-	font:							"Hack Nerd Font 20";
+	text-color: 					@sec;
+	font:							"Hack Nerd Font 24";
 }
 
 entry {
     background-color:               @background;
-    text-color:                     @foreground;
-    placeholder-color:              @foreground;
-    expand:                         true;
+    text-color:                     @sub;
+    placeholder-color:              @sub-dim;
+    expand:                         false;
     horizontal-align:               0;
     placeholder:                    "Search Applications";
-    padding:                        0.15% 0% 0% 0%;
     blink:                          true;
+    position:                       north west;
 }
 
 inputbar {
@@ -70,34 +77,36 @@ inputbar {
     background-color:               @background;
     text-color:                     @foreground;
     expand:                         false;
-	border:							0% 0% 0.3% 0.2%;
-    border-radius:                  1.5% 1.0% 1.5% 1.5%;
-	border-color:					@border-alt;
-    margin:                         0% 17% 0% 0%;
-    padding:                        1%;
-    position:                       center;
+	border:							0% 0.05% 0.1% 0%;
+    border-radius:                  0% 1% 1.5% 1.5%;
+	border-color:					@sec;
+    margin:                         0% 19.5% 0% 0%;
+    padding:                        1% 0% 1% 0.3%;
 }
 
 listview {
     background-color:               @background;
-    columns:                        4;
+    columns:                        3;
+    lines:                          4;
     spacing:                        1%;
     cycle:                          false;
     dynamic:                        true;
+    fixed-height:                   false;
     layout:                         vertical;
 }
+
 
 element {
     background-color:               @background;
     text-color:                     @foreground;
     orientation:                    vertical;
-    border-radius:                  0%;
-    padding:                        2% 0% 2% 0%;
+    padding:                        1% 0% 1% 0%;
+    margin:                         0% 0 0% 2.5%;
 }
 
 element-icon {
-    size:                           64px;
-    border:                         0px;
+    size:                           48px;
+    horizontal-align:               0.5;
 }
 
 element-text {
@@ -105,6 +114,7 @@ element-text {
     horizontal-align:               0.5;
     vertical-align:                 0.5;
     margin:                         0.5% 1% 0% 1%;
+    highlight:                      Bold underline #f5b17a;
 }
 
 element normal.urgent,
@@ -121,11 +131,11 @@ element alternate.active {
 }
 
 element selected {
-    background-color:               @selected;
+    background-color:               @background;
     text-color:                     @foreground;
-	border:							0% 0% 0.3% 0.2%;
-    border-radius:                  1.5% 1.0% 1.5% 1.5%;
-    border-color:                  	@border-alt;
+	border:							0% 0.1% 0% 0.1%;
+    border-radius:                  1.9% 1.8% 1.9% 1.8%;
+    border-color:                  	@sec;
 }
 
 element selected.urgent {

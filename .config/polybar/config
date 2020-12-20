@@ -106,7 +106,7 @@ content-margin = 3
 content-foreground = ${colors.sec}
 content-background = ${colors.background}
 content-font = 8
-click-left= rofi -no-lazy-grab -normal-window -show drun -theme ~/.config/rofi/launcher.rasi
+click-left= rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launcher.rasi
 
 [module/power]
 type=custom/text
