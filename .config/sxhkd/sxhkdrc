@@ -33,12 +33,19 @@ super + alt + shift + {f,t,d,g,e,v}
 ctrl + Escape 
 	bspc node -c
 
-# screenshots
+# selection then copy to clipboard
 super + shift + b
 	maim -s -u | xclip -selection clipboard -t image/png
+# selection then save
 super + shift + c
-	maim -s -u ~/screenshots/$(date +%m-%d-%y_%H':'%M).png
-super + shift + d
+	maim -s -u ~/screenshots/$(date +%m-%d-%y_%H':'%M':'%S).png
+# screenshot of active window
+super + shift + s
+	maim -u -i $(xdotool getactivewindow) ~/screenshots/$(date +%m-%d-%y_%H':'%M':'%S).png
+# screensshot of entire screen
+super + shift + e
+	maim -u ~/screenshots/$(date +%m-%d-%y_%H':'%M':'%S).png
+	
 	
 #rofi
 super + shift + ctrl + alt + n
