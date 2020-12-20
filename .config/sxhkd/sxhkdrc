@@ -26,8 +26,8 @@
 super + Return
 	kitty
 
-super + alt + shift + {f,t,d,g,e,v,BackSpace}
-	{code,firefox,discord,zathura,kitty -e ranger,bspc wm -r,bspc node -k}
+super + alt + shift + {f,t,d,g,e,v}
+	{code,firefox,discord,zathura,kitty -e ranger,bspc wm -r}
 
 # close
 ctrl + Escape 
@@ -43,7 +43,8 @@ super + shift + d
 #rofi
 super + shift + ctrl + alt + n
 	rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launcher.rasi
-super + shift + ctrl + alt + Escape
+
+super + shift + ctrl + alt + BackSpace
 	~/.config/rofi/powermenu.sh
 
 # ╔╗ ┌─┐┌─┐┬ ┬┌┬┐
