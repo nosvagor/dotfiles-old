@@ -1,0 +1,26 @@
+/** 
+ * Custom css for page 
+*/
+
+html, body {
+    color: #e0e0e0 !important;
+    background: #1f1f1f !important;
+    background-color: #1f1f1f !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.ytmusic-player-page {
+    background: #1f1f1f !important;
+}
+
+#nav-bar-background {
+    background: #262626 !important;
+    box-shadow: 0px 6px 5px -7px #141414;
+}
+
+#nav-bar-divider {
+    display: none !important;
+}
