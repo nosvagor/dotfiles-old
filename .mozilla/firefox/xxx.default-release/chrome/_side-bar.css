@@ -21,10 +21,6 @@
   transition: var(--inVerba-move) !important;
 }
 
-/* tried messing with this a bit, but never use it */ 
-#sidebar-box {
-  visibility: collapse !important;
-}
 /* delete this if you want to nd edit */
 
 #sidebar-box #sidebar-header {
