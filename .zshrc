@@ -51,5 +51,4 @@ key[Home]=${terminfo[khome]}
 key[End]=${terminfo[kend]}
 [[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
 [[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
-[[ -n "${key[Home]}"    ]]  && bindkey -M vicmd "${key[Home]}"    beginning-of-line
-[[ -n "${key[End]}"     ]]  && bindkey -M vicmd "${key[End]}"     end-of-line
+bindkey  "^[[3~"  delete-char

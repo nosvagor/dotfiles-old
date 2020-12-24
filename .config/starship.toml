@@ -1,5 +1,5 @@
 format = """
-[╭╼╾ $username ╼╾ $hostname ╼╾ $memory_usage ╼╾ $time ╼─╼─╼─╼─╼─](#f5b17a) $cmd_duration
+[╭╼╾ $username ╼╾ $hostname ╼╾ $time ╼─╼─╼─╼─](#f5b17a) $cmd_duration
 [╞╾ ](#f5b17a)$directory$git_branch$git_commit$git_state$git_status$hg_branch
 [╰╼╾](#f5b17a) $status$character"""
 
@@ -68,7 +68,7 @@ format = "[${ram}]($style)"
 threshold = -1
 symbol = ""
 style = "dimmed #f5b17a"
-disabled = false
+disabled = true
 
 [time]
 disabled = false
