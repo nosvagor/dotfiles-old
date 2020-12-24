@@ -72,6 +72,8 @@ super + space
 super + {Prior, Next}
 	bspc node -f {prev,next}
 
+super + alt + shift + {u,i,n,o}
+	bspc node -f {north,south,west,east}.local
 # swap current window with biggest/smallest in current desktop
 super + {g,comma}
 	bspc node -s {biggest,smallest}.local
