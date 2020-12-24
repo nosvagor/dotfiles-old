@@ -133,7 +133,7 @@ content-margin = 1
 content-font = 6
 content-foreground = ${colors.sub}
 content-background = ${colors.background}
-click-left = bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty
+click-left = ./.config/rofi/layouts.sh
 
 [module/dunst]
 type = custom/ipc
