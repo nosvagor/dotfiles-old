@@ -15,10 +15,8 @@
 # ╚═╝└─┘┘└┘└─┘┴└─┴ ┴┴─┘
 
 set adjust-open width
-set zoom 
 set zoom-step 5
 
-set smooth-scroll "true"
 set scroll-page-aware "true"
 set scroll-step 200
 
@@ -31,9 +29,9 @@ set window-title-basename "true"
 #  ║║│└─┐├─┘│  ├─┤└┬┘
 # ═╩╝┴└─┘┴  ┴─┘┴ ┴ ┴
 
-set defaulf-bg "1f1f1f"
+set default-bg "1f1f1f"
 
-set highlight-color "#ffb981"
+set highlight-color "#ff9e4f"
 set highlight-active-color '#406de3'
 set highlight-transparency 0.42
 
@@ -48,19 +46,23 @@ set notification-fg "#e0e0e0"
 set recolor-lightcolor "#1f1f1f"
 set recolor-darkcolor "#b0b0b0"
 set recolor-keephue "true"
-set reccolor-reverse-video "true"
+set recolor-reverse-video "true"
 
-set tabbar-fg "#e0e0e0" 
-set tabbar-bg "#1f1f1f"
+# set tabbar-fg "#e0e0e0" 
+# set tabbar-bg "#1f1f1f"
 
-tabbar-focus-fg "#ff9e4f"
-tabbar-focus-bg "#1f1f1f"
+# set tabbar-focus-fg "#ff9e4f"
+# set tabbar-focus-bg "#1f1f1f"
 
 set completion-highlight-fg "#1f1f1f"
 set completion-highlight-bg "#ff9e4f"
 
 set index-active-fg "#1f1f1f"
-set index-active-bg "#ff9e4f"
+set index-active-bg "#ff7d14"
+
+set index-bg "#1f1f1f"
+set index-fg "#e0e0e0"
+
 
 # ╦╔═┌─┐┬ ┬  ╔╦╗┌─┐┌─┐┌─┐
 # ╠╩╗├┤ └┬┘  ║║║├─┤├─┘└─┐
