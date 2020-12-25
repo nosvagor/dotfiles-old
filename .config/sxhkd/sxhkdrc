@@ -27,12 +27,11 @@ super + Return
 	kitty
 
 # most used apps
-super + alt + shift + {f,t,d,g,e,v,w,x}
+super + alt + shift + {f,t,d,g,e,v,x}
 	{code,firefox,discord,zathura,\
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
 	bspc wm -r, \
-	~/.config/rofi/layouts.sh, \
-	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop,}
+	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop}
 
 # ╔╦╗┌─┐┬┌┬┐
 # ║║║├─┤││││
@@ -60,6 +59,10 @@ super + shift + ctrl + alt + n
 # powermenu lanucher
 super + shift + ctrl + alt + BackSpace
 	~/.config/rofi/powermenu.sh
+
+# layouts lanucher
+super + shift + ctrl + alt + l
+	~/.config/rofi/layouts.sh
 
 # ╔╗ ┌─┐┌─┐┬ ┬┌┬┐
 # ╠╩╗└─┐├─┘││││││
