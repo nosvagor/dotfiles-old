@@ -57,12 +57,8 @@ super + shift + ctrl + alt + n
 	rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launcher.rasi
 
 # powermenu lanucher
-super + shift + ctrl + alt + BackSpace
-	~/.config/rofi/powermenu.sh
-
-# layouts lanucher
-super + shift + ctrl + alt + l
-	~/.config/rofi/layouts.sh
+super + shift + ctrl + alt + {BackSpace,i}
+	{~/.config/rofi/{powermenu,layouts}.sh
 
 # ╔╗ ┌─┐┌─┐┬ ┬┌┬┐
 # ╠╩╗└─┐├─┘││││││
