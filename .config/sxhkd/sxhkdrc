@@ -27,8 +27,12 @@ super + Return
 	kitty
 
 # most used apps
-super + alt + shift + {f,t,d,g,e,v}
-	{code,firefox,discord,zathura,kitty -e ranger,bspc wm -r}
+super + alt + shift + {f,t,d,g,e,v,w,x}
+	{code,firefox,discord,zathura,\
+	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
+	bspc wm -r, \
+	~/.config/rofi/layouts.sh, \
+	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop,}
 
 # ╔╦╗┌─┐┬┌┬┐
 # ║║║├─┤││││
@@ -65,7 +69,7 @@ ctrl + Escape
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-super + space
+super + Tab
 	bspc desktop -l next
 
 # move window focus
@@ -83,7 +87,7 @@ super + {w,r}
 	bspc node -t {tiled,floating}
 
 # focus the last desktop
-super + Tab
+super + Escape
 	bspc desktop -f last
 
 # focus desktop and change background

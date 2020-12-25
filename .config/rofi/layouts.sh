@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
-uptime=$(uptime -p | sed -e 's/up //g')
-rofi_command="rofi -theme ~/.config/rofi/launcher.rasi"
+rofi_command="rofi -theme ~/.config/rofi/layouts.rasi"
 
 # Options
-BI_428="Human Genetics"
-BI_429="Conservation Biology"
-BI_463="Sensory and Motor Systems"
-CH_335="Organic Chemistry II"
-PHL_331="Philosophy of Education"
+BI_428="BI: 428 - Human Genetics"
+BI_429="BI: 429 - Conservation Biology"
+BI_463="BI: 463 - Sensory and Motor Systems"
+CH_335="CH: 335 - Organic Chemistry II"
+PHL_331="PHL: 331 - Philosophy of Education"
 notes="notes"
 dotfiles="dotfiles"
+chill="chill"
 
 # Variable passed to rofi
-options="$BI_428\n$BI_429\n$BI_463\n$CH_335\n$PHL_331\n$notes\n$dotfiles"
+options="$PHL_331\n$CH_335\n$BI_428\n$BI_429\n$BI_463\n$notes\n$dotfiles\n$chill"
 
-chosen="$(echo -e "$options" | $rofi_command -p "$uptime" -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu -selected-row 2)"
 case $chosen in
     $BI_428)
 		./scripts/launch.sh bi-428
@@ -37,5 +37,8 @@ case $chosen in
         ;;
     $dotfiles)
 		./scripts/basic-launch.sh dotfiles
+        ;;
+    $chill)
+		./scripts/chill-launch.sh 
         ;;
 esac
