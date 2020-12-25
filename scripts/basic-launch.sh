@@ -2,7 +2,7 @@
 
 bspc config focus_follows_pointer false
 
-bspc desktop -f ^3
+bspc desktop -f ^$2
 feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png'
 
 kitty -e cava &
