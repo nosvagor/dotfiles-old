@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# needs https://github.com/wmutils/opt
+# see https://github.com/wmutils/opt/issues/48 if issue with borders.
+
 outer='0x1f1f1f'   # outer
 inner1='0xb08058'  # focused
 inner2='0x849cb0'  # normal
