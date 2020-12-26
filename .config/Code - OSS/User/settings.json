@@ -120,4 +120,8 @@
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "kitty",
     "editor.mouseWheelZoom": true,
+    "telemetry.experiments.showDefaultViewlet": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }

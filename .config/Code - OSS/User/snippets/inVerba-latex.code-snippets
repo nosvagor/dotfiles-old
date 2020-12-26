@@ -1,0 +1,62 @@
+{
+  // ██╗      █████╗ ████████╗███████╗██╗  ██╗
+  // ██║     ██╔══██╗╚══██╔══╝██╔════╝╚██╗██╔╝
+  // ██║     ███████║   ██║   █████╗   ╚███╔╝
+  // ██║     ██╔══██║   ██║   ██╔══╝   ██╔██╗
+  // ███████╗██║  ██║   ██║   ███████╗██╔╝ ██╗
+  // ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+  //  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
+  // |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  // |::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
+  // |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  //         `--'      `.-'      `--'      `--'      `--'      `-.'      `
+
+  // ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
+  // ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
+  // ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
+  "New Chapter": {
+    "scope": "latex",
+    "prefix": "new chapter",
+    "body": [
+      "%%%%%%%%%%% ${1:Chapter} %%%%%%%%%%%",
+      "",
+      "%\\begingroup",
+      "\\chapter{${1:Chapter}}\\label{${2}}",
+      "\\begin{adjustwidth}{1cm}{1cm}",
+      "  \\dots",
+      "\\end{adjustwidth}",
+      "",
+      "$0",
+      "%\\endgroup",
+      "%%%%%%%%%%% ${1:Chapter} %%%%%%%%%%%"
+    ],
+    "description": "New chapter + some code formatting"
+  },
+
+  "New Section": {
+    "scope": "latex",
+    "prefix": "new section",
+    "body": [
+      "\\section{$1}\\label{$2}",
+      "\\begin{itemize}",
+      "    \\item $0",
+      "\\end{itemize}",
+      ""
+    ],
+    "description": "New section with a label"
+  },
+
+  "New Subsection": {
+    "scope": "latex",
+    "prefix": "new ssection",
+    "body": [
+      "\\subsection{$1}\\label{$2}",
+      "\\begin{itemize}",
+      "    \\item $0",
+      "\\end{itemize}",
+      ""
+    ],
+    "description": "New subsection with a label"
+  },
+
+}
