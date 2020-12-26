@@ -19,7 +19,7 @@ sleep 1
 bspc config split_ratio 0.75 && kitty -e ranger &
 sleep 1
 
-bspc config split_ratio 0.64 && kitty &
+bspc config split_ratio 0.64 && kitty -d ~/$1 &
 sleep 1 &&
 
 bspc config split_ratio 0.5 

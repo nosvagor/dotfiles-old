@@ -27,11 +27,12 @@ super + Return
 	kitty
 
 # most used apps
-super + alt + shift + {f,t,d,g,e,v,x}
+super + alt + shift + {f,t,d,g,e,v,w,x}
 	{code,firefox,discord,zathura,\
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
 	bspc wm -r, \
-	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop}
+	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty 
+	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop,} 
 
 # ╔╦╗┌─┐┬┌┬┐
 # ║║║├─┤││││
