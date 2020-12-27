@@ -27,7 +27,7 @@ super + Return
 	kitty
 
 # most used apps
-super + alt + shift + {f,t,d,g,e,v,w,x}
+super + alt + shift + {f,t,d,r,e,v,w,x}
 	{code,firefox,discord,zathura,\
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
 	bspc wm -r, \
@@ -78,9 +78,10 @@ super + {Prior, Next}
 
 super + alt + shift + {u,i,n,o}
 	bspc node -f {north,south,west,east}.local
-# swap current window with biggest/smallest in current desktop
-super + {g,comma}
-	bspc node -s {biggest,smallest}.local
+
+# swap current window with smallest in current desktop
+super + alt + shift + l
+	bspc node -s south; bspc node -f north
 
 # set the window state
 super + {w,r}
