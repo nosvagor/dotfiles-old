@@ -59,4 +59,25 @@
     "description": "New subsection with a label"
   },
 
+  // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
+  // ║  │ │││││││├─┤│││ ││└─┐
+  // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
+
+  "Internal Down Link": {
+    "scope": "latex",
+    "prefix": "dll",
+    "body": [
+      "\\hyperref[$0]{\\dlink{$1}}",
+    ],
+    "description": "a styled link to a later part of the document"
+  },
+
+  "Internal Up Link": {
+    "scope": "latex",
+    "prefix": "ull",
+    "body": [
+      "\\hyperref[$0]{\\ulink{$1}}",
+    ],
+    "description": "A styled link to an earlier part of the document"
+  },
 }
