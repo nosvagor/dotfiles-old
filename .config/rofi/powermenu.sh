@@ -12,7 +12,7 @@ hibernate="鈴"
 logout="﫼"
 
 # Variable passed to rofi
-options="$shutdown\n$reboot\n$lock\n$suspend\n$hibernate\n$logout"
+options="$lock\n$hibernate\n$shutdown\n$suspend\n$reboot\n$logout"
 
 chosen="$(echo -e "$options" | $rofi_command -p "$uptime" -dmenu -selected-row 2)"
 case $chosen in

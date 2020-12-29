@@ -16,7 +16,7 @@ bspc node -f west.local
 bspc config split_ratio 0.12 && discord &
 sleep 1
 
-bspc config split_ratio 0.5 
+bspc config split_ratio 0.5
 bspc config focus_follows_pointer true
 
 exit 0

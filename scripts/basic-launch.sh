@@ -2,7 +2,6 @@
 
 bspc config focus_follows_pointer false
 
-bspc desktop -f ^$2
 feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png'
 
 kitty -e cava &
@@ -16,13 +15,10 @@ bspc node -f west.local
 bspc config split_ratio 0.12 && code ~/$1 &
 sleep 1
 
-bspc config split_ratio 0.75 && kitty -e ranger &
+bspc config split_ratio 0.86 && kitty -d ~/$1 &
 sleep 1
 
-bspc config split_ratio 0.64 && kitty -d ~/$1 &
-sleep 1 &&
-
-bspc config split_ratio 0.5 
+bspc config split_ratio 0.5
 bspc config focus_follows_pointer true
 
 exit 0

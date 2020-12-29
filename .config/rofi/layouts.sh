@@ -33,10 +33,10 @@ case $chosen in
 		./scripts/launch.sh phl-331
         ;;
     $notes)
-		./scripts/basic-launch.sh notes 2
+		./scripts/basic-launch.sh notes
         ;;
     $dotfiles)
-		./scripts/basic-launch.sh dotfiles 3
+		./scripts/basic-launch.sh dotfiles
         ;;
     $chill)
 		./scripts/chill-launch.sh 
