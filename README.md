@@ -6,6 +6,7 @@
 - Shell: zsh
 - Prompt: [starship](https://starship.rs/), with custom DNA greeter (new basepairs each time!)
 <img src="resources/examples/prompt.png" width="350">
+
 - Editor: Visual Studio Code, with modified dark material theme
 - Browser: Firefox, heavily modified and minimal version of [eduardhojbota's Moonlight theme](https://github.com/eduardhojbota/moonlight-userChrome)
 - Wallpapers: four different ones, found [here](resources/wallpapers)
@@ -13,7 +14,9 @@
 - Terminal: kitty
 - Bar: polybar
 - Launchers: modified versions of [adi1090x's rofi themes](https://github.com/adi1090x/rofi) (check out Adi's [polybar themes](https://github.com/adi1090x/polybar-themes) too)
-<img src="resources/examples/launchers.gif" width="400"> <img src="resources/examples/powermenu.gif" width="300"> 
+
+<img src="resources/examples/launchers.gif" width="350"> <img src="resources/examples/powermenu.gif" width="350"> 
+
 - PDF viewer: zathura
 - Notifications: dunst 
 - Music: [ytmdesktop](https://github.com/ytmdesktop/ytmdesktop)&mdash;yes, I like YouTube Music
