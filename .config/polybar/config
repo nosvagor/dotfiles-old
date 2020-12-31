@@ -192,10 +192,10 @@ label-occupied-font = 7
 label-occupied-foreground = ${colors.sub}
 label-occupied-margin = 3
 
-ws-icon-0 = 1;%{O1}%{A2:firefox & bspc desktop -f \^1 & bspc desktop -l next & feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg':}%{A}
+ws-icon-0 = 1;%{O1}%{A1:bspc desktop -f \^1 & feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png':}%{A}
 ws-icon-1 = 1;
-ws-icon-2 = 2;%{O1}
-ws-icon-3 = 3;%{O5}%{A2:code & bspc desktop -f \^3 & feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg':}﬏%{A}
+ws-icon-2 = 2;%{O1}%{A1:bspc desktop -f \^2 & feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg':}%{A}
+ws-icon-3 = 3;%{O5}%{A1:bspc desktop -f \^3 & feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg':}﬏%{A}
 ws-icon-4 = 4;%{O-3}%{A1:bspc desktop -f \^4 & feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png':}%{A}
 
 ; ╔═╗┬ ┬┌┬┐┬┌─┐
