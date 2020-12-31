@@ -12,7 +12,7 @@
 - File manager: ranger
 - Terminal: kitty
 - Bar: polybar
-- Launchers: modified versions of [adi1090x's rofi themes](https://github.com/adi1090x/rofi) (check out Adi's [polybar themes](https://github.com/adi1090x/polybar-themes) too) <img src="resources/examples/launchers.gif" width="400"> <img src="resources/examples/powermenu.gif" width="40"> 
+- Launchers: modified versions of [adi1090x's rofi themes](https://github.com/adi1090x/rofi) (check out Adi's [polybar themes](https://github.com/adi1090x/polybar-themes) too) <img src="resources/examples/launchers.gif" width="400"><img src="resources/examples/powermenu.gif" width="400"> 
 
 - PDF viewer: zathura
 - Notifications: dunst 
