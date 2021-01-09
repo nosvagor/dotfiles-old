@@ -38,6 +38,7 @@ bspc rule -a youtube-music-desktop-app desktop='^4' state=floating
 bspc rule -a Gpick state=floating
 bspc rule -a Zathura state=tiled 
 bspc rule -a vlc state=floating
+bspc rule -a zoom state=floating
 
 # ╔╗ ┌─┐┬ ┬┌─┐┬  ┬┬┌─┐┬─┐
 # ╠╩╗├┤ ├─┤├─┤└┐┌┘││ │├┬┘

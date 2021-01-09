@@ -78,7 +78,7 @@ super + {Prior, Next}
 super + alt + shift + {u,i,n,o}
 	bspc node -f {north,south,west,east}.local
 
-# swap current window with smallest in current desktop
+# makeshift tab swap
 super + alt + shift + l
 	bspc node -s south; bspc node -f north
 
@@ -101,7 +101,7 @@ super + t
 	bspc desktop -f ^4; feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png'
 
 # move focused window to next desktop then switch
-super + {Up, Down}
+super + alt + {Up, Down}
 	DIR={next,prev}; \
     bspc node -d "$DIR"; \
     bspc desktop -f "$DIR"
