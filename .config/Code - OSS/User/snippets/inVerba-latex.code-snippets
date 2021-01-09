@@ -58,6 +58,17 @@
     "description": "New subsection with a label"
   },
 
+  "Centered Graphic": {
+    "scope": "latex",
+    "prefix": "Centered Graphic",
+    "body": [
+      "\\begin{center}",
+      "\t\\includegraphics[scale=0.$1]{images/$2.png}",
+      "\\end{center}"
+    ],
+    "description": "Insert centered graphic"
+  },
+
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
@@ -65,18 +76,284 @@
   "Internal Down Link": {
     "scope": "latex",
     "prefix": "dll",
-    "body": [
-      "\\hyperref[$0]{\\dlink{$1}}",
-    ],
+    "body": ["\\hyperref[$0]{\\dlink{$1}}"],
     "description": "a styled link to a later part of the document"
   },
 
   "Internal Up Link": {
     "scope": "latex",
     "prefix": "ull",
-    "body": [
-      "\\hyperref[$0]{\\ulink{$1}}",
-    ],
+    "body": ["\\hyperref[$0]{\\ulink{$1}}"],
     "description": "A styled link to an earlier part of the document"
+  },
+
+  // ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
+  // ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
+  // ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
+
+  "Centered Reaction Scheme": {
+    "scope": "latex",
+    "prefix": "centschemestart",
+    "body": [
+      "\\begin{center}",
+      "\\medskip",
+      "\\schemestart{}",
+      "\t$0",
+      "\\schemestop{}",
+      "\\end{center}",
+      "\\bigskip",
+      ""
+    ],
+    "description": "A centered reaction scheme"
+  },
+
+  "Reaction Scheme": {
+    "scope": "latex",
+    "prefix": "schemestart",
+    "body": [
+      "\\medskip",
+      "\\schemestart{}",
+      "\t$0",
+      "\\schemestop{}",
+      "\\bigskip",
+      ""
+    ],
+    "description": "chemfig reaction scheme"
+  },
+
+  "Labeled Chemfig": {
+    "scope": "latex",
+    "prefix": "chname",
+    "body": ["\\chemname{\\chemfig{${1:figure}}}{${2:label}}"]
+  },
+
+  "Anion": {
+    "scope": "latex",
+    "prefix": "anion",
+    "body": "\\bbb{\\ch{$1-}}"
+  },
+
+  "Cation": {
+    "scope": "latex",
+    "prefix": "cation",
+    "body": "\\bbb{\\ch{$1+}}"
+  },
+
+  // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
+  // ║  ├─┤├┤ │││├┤ ││ ┬
+  // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
+
+  "Basic +-90": {
+    "scope": "latex",
+    "prefix": "~ncs",
+    "body": ["(-[:90]$1)(-[:-90]$2)$0"]
+  },
+
+  // ╔═╗┬─┐┌─┐┌─┐┬┌─
+  // ║ ╦├┬┘├┤ ├┤ ├┴┐
+  // ╚═╝┴└─└─┘└─┘┴ ┴
+
+  "alpha": {
+    "scope": "latex",
+    "prefix": "alpha",
+    "body": "\\(\\alpha \\)"
+  },
+
+  "beta": {
+    "scope": "latex",
+    "prefix": "beta",
+    "body": "\\(\\beta \\)"
+  },
+
+  "gamma": {
+    "scope": "latex",
+    "prefix": "gamma",
+    "body": "\\(\\gamma \\)"
+  },
+
+  "Gamma": {
+    "scope": "latex",
+    "prefix": "Gamma",
+    "body": "\\(\\Gamma \\)"
+  },
+
+  "delta": {
+    "scope": "latex",
+    "prefix": "delta",
+    "body": "\\(\\delta \\)"
+  },
+
+  "Delta": {
+    "scope": "latex",
+    "prefix": "Delta",
+    "body": "\\(\\Delta \\)"
+  },
+
+  "epsilon": {
+    "scope": "latex",
+    "prefix": "epsilon",
+    "body": "\\(\\epsilon \\)"
+  },
+
+  "zeta": {
+    "scope": "latex",
+    "prefix": "zeta",
+    "body": "\\(\\zeta \\)"
+  },
+
+  "eta": {
+    "scope": "latex",
+    "prefix": "eta",
+    "body": "\\(\\eta \\)"
+  },
+
+  "theta": {
+    "scope": "latex",
+    "prefix": "theta",
+    "body": "\\(\\theta \\)"
+  },
+
+  "Theta": {
+    "scope": "latex",
+    "prefix": "Theta",
+    "body": "\\(\\Theta \\)"
+  },
+
+  "iota": {
+    "scope": "latex",
+    "prefix": "iota",
+    "body": "\\(\\iota \\)"
+  },
+
+  "kappa": {
+    "scope": "latex",
+    "prefix": "kappa",
+    "body": "\\(\\kappa \\)"
+  },
+
+  "lambda": {
+    "scope": "latex",
+    "prefix": "lambda",
+    "body": "\\(\\lambda \\)"
+  },
+
+  "Lambda": {
+    "scope": "latex",
+    "prefix": "Lambda",
+    "body": "\\(\\Lambda \\)"
+  },
+
+  "mu": {
+    "scope": "latex",
+    "prefix": "mu",
+    "body": "\\(\\mu \\)"
+  },
+
+  "nu": {
+    "scope": "latex",
+    "prefix": "nu",
+    "body": "\\(\\nu \\)"
+  },
+  
+  "xi": {
+    "scope": "latex",
+    "prefix": "xi",
+    "body": "\\(\\xi \\)"
+  },
+  
+  "Xi": {
+    "scope": "latex",
+    "prefix": "Xi",
+    "body": "\\(\\Xi \\)"
+  },
+
+  "pi": {
+    "scope": "latex",
+    "prefix": "pi",
+    "body": "\\(\\pi \\)"
+  },
+
+  "Pi": {
+    "scope": "latex",
+    "prefix": "Pi",
+    "body": "\\(\\Pi \\)"
+  },
+
+  "rho": {
+    "scope": "latex",
+    "prefix": "rho",
+    "body": "\\(\\rho \\)"
+  },
+
+  "sigma": {
+    "scope": "latex",
+    "prefix": "sigma",
+    "body": "\\(\\sigma \\)"
+  },
+
+  "Sigma": {
+    "scope": "latex",
+    "prefix": "Sigma",
+    "body": "\\(\\Sigma \\)"
+  },
+
+  "tau": {
+    "scope": "latex",
+    "prefix": "tau",
+    "body": "\\(\\tau \\)"
+  },
+
+  "upsilon": {
+    "scope": "latex",
+    "prefix": "upsilon",
+    "body": "\\(\\upsilon \\)"
+  },
+
+  "Upsilon": {
+    "scope": "latex",
+    "prefix": "Upsilon",
+    "body": "\\(\\Upsilon \\)"
+  },
+
+  "phi": {
+    "scope": "latex",
+    "prefix": "phi",
+    "body": "\\(\\phi \\)"
+  },
+
+  "Phi": {
+    "scope": "latex",
+    "prefix": "Phi",
+    "body": "\\(\\Phi \\)"
+  },
+
+  "chi": {
+    "scope": "latex",
+    "prefix": "chi",
+    "body": "\\(\\chi \\)"
+  },
+
+  "Chi": {
+    "scope": "latex",
+    "prefix": "Chi",
+    "body": "\\(\\Chi \\)"
+  },
+
+  "psi": {
+    "scope": "latex",
+    "prefix": "psi",
+    "body": "\\(\\psi \\)"
+  },
+
+  "Psi": {
+    "scope": "latex",
+    "prefix": "Psi",
+    "body": "\\(\\Psi \\)"
+  },
+
+  "omega": {
+    "scope": "latex",
+    "prefix": "omega",
+    "body": "\\(\\omega \\)"
   },
 }
