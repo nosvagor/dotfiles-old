@@ -36,6 +36,7 @@
     "scope": "latex",
     "prefix": "new section",
     "body": [
+      "\\clearpage",
       "\\section{$1}\\label{$1}",
       "\\begin{itemize}",
       "    \\item $0",
@@ -190,6 +191,14 @@
     "prefix": "barrow",
     "body": "\\arrow(--[braces]){->}"
   },
+
+  "Chemmove": {
+    "scope": "latex",
+    "prefix": "chemmove",
+    "body": ["\\chemmove[dash pattern= on 1pt off 1pt]{",
+      "\t\\draw(x)..controls +(north:1cm) and +(south:1cm).. (db);}"]
+  },
+  
 
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
   // ║ ╦├┬┘├┤ ├┤ ├┴┐
