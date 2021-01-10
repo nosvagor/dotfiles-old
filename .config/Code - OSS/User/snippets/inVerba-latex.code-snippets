@@ -69,6 +69,12 @@
     "description": "Insert centered graphic"
   },
 
+  "Move Left": {
+    "scope": "latex",
+    "prefix": "mleft",
+    "body": "\\hspace{-$1pt}"
+  },
+
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
@@ -113,7 +119,7 @@
     "body": [
       "\\medskip",
       "\\schemestart{}",
-      "\t$0",
+      "\t\\chemfig{$0}",
       "\\schemestop{}",
       "\\bigskip",
       ""
@@ -139,6 +145,30 @@
     "body": "\\bbb{\\ch{$1+}}"
   },
 
+  "Water": {
+    "scope": "latex",
+    "prefix": "water",
+    "body": "\\ch{H2O}"
+  },
+
+  "Priamry": {
+    "scope": "latex",
+    "prefix": "prim",
+    "body": "\\ang{1}"
+  },
+
+  "Secondary": {
+    "scope": "latex",
+    "prefix": "sec",
+    "body": "\\ang{2}"
+  },
+
+  "Tertiary": {
+    "scope": "latex",
+    "prefix": "tert",
+    "body": "\\ang{3}"
+  },
+
   // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // ║  ├─┤├┤ │││├┤ ││ ┬
   // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
@@ -147,6 +177,18 @@
     "scope": "latex",
     "prefix": "~ncs",
     "body": ["(-[:90]$1)(-[:-90]$2)$0"]
+  },
+
+  "Labeled Arrow": {
+    "scope": "latex",
+    "prefix": "larrow",
+    "body": "\\arrow{->[$1][$2]}"
+  },
+
+  "Braces": {
+    "scope": "latex",
+    "prefix": "barrow",
+    "body": "\\arrow(--[braces]){->}"
   },
 
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
@@ -254,13 +296,13 @@
     "prefix": "nu",
     "body": "\\(\\nu \\)"
   },
-  
+
   "xi": {
     "scope": "latex",
     "prefix": "xi",
     "body": "\\(\\xi \\)"
   },
-  
+
   "Xi": {
     "scope": "latex",
     "prefix": "Xi",
@@ -355,5 +397,5 @@
     "scope": "latex",
     "prefix": "omega",
     "body": "\\(\\omega \\)"
-  },
+  }
 }
