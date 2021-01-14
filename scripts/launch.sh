@@ -11,7 +11,7 @@ sleep 1.0
 bspc config split_ratio 0.38 && firefox -new-window https://github.com/cullyn-inverba/notes/tree/master/$1 & 
 sleep 1.0
 
-bspc config split_ratio 0.60 && kitty -e cava &
+bspc config split_ratio 0.65 && kitty -e cava &
 sleep 1.0
 
 bspc config split_ratio 0.13 && zathura ~/notes/$1/$1.pdf &

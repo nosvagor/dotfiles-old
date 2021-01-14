@@ -97,7 +97,6 @@
     "editor.fontSize": 16,
     "git.enableSmartCommit": true,
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "latex-workshop.latex.autoClean.run": "onBuilt",
     "latex-workshop.message.update.show": false,
     "latex-workshop.latex.tools": [
         {
