@@ -170,6 +170,18 @@
     "body": "\\ang{3}"
   },
 
+  "SN2": {
+    "scope": "latex",
+    "prefix": "sn2",
+    "body": "\\(S_N2\\)"
+  },
+
+  "SN1": {
+    "scope": "latex",
+    "prefix": "sn1",
+    "body": "\\(S_N1\\)"
+  },
+
   // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // ║  ├─┤├┤ │││├┤ ││ ┬
   // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
@@ -195,10 +207,53 @@
   "Chemmove": {
     "scope": "latex",
     "prefix": "chemmove",
-    "body": ["\\chemmove[dash pattern= on 1pt off 1pt]{",
-      "\t\\draw(x)..controls +(north:1cm) and +(south:1cm).. (db);}"]
+    "body": [
+      "\\chemmove[dash pattern= on 1pt off 1pt]{",
+      "\t\\draw(x)..controls +(north:1cm) and +(south:1cm).. (db);}"
+    ]
   },
-  
+
+  "subtituients": {
+    "scope": "latex",
+    "prefix": "split",
+    "body": "(-[:30]$1)(-[:-30]$2)$0",
+  },
+
+  "carbon+30": {
+    "scope": "latex",
+    "prefix": "cplus",
+    "body": "-[:30]",
+  },
+
+  "carbon-30": {
+    "scope": "latex",
+    "prefix": "cminus",
+    "body": "-[:-30]",
+  },
+
+  "alkyne": {
+    "scope": "latex",
+    "prefix": "alkyne",
+    "body": "\\chemfig{R-~-R'}",
+  },
+
+  "Chemabove": {
+    "scope": "latex",
+    "prefix": "chemabove",
+    "body": "\\chemabove[6pt]{}{$1}"
+  },
+
+  "hexene": {
+    "scope": "latex",
+    "prefix": "hexene",
+    "body": "{\\scriptsize\\chemfig{*6(---=--)}}"
+  },
+
+  "benzene": {
+    "scope": "latex",
+    "prefix": "hexene",
+    "body": "{\\scriptsize\\chemfig{*6(-=-=-=)}}"
+  },
 
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
   // ║ ╦├┬┘├┤ ├┤ ├┴┐
