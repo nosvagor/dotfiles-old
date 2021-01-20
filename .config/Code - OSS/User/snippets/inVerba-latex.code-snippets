@@ -21,10 +21,6 @@
       "%%%%%%%%%%% $1 %%%%%%%%%%%",
       "%\\begingroup",
       "\\chapter{$1}\\label{$1}",
-      "\\begin{adjustwidth}{1cm}{1cm}",
-      "  \\dots",
-      "\\end{adjustwidth}",
-      "",
       "$0",
       "%\\endgroup",
       "%%%%%%%%%%% $1 %%%%%%%%%%%"
@@ -152,6 +148,19 @@
     "body": "\\ch{H2O}"
   },
 
+  "na borohydride": {
+    "scope": "latex",
+    "prefix": "nabh4",
+    "body": "\\ch{NaBH4}"
+  },
+
+  "li al hydride ": {
+    "scope": "latex",
+    "prefix": "lialh4",
+    "body": "\\ch{LiAlH4}"
+  },
+
+
   "Priamry": {
     "scope": "latex",
     "prefix": "prim",
@@ -182,6 +191,7 @@
     "body": "\\(S_N1\\)"
   },
 
+
   // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // ║  ├─┤├┤ │││├┤ ││ ┬
   // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
@@ -192,10 +202,22 @@
     "body": ["(-[:90]$1)(-[:-90]$2)$0"]
   },
 
+  "90": {
+    "scope": "latex",
+    "prefix": "cnorth",
+    "body": ["(-[:90]$1)"]
+  },
+
   "Labeled Arrow": {
     "scope": "latex",
     "prefix": "larrow",
     "body": "\\arrow{->[$1][$2]}"
+  },
+
+  "extend": {
+    "scope": "latex",
+    "prefix": "arex",
+    "body": "[0,1.$1]"
   },
 
   "Braces": {
@@ -241,7 +263,7 @@
 
   "alkyne": {
     "scope": "latex",
-    "prefix": "alkyne",
+    "prefix": "cfalkyne",
     "body": "\\chemfig{R-~-R'}"
   },
 
