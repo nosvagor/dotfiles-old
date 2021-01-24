@@ -98,8 +98,9 @@
     "scope": "latex",
     "prefix": "centschemestart",
     "body": [
-      "\\begin{center}",
       "\\medskip",
+      "\\begin{center}",
+      "\\hspace{-30pt}",
       "\\schemestart{}",
       "\t$0",
       "\\schemestop{}",
@@ -124,6 +125,22 @@
     "description": "chemfig reaction scheme"
   },
 
+  "Small Reaction Scheme": {
+    "scope": "latex",
+    "prefix": "smallscheme",
+    "body": [
+      "\\medskip",
+      "{\\small",
+      "\\schemestart{}",
+      "\t\\chemfig{$0}",
+      "\\schemestop{}",
+      "}",
+      "\\bigskip",
+      ""
+    ],
+    "description": "chemfig reaction scheme"
+  },
+
   "Labeled Chemfig": {
     "scope": "latex",
     "prefix": "chname",
@@ -133,19 +150,25 @@
   "Anion": {
     "scope": "latex",
     "prefix": "anion",
-    "body": "\\bbb{\\ch{$1-}}"
+    "body": "\\bbb{\\ch{$1^{-$2}}}$0"
   },
 
   "Cation": {
     "scope": "latex",
     "prefix": "cation",
-    "body": "\\bbb{\\ch{$1+}}"
+    "body": "\\rrr{\\ch{$1^{+$2}}}$0"
   },
 
   "Water": {
     "scope": "latex",
     "prefix": "water",
     "body": "\\ch{H2O}"
+  },
+
+  "ozone": {
+    "scope": "latex",
+    "prefix": "ozone",
+    "body": "\\ch{O3}"
   },
 
   "na borohydride": {
@@ -159,7 +182,6 @@
     "prefix": "lialh4",
     "body": "\\ch{LiAlH4}"
   },
-
 
   "Priamry": {
     "scope": "latex",
@@ -191,7 +213,6 @@
     "body": "\\(S_N1\\)"
   },
 
-
   // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // ║  ├─┤├┤ │││├┤ ││ ┬
   // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
@@ -206,6 +227,12 @@
     "scope": "latex",
     "prefix": "cnorth",
     "body": ["(-[:90]$1)"]
+  },
+
+  "90-Oxygen": {
+    "scope": "latex",
+    "prefix": "onorth",
+    "body": ["(=[:90]O)"]
   },
 
   "Labeled Arrow": {
@@ -273,16 +300,22 @@
     "body": "\\chemabove[6pt]{}{$1}"
   },
 
-  "hexene": {
+  "cyclo hexene": {
     "scope": "latex",
-    "prefix": "hexene",
+    "prefix": "cyclohexene",
     "body": "{\\scriptsize\\chemfig{*6(---=--)}}"
   },
 
   "benzene": {
     "scope": "latex",
-    "prefix": "hexene",
+    "prefix": "benzene",
     "body": "{\\scriptsize\\chemfig{*6(-=-=-=)}}"
+  },
+
+  "epoxide": {
+    "scope": "latex",
+    "prefix": "epoxide",
+    "body": "\\chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}"
   },
 
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
