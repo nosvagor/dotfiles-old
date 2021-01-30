@@ -63,6 +63,8 @@ set index-active-bg "#ff7d14"
 set index-bg "#1f1f1f"
 set index-fg "#e0e0e0"
 
+set selection-clipboard "clipboard"
+
 
 # ╦╔═┌─┐┬ ┬  ╔╦╗┌─┐┌─┐┌─┐
 # ╠╩╗├┤ └┬┘  ║║║├─┤├─┘└─┐
