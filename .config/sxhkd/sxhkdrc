@@ -124,7 +124,15 @@ XF86AudioLowerVolume
 # ╚  └  ┴ ┴┴  └─┘└─┘
 # full screen record with audio
 ctrl + shift + alt + super + b
-	ffmpeg -f x11grab -video_size 3840x2160 -framerate 24 -i $DISPLAY -f pulse -i bluez_sink.04_5D_4B_65_C0_03.a2dp_sink.monitor -c:v libx264 -preset ultrafast -c:a aac ~/recordings/$(date +%m-%d-%y_%H':'%M':'%S).mp4 & notify-send -u critical -t 3000 started Recording
+	ffmpeg \
+	-f x11grab -video_size 3840x2160 -framerate 30 -i $DISPLAY \ 
+	-f pulse -ac 2 -ar 44100 -i bluez_sink.04_5D_4B_65_C0_03.a2dp_sink.monitor \
+	-f pulse -ac 1 -ar 48000 -i alsa_input.usb-C-Media_Electronics_Inc._TONOR_TC-777_Audio_Device-00.multichannel-input \
+	-filter_complex amix=inputs=2 \
+	-vcodec libx264 -preset veryfast -crf 18 \ 
+	-acodec libmp3lame -ar 44100 \
+	~/recordings/$(date +%m-%d-%y_%H':'%M':'%S).mkv \
+	& notify-send -u critical -t 3000 started Recording
 
 # stop ffmpeg
 ctrl + shift + alt + super + q
