@@ -14,6 +14,20 @@
   // ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
   // ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
   // ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
+
+  "Document Start":{
+    "scope": "latex",
+    "prefix": "docstart",
+    "body": [
+      "\\documentclass[basic]{inVerba-notes}",
+      "",
+      "\\newcommand{\\userName}{Cullyn Newman}",
+      "\\newcommand{\\class}{BI:\\@ $1}",
+      "\\newcommand{\\theTitle}{$2}",
+      "\\newcommand{\\institution}{Portland State University}"
+    ]
+  },
+
   "New Chapter": {
     "scope": "latex",
     "prefix": "new chapter",
