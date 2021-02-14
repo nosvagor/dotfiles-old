@@ -15,7 +15,7 @@
   // ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
   // ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
 
-  "Document Start":{
+  "Document Start": {
     "scope": "latex",
     "prefix": "docstart",
     "body": [
@@ -78,6 +78,27 @@
       "\\end{center}"
     ],
     "description": "Insert centered graphic"
+  },
+
+  "My Table": {
+    "prefix": "my table",
+    "body": [
+      "\\begin{table}[h]",
+      "\t\\centering",
+      "\t\\caption{$1 \\strut}",
+      "\t\\label{tab:$2}",
+      "\t\\begin{tabular}{ccc}",
+      "\t\t\\toprule",
+      "\t\t$3 & $4 & $5 \\\\\\",
+      "\t\t\\midrule",
+      "\t\t & & \\\\\\",
+      "\t\t & & \\\\\\",
+      "\t\t\\bottomrule",
+      "\t\t\\end{tabular}",
+      "\\end{table}",
+      "$0"
+    ],
+    "description": "Template for a nice table"
   },
 
   "Move Left": {
@@ -257,6 +278,12 @@
     "body": "\\(S_N1\\)"
   },
 
+  "Wavenumber": {
+    "scope": "latex",
+    "prefix": "wavenum",
+    "body": "\\(\\tilde{\\nu} \\)"
+  },
+
   // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // ║  ├─┤├┤ │││├┤ ││ ┬
   // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
@@ -343,8 +370,8 @@
     "prefix": "cfalkene",
     "body": "\\chemfig{(-[3])(-[5])=(-[1]H)(-[7])}"
   },
-  
-  "cfalign":{
+
+  "cfalign": {
     "scope": "latex",
     "prefix": "cfalign",
     "body": "\\arrow{0}[,0]"
@@ -374,13 +401,13 @@
     "body": "\\chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}"
   },
 
-  "carboxylic aid":{
+  "carboxylic aid": {
     "scope": "latex",
     "prefix": "cfcarboxylic",
     "body": "\\chemfig{(=[2]O)(-[:210]R)-[:-30]OH}"
   },
 
-  "carboxylic aid reversed":{
+  "carboxylic aid reversed": {
     "scope": "latex",
     "prefix": "cfcarboxylic rev",
     "body": "\\chemfig{HO-[:30](=[2]O)(-[:-30]R')}"
