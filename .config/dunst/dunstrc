@@ -59,8 +59,8 @@ icon_path = /usr/share/icons/Vimix-Doder/scalable/apps:/usr/share/icons/Vimix-Do
 # ╦ ╦┬┌─┐┌┬┐┌─┐┬─┐┬ ┬
 # ╠═╣│└─┐ │ │ │├┬┘└┬┘
 # ╩ ╩┴└─┘ ┴ └─┘┴└─ ┴
-sticky_history = yes
-history_length = 100
+sticky_history = false
+history_length = 10
 
 
 # ╔╦╗┬┌─┐┌─┐
