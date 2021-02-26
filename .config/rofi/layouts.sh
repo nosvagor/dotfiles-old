@@ -8,12 +8,13 @@ BI_429="BI: 429 - Conservation Biology"
 BI_463="BI: 463 - Sensory and Motor Systems"
 CH_335="CH: 335 - Organic Chemistry II"
 PHL_331="PHL: 331 - Philosophy of Education"
+go="go"
 notes="notes"
 dotfiles="dotfiles"
 chill="chill"
 
 # Variable passed to rofi
-options="$PHL_331\n$CH_335\n$BI_428\n$BI_429\n$BI_463\n$notes\n$dotfiles\n$chill"
+options="$PHL_331\n$CH_335\n$BI_428\n$BI_429\n$BI_463\n$notes\n$dotfiles\n$chill\n$go"
 
 chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu -selected-row 2)"
 case $chosen in
@@ -41,4 +42,6 @@ case $chosen in
     $chill)
 		./scripts/chill-launch.sh 
         ;;
+    $go)
+    ./scripts/basic-launch.sh notes/go
 esac
