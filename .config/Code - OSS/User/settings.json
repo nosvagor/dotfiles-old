@@ -123,4 +123,7 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "python.venvFolders": [
+        "notes"
+    ],
 }
