@@ -1,5 +1,5 @@
 format = """
-[╭╼╾ $username ╼╾ $hostname ╼╾ $time ╼─╼─╼─╼─╼─](#f5b17a) $cmd_duration
+[╭╼╾ $username ╼╾ $hostname ╼╾ $time$python$golang ╼╾](#f5b17a) $cmd_duration
 [╞╾ ](#f5b17a)$directory$git_branch$git_commit$git_state$git_status$hg_branch
 [╰╼╾](#f5b17a) $status$character"""
 
@@ -49,14 +49,14 @@ only_detached = true
 disabled = false
 
 [git_status]
-format = '([ $conflicted$staged$untracked$ahead_behind$renamed$deleted$modified$stashed]($style))'
+format = '([ $conflicted$staged$untracked$ahead_behind$renamed$deleted$stashed$modified]($style))'
 conflicted = "[ ](bold #eb4972)"
 stashed = " "
-modified = "⌨  "
+modified = " "
 staged = '[ ${count} ](bold #99e09b)'
 untracked = '[‍ ${count} ](bold #f0dd86)'
-renamed = "凜"
-deleted = " "
+renamed = " "
+deleted = " "
 ahead = "[ ${count} ](bold #57d9c3)"
 diverged = '[ [${ahead_count}](bold #57d9c3) [${behind_count} ](bold #eb4972)](bold #c28bf0)'
 behind = '[ ${count} ](bold #eb4972)'
@@ -73,11 +73,21 @@ disabled = true
 [time]
 disabled = false
 format = '[$time]($style)'
-time_format = "%T"
-style = "dimmed #f5b17a"
+time_format = "%R"
+style = "#f5b17a"
 
 [status]
 format = '[$symbol$status]($style) '
 style = "bold #f5736c"
 symbol = " "
 disabled = false
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version})( \($virtualenv\))]($style)'
+symbol = " ╼╾  "
+style = "#f5b17a"
+
+[golang]
+format = "[$symbol($version)]($style)"
+symbol = " ╼╾ ﳑ "
+style = "#f5b17a"
