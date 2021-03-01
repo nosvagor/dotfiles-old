@@ -33,4 +33,6 @@ fi
 xinput --set-prop 'ROCCAT ROCCAT Kova Mouse' 'libinput Accel Speed' 0.8
 xset r rate 196 36
 xsetroot -cursor_name left_ptr 
+export GOPATH="$HOME/go"
+export PATH="$PATH:$HOME/go/bin"
 exec bspwm
