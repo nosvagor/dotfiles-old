@@ -5,7 +5,7 @@ bspc config focus_follows_pointer false
 code ~/notes/$1 &
 sleep 1.0
 
-bspc config split_ratio 0.37 && firefox -new-window https://github.com/cullyn-inverba/notes/tree/master/$1 & 
+bspc config split_ratio 0.33 && firefox -new-window https://github.com/cullyn-inverba/notes/tree/master/$1 & 
 sleep 1.0
 
 bspc config split_ratio 0.67 && kitty -e cava &
@@ -20,7 +20,7 @@ bspc node -f west.local
 bspc config split_ratio 0.88 && kitty -d ~/notes &
 sleep 1.0 &&
 
-bspc config split_ratio 0.5
+bspc config split_ratio 0.48
 bspc config focus_follows_pointer true
 
 exit 0
