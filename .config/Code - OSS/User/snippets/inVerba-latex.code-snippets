@@ -49,6 +49,17 @@
     ]
   },
 
+  "Apa Bib Start":{
+    "scope": "latex",
+    "prefix": "bibstart",
+    "body": [
+      "\\nocite{$2}",
+      "\\bibliographystyle{apacite}",
+      "\\bibliography{$1.bib}"
+    ]
+
+  },
+
   "New Chapter": {
     "scope": "latex",
     "prefix": "new chapter",
