@@ -24,7 +24,11 @@
       "\\newcommand{\\userName}{Cullyn Newman}",
       "\\newcommand{\\class}{BI:\\@ $1}",
       "\\newcommand{\\theTitle}{$2}",
-      "\\newcommand{\\institution}{Portland State University}"
+      "\\newcommand{\\institution}{Portland State University}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\end{document}"
     ]
   },
 
@@ -182,259 +186,259 @@
   // ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
   // ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
 
-  "Centered Reaction Scheme": {
-    "scope": "latex",
-    "prefix": "centschemestart",
-    "body": [
-      "\\medskip",
-      "\\begin{center}",
-      "\\hspace{-30pt}",
-      "\\schemestart{}",
-      "\t$0",
-      "\\schemestop{}",
-      "\\end{center}",
-      "\\bigskip",
-      ""
-    ],
-    "description": "A centered reaction scheme"
-  },
+  // "Centered Reaction Scheme": {
+  //   "scope": "latex",
+  //   "prefix": "centschemestart",
+  //   "body": [
+  //     "\\medskip",
+  //     "\\begin{center}",
+  //     "\\hspace{-30pt}",
+  //     "\\schemestart{}",
+  //     "\t$0",
+  //     "\\schemestop{}",
+  //     "\\end{center}",
+  //     "\\bigskip",
+  //     ""
+  //   ],
+  //   "description": "A centered reaction scheme"
+  // },
 
-  "Reaction Scheme": {
-    "scope": "latex",
-    "prefix": "schemestart",
-    "body": [
-      "\\medskip",
-      "\\schemestart{}",
-      "\t\\chemfig{$0}",
-      "\\schemestop{}",
-      "\\bigskip",
-      ""
-    ],
-    "description": "chemfig reaction scheme"
-  },
+  // "Reaction Scheme": {
+  //   "scope": "latex",
+  //   "prefix": "schemestart",
+  //   "body": [
+  //     "\\medskip",
+  //     "\\schemestart{}",
+  //     "\t\\chemfig{$0}",
+  //     "\\schemestop{}",
+  //     "\\bigskip",
+  //     ""
+  //   ],
+  //   "description": "chemfig reaction scheme"
+  // },
 
-  "Small Reaction Scheme": {
-    "scope": "latex",
-    "prefix": "smallscheme",
-    "body": [
-      "\\medskip",
-      "{\\small",
-      "\\schemestart{}",
-      "\t\\chemfig{$0}",
-      "\\schemestop{}",
-      "}",
-      "\\bigskip",
-      ""
-    ],
-    "description": "chemfig reaction scheme"
-  },
+  // "Small Reaction Scheme": {
+  //   "scope": "latex",
+  //   "prefix": "smallscheme",
+  //   "body": [
+  //     "\\medskip",
+  //     "{\\small",
+  //     "\\schemestart{}",
+  //     "\t\\chemfig{$0}",
+  //     "\\schemestop{}",
+  //     "}",
+  //     "\\bigskip",
+  //     ""
+  //   ],
+  //   "description": "chemfig reaction scheme"
+  // },
 
-  "Labeled Chemfig": {
-    "scope": "latex",
-    "prefix": "chname",
-    "body": ["\\chemname{\\chemfig{${1:figure}}}{${2:label}}"]
-  },
+  // "Labeled Chemfig": {
+  //   "scope": "latex",
+  //   "prefix": "chname",
+  //   "body": ["\\chemname{\\chemfig{${1:figure}}}{${2:label}}"]
+  // },
 
-  "Anion": {
-    "scope": "latex",
-    "prefix": "anion",
-    "body": "\\bbb{\\ch{$1^{-$2}}}$0"
-  },
+  // "Anion": {
+  //   "scope": "latex",
+  //   "prefix": "anion",
+  //   "body": "\\bbb{\\ch{$1^{-$2}}}$0"
+  // },
 
-  "Cation": {
-    "scope": "latex",
-    "prefix": "cation",
-    "body": "\\rrr{\\ch{$1^{+$2}}}$0"
-  },
+  // "Cation": {
+  //   "scope": "latex",
+  //   "prefix": "cation",
+  //   "body": "\\rrr{\\ch{$1^{+$2}}}$0"
+  // },
 
-  "Water": {
-    "scope": "latex",
-    "prefix": "water",
-    "body": "\\ch{H2O}"
-  },
+  // "Water": {
+  //   "scope": "latex",
+  //   "prefix": "water",
+  //   "body": "\\ch{H2O}"
+  // },
 
-  "ozone": {
-    "scope": "latex",
-    "prefix": "ozone",
-    "body": "\\ch{O3}"
-  },
+  // "ozone": {
+  //   "scope": "latex",
+  //   "prefix": "ozone",
+  //   "body": "\\ch{O3}"
+  // },
 
-  "na borohydride": {
-    "scope": "latex",
-    "prefix": "nabh4",
-    "body": "\\ch{NaBH4}"
-  },
+  // "na borohydride": {
+  //   "scope": "latex",
+  //   "prefix": "nabh4",
+  //   "body": "\\ch{NaBH4}"
+  // },
 
-  "li al hydride ": {
-    "scope": "latex",
-    "prefix": "lialh4",
-    "body": "\\ch{LiAlH4}"
-  },
+  // "li al hydride ": {
+  //   "scope": "latex",
+  //   "prefix": "lialh4",
+  //   "body": "\\ch{LiAlH4}"
+  // },
 
-  "Priamry": {
-    "scope": "latex",
-    "prefix": "prim",
-    "body": "\\ang{1}"
-  },
+  // "Priamry": {
+  //   "scope": "latex",
+  //   "prefix": "prim",
+  //   "body": "\\ang{1}"
+  // },
 
-  "Secondary": {
-    "scope": "latex",
-    "prefix": "sec",
-    "body": "\\ang{2}"
-  },
+  // "Secondary": {
+  //   "scope": "latex",
+  //   "prefix": "sec",
+  //   "body": "\\ang{2}"
+  // },
 
-  "Tertiary": {
-    "scope": "latex",
-    "prefix": "tert",
-    "body": "\\ang{3}"
-  },
+  // "Tertiary": {
+  //   "scope": "latex",
+  //   "prefix": "tert",
+  //   "body": "\\ang{3}"
+  // },
 
-  "SN2": {
-    "scope": "latex",
-    "prefix": "sn2",
-    "body": "\\(S_N2\\)"
-  },
+  // "SN2": {
+  //   "scope": "latex",
+  //   "prefix": "sn2",
+  //   "body": "\\(S_N2\\)"
+  // },
 
-  "SN1": {
-    "scope": "latex",
-    "prefix": "sn1",
-    "body": "\\(S_N1\\)"
-  },
+  // "SN1": {
+  //   "scope": "latex",
+  //   "prefix": "sn1",
+  //   "body": "\\(S_N1\\)"
+  // },
 
-  "Wavenumber": {
-    "scope": "latex",
-    "prefix": "wavenum",
-    "body": "\\(\\tilde{\\nu} \\)"
-  },
+  // "Wavenumber": {
+  //   "scope": "latex",
+  //   "prefix": "wavenum",
+  //   "body": "\\(\\tilde{\\nu} \\)"
+  // },
 
-  // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
-  // ║  ├─┤├┤ │││├┤ ││ ┬
-  // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
+  // // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
+  // // ║  ├─┤├┤ │││├┤ ││ ┬
+  // // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
 
-  "Basic +-90": {
-    "scope": "latex",
-    "prefix": "~ncs",
-    "body": ["(-[:90]$1)(-[:-90]$2)$0"]
-  },
+  // "Basic +-90": {
+  //   "scope": "latex",
+  //   "prefix": "~ncs",
+  //   "body": ["(-[:90]$1)(-[:-90]$2)$0"]
+  // },
 
-  "90": {
-    "scope": "latex",
-    "prefix": "cnorth",
-    "body": ["(-[:90]$1)"]
-  },
+  // "90": {
+  //   "scope": "latex",
+  //   "prefix": "cnorth",
+  //   "body": ["(-[:90]$1)"]
+  // },
 
-  "90-Oxygen": {
-    "scope": "latex",
-    "prefix": "onorth",
-    "body": ["(=[:90]O)"]
-  },
+  // "90-Oxygen": {
+  //   "scope": "latex",
+  //   "prefix": "onorth",
+  //   "body": ["(=[:90]O)"]
+  // },
 
-  "Labeled Arrow": {
-    "scope": "latex",
-    "prefix": "larrow",
-    "body": "\\arrow{->[$1][$2]}"
-  },
+  // "Labeled Arrow": {
+  //   "scope": "latex",
+  //   "prefix": "larrow",
+  //   "body": "\\arrow{->[$1][$2]}"
+  // },
 
-  "extend": {
-    "scope": "latex",
-    "prefix": "arex",
-    "body": "[0,1.$1]"
-  },
+  // "extend": {
+  //   "scope": "latex",
+  //   "prefix": "arex",
+  //   "body": "[0,1.$1]"
+  // },
 
-  "Braces": {
-    "scope": "latex",
-    "prefix": "barrow",
-    "body": "\\arrow(--[braces]){->}"
-  },
+  // "Braces": {
+  //   "scope": "latex",
+  //   "prefix": "barrow",
+  //   "body": "\\arrow(--[braces]){->}"
+  // },
 
-  "Chemmove": {
-    "scope": "latex",
-    "prefix": "chemmove",
-    "body": [
-      "\\chemmove[dash pattern= on 1pt off 1pt]{",
-      "\t\\draw($1)..controls +(north:1cm) and +(south:1cm).. ($2);",
-      "$0",
-      "}"
-    ]
-  },
+  // "Chemmove": {
+  //   "scope": "latex",
+  //   "prefix": "chemmove",
+  //   "body": [
+  //     "\\chemmove[dash pattern= on 1pt off 1pt]{",
+  //     "\t\\draw($1)..controls +(north:1cm) and +(south:1cm).. ($2);",
+  //     "$0",
+  //     "}"
+  //   ]
+  // },
 
-  "chdraw": {
-    "scope": "latex",
-    "prefix": "ddraw",
-    "body": "\\draw($1)..controls +(north:1cm) and +(south:1cm).. ($2);"
-  },
+  // "chdraw": {
+  //   "scope": "latex",
+  //   "prefix": "ddraw",
+  //   "body": "\\draw($1)..controls +(north:1cm) and +(south:1cm).. ($2);"
+  // },
 
-  "subtituients": {
-    "scope": "latex",
-    "prefix": "split",
-    "body": "(-[:30]$1)(-[:-30]$2)$0"
-  },
+  // "subtituients": {
+  //   "scope": "latex",
+  //   "prefix": "split",
+  //   "body": "(-[:30]$1)(-[:-30]$2)$0"
+  // },
 
-  "carbon+30": {
-    "scope": "latex",
-    "prefix": "cplus",
-    "body": "-[:30]"
-  },
+  // "carbon+30": {
+  //   "scope": "latex",
+  //   "prefix": "cplus",
+  //   "body": "-[:30]"
+  // },
 
-  "carbon-30": {
-    "scope": "latex",
-    "prefix": "cminus",
-    "body": "-[:-30]"
-  },
+  // "carbon-30": {
+  //   "scope": "latex",
+  //   "prefix": "cminus",
+  //   "body": "-[:-30]"
+  // },
 
-  "alkyne": {
-    "scope": "latex",
-    "prefix": "cfalkyne",
-    "body": "\\chemfig{R-~-R'}"
-  },
+  // "alkyne": {
+  //   "scope": "latex",
+  //   "prefix": "cfalkyne",
+  //   "body": "\\chemfig{R-~-R'}"
+  // },
 
-  "alkene": {
-    "scope": "latex",
-    "prefix": "cfalkene",
-    "body": "\\chemfig{(-[3])(-[5])=(-[1]H)(-[7])}"
-  },
+  // "alkene": {
+  //   "scope": "latex",
+  //   "prefix": "cfalkene",
+  //   "body": "\\chemfig{(-[3])(-[5])=(-[1]H)(-[7])}"
+  // },
 
-  "cfalign": {
-    "scope": "latex",
-    "prefix": "cfalign",
-    "body": "\\arrow{0}[,0]"
-  },
+  // "cfalign": {
+  //   "scope": "latex",
+  //   "prefix": "cfalign",
+  //   "body": "\\arrow{0}[,0]"
+  // },
 
-  "Chemabove": {
-    "scope": "latex",
-    "prefix": "chemabove",
-    "body": "\\chemabove[6pt]{}{$1}"
-  },
+  // "Chemabove": {
+  //   "scope": "latex",
+  //   "prefix": "chemabove",
+  //   "body": "\\chemabove[6pt]{}{$1}"
+  // },
 
-  "cyclo hexene": {
-    "scope": "latex",
-    "prefix": "cyclohexene",
-    "body": "{\\footnotesize\\chemfig{*6(---=--)}}"
-  },
+  // "cyclo hexene": {
+  //   "scope": "latex",
+  //   "prefix": "cyclohexene",
+  //   "body": "{\\footnotesize\\chemfig{*6(---=--)}}"
+  // },
 
-  "benzene": {
-    "scope": "latex",
-    "prefix": "benzene",
-    "body": "{\\footnotesize\\chemfig{*6(-=-=-=)}}"
-  },
+  // "benzene": {
+  //   "scope": "latex",
+  //   "prefix": "benzene",
+  //   "body": "{\\footnotesize\\chemfig{*6(-=-=-=)}}"
+  // },
 
-  "epoxide": {
-    "scope": "latex",
-    "prefix": "epoxide",
-    "body": "\\chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}"
-  },
+  // "epoxide": {
+  //   "scope": "latex",
+  //   "prefix": "epoxide",
+  //   "body": "\\chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}"
+  // },
 
-  "carboxylic aid": {
-    "scope": "latex",
-    "prefix": "cfcarboxylic",
-    "body": "\\chemfig{(=[2]O)(-[:210]R)-[:-30]OH}"
-  },
+  // "carboxylic aid": {
+  //   "scope": "latex",
+  //   "prefix": "cfcarboxylic",
+  //   "body": "\\chemfig{(=[2]O)(-[:210]R)-[:-30]OH}"
+  // },
 
-  "carboxylic aid reversed": {
-    "scope": "latex",
-    "prefix": "cfcarboxylic rev",
-    "body": "\\chemfig{HO-[:30](=[2]O)(-[:-30]R')}"
-  },
+  // "carboxylic aid reversed": {
+  //   "scope": "latex",
+  //   "prefix": "cfcarboxylic rev",
+  //   "body": "\\chemfig{HO-[:30](=[2]O)(-[:-30]R')}"
+  // },
 
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
   // ║ ╦├┬┘├┤ ├┤ ├┴┐
