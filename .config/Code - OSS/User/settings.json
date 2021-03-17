@@ -124,7 +124,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "python.venvFolders": [
-        "notes"
+        "~/notes"
     ],
     "go.toolsManagement.autoUpdate": true,
+    "python.dataScience.askForKernelRestart": false,
 }
