@@ -126,4 +126,5 @@
     "python.venvFolders": [
         "notes"
     ],
+    "go.toolsManagement.autoUpdate": true,
 }
