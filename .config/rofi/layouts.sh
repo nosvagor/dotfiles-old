@@ -3,35 +3,32 @@
 rofi_command="rofi -theme ~/.config/rofi/layouts.rasi"
 
 # Options
-BI_428="BI: 428 - Human Genetics"
-BI_429="BI: 429 - Conservation Biology"
-BI_463="BI: 463 - Sensory and Motor Systems"
-CH_335="CH: 335 - Organic Chemistry II"
-PHL_331="PHL: 331 - Philosophy of Education"
-linear="linear"
+MTH_261="linear"
+BI_337="cell biology"
+BI_430="recombinant"
+BI_455="histology"
 notes="notes"
 dotfiles="dotfiles"
-chill="chill"
+golang="golang"
+stat="statistics"
+pandas="pandas"
 
 # Variable passed to rofi
-options="$PHL_331\n$CH_335\n$BI_428\n$BI_429\n$BI_463\n$notes\n$dotfiles\n$chill\n$linear"
+options="$dotfiles\n$notes\n$MTH_261\n$BI_337\n$BI_430\n$BI_455\n$golang\n$stat\n$pandas"
 
-chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu)"
 case $chosen in
-    $BI_428)
-		./scripts/launch.sh bi-428
+    $MTH_261)
+		./scripts/code-launch.sh mth-261
         ;;
-    $BI_429)
-		./scripts/launch.sh bi-429
+    $BI_337)
+		./scripts/uni-launch.sh bi-337
         ;;
-    $BI_463)
-		./scripts/launch.sh bi-463
+    $BI_430)
+		./scripts/uni-launch.sh bi-430
         ;;
-    $CH_335)
-		./scripts/launch.sh ch-335
-        ;;
-    $PHL_331)
-		./scripts/launch.sh phl-331
+    $BI_455)
+		./scripts/uni-launch.sh bi-455
         ;;
     $notes)
 		./scripts/basic-launch.sh notes
@@ -39,10 +36,12 @@ case $chosen in
     $dotfiles)
 		./scripts/basic-launch.sh dotfiles
         ;;
-    $chill)
-		./scripts/chill-launch.sh 
+    $golang)
+		./scripts/code-launch.sh golang
         ;;
-    $linear)
-        ./scripts/code-launch.sh linear
+    $stat)
+        ./scripts/code-launch.sh stat
         ;;
+    $pandas)
+        ./scripts/code-launch.sh pandas
 esac
