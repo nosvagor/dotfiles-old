@@ -128,4 +128,5 @@
     ],
     "go.toolsManagement.autoUpdate": true,
     "python.dataScience.askForKernelRestart": false,
+    "editor.tabSize": 2,
 }
