@@ -78,23 +78,23 @@
     "body": [
       "\\section{$1}\\label{$1}",
       "\\begin{itemize}",
-      "    \\item $0",
+      "\t\\item $0",
       "\\end{itemize}",
       ""
     ]
   },
 
-  // "New Subsection": {
-  //   "scope": "latex",
-  //   "prefix": "new ssection",
-  //   "body": [
-  //     "\\subsection{$1}\\label{$1}",
-  //     "\\begin{itemize}",
-  //     "    \\item $0",
-  //     "\\end{itemize}",
-  //     ""
-  //   ]
-  // },
+  "New Subsection": {
+    "scope": "latex",
+    "prefix": "new ssection",
+    "body": [
+      "\\subsection{$1}\\label{$1}",
+      "\\begin{itemize}",
+      "\t\\item $0",
+      "\\end{itemize}",
+      ""
+    ]
+  },
 
   "Centered Graphic": {
     "scope": "latex",
@@ -142,13 +142,13 @@
 
   "Multicols": {
     "scope": "latex",
-    "prefix": "multi",
+    "prefix": "mti",
     "body": "\\begin{multicols}{2}"
   },
 
   "End Multicols": {
     "scope": "latex",
-    "prefix": "emulti",
+    "prefix": "emti",
     "body": "\\end{multicols}"
   },
 
@@ -159,15 +159,22 @@
   "Internal Down Link": {
     "scope": "latex",
     "prefix": "dll",
-    "body": ["\\hyperref[$0]{\\dlink{$1}}"],
-    "description": "a styled link to a later part of the document"
+    "body": ["\\hyperref[$1]{\\dlink{$0"],
+    "description": "A styled link to a later part of the document (needs }})"
+  },
+
+  "To be defined":{
+    "scope": "latex",
+    "prefix": "dlltb",
+    "body": ["\\hyperref[tbd]{\\dlink{$0"],
+    "description": "A styled link to a later part of the document that is currently not defined (needs }})"
   },
 
   "Internal Up Link": {
     "scope": "latex",
     "prefix": "ull",
-    "body": ["\\hyperref[$0]{\\ulink{$1}}"],
-    "description": "A styled link to an earlier part of the document"
+    "body": ["\\hyperref[$1]{\\ulink{$0"],
+    "description": "A styled link to an earlier part of the document (needs }})"
   },
 
   "SI units": {

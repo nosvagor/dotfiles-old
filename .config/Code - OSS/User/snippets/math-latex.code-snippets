@@ -57,10 +57,121 @@
       "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
       ""
     ],
-    "description": "An imporant equation with emphasis and label"
-  }
+    "description": "An imporant equation with emphasis and a label"
+  },
+
+  "Dispaly Equation": {
+    "scope": "latex",
+    "prefix": "deq",
+    "body": [
+      "\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "$1",
+      "\\]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      ""
+    ]
+  },
 
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
+
+  "Bold Math":{
+    "scope": "latex",
+    "prefix": "bm",
+    "body": "\\bm{$1}"
+  },
+
+  "Text-Bold Math":{
+    "scope": "latex",
+    "prefix": "tbm",
+    "body": "\\tbm{$1}"
+  },
+
+  "Overarrow":{
+    "scope": "latex",
+    "prefix": "ov",
+    "body": "\\vv{$1}"
+  },
+
+  "Column Vector":{
+    "scope": "latex",
+    "prefix": "cv",
+    "body": [
+      "\\begin{bmatrix} $1 \\\\\\ $2 \\\\\\ $3 \\end{bmatrix}",
+    ]
+  },
+
+  "Row Vector":{
+    "scope": "latex",
+    "prefix": "rv",
+    "body": [
+        "\\begin{bmatrix} $1 & $2 & $3 \\end{bmatrix}",
+    ]
+  },
+
+  "Matrix":{
+    "scope": "latex",
+    "prefix": "mx",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 & $2 & $3 \\\\\\",
+        "$4 & $5 & $6 \\\\\\",
+        "$7 & $8 & $9 ",
+        "\\end{bmatrix}",
+    ]
+  },
+
+  "Sum":{
+    "scope": "latex",
+    "prefix": "sum",
+    "body": "\\sum_{n = $1}^{$2}"
+  },
+
+  "Times":{
+    "scope": "latex",
+    "prefix": "times",
+    "body": "\\cdot"
+  },
+
+  "Transpose":{
+    "scope": "latex",
+    "prefix": "trp",
+    "body": "\\bm{$1}^T"
+  },
+
+  "Text-Vector Norm":{
+    "scope": "latex",
+    "prefix": "tvn",
+    "body": "\\( \\| \\bm{$1} \\| \\)"
+  },
+
+  "Vector Norm":{
+    "scope": "latex",
+    "prefix": "vnr",
+    "body": "\\| \\bm{$1} \\|"
+  },
+
+  "Cos Theta":{
+    "scope": "latex",
+    "prefix": "cth",
+    "body": "\\(\\cos(\\theta)\\)",
+  },
+
+  "Sine Theta":{
+    "scope": "latex",
+    "prefix": "sth",
+    "body": "\\(\\sin(\\theta)\\)",
+  },
+
+  "Field":{
+    "scope": "latex",
+    "prefix": "bbf",
+    "body": "\\mathbb{$1}"
+  },
+
+  "Span":{
+    "scope": "latex",
+    "prefix": "sp()",
+    "body": "\\operatorname{span}($1)"
+  }
 }
