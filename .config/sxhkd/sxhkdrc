@@ -141,3 +141,10 @@ ctrl + shift + alt + super + q
 # generate gif of selected area
 ctrl + shift + alt + super + x
 	~/scripts/gif.sh
+
+# ╔╗ ┬  ┬ ┬┌─┐┌┬┐┌─┐┌─┐┌┬┐┬ ┬
+# ╠╩╗│  │ │├┤  │ │ ││ │ │ ├─┤
+# ╚═╝┴─┘└─┘└─┘ ┴ └─┘└─┘ ┴ ┴ ┴
+
+ctrl + shift + alt + super + {v,h}
+	~/scripts/bluetooth.sh {connect,disconnect}

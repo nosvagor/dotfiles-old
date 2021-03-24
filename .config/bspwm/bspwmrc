@@ -27,9 +27,8 @@ lxsession &
 killall "borders"
 ~/.config/bspwm/borders &
 feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png' &
-ytmdesktop 
-sleep 5
-bluetoothctl -- connect 14:3F:A6:10:A1:B5
+ytmdesktop &
+
 #notify-send -u low bspwm restarted &
 
 # ╔╦╗┌─┐┌─┐┬┌─┌┬┐┌─┐┌─┐┌─┐
