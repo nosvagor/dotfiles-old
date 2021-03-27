@@ -7,7 +7,7 @@ format = """
 truncation_length = 2
 truncation_symbol = " "
 style = "bold #7abef5"
-read_only = ""
+read_only = " "
 disabled = false
 
 [username]

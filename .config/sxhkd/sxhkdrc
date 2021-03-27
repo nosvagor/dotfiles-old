@@ -126,8 +126,8 @@ XF86AudioLowerVolume
 ctrl + shift + alt + super + b
 	ffmpeg \
 	-f x11grab -video_size 3840x2160 -framerate 30 -i $DISPLAY \ 
-	-f pulse -ac 2 -ar 44100 -i bluez_sink.04_5D_4B_65_C0_03.a2dp_sink.monitor \
-	-f pulse -ac 1 -ar 48000 -i alsa_input.usb-C-Media_Electronics_Inc._TONOR_TC-777_Audio_Device-00.multichannel-input \
+	-f pulse -ac 2 -ar 44100 -i bluez_sink.14_3F_A6_10_A1_B5.a2dp_sink.monitor \
+	-f pulse -ac 2 -ar 44100 -i alsa_input.hw_1_0 \
 	-filter_complex amix=inputs=2 \
 	-vcodec libx264 -preset veryfast -crf 18 \ 
 	-acodec libmp3lame -ar 44100 \
@@ -146,5 +146,9 @@ ctrl + shift + alt + super + x
 # ╠╩╗│  │ │├┤  │ │ ││ │ │ ├─┤
 # ╚═╝┴─┘└─┘└─┘ ┴ └─┘└─┘ ┴ ┴ ┴
 
-ctrl + shift + alt + super + {v,h}
-	~/scripts/bluetooth.sh {connect,disconnect}
+ctrl + shift + alt + super + v
+	~/scripts/bluetooth.sh connect
+
+ctrl + shift + alt + super + h
+	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock\emp
+	
