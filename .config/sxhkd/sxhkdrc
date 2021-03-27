@@ -150,5 +150,5 @@ ctrl + shift + alt + super + v
 	~/scripts/bluetooth.sh connect
 
 ctrl + shift + alt + super + h
-	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock\emp
+	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock
 	
