@@ -121,10 +121,40 @@
     ]
   },
 
+  "Indefinite Matrix":{
+    "scope": "latex",
+    "prefix": "imx",
+    "body": [
+      "\\begin{bmatrix}",
+      "e & e & \\cdots & e \\\\\\",
+      "e & e & \\cdots & e \\\\\\",
+      "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
+      "e & e & \\cdots & e",
+      "\\end{bmatrix}",
+    ]
+  },
+
+  "2x2 Matrix":{
+    "scope": "latex",
+    "prefix": "smx",
+    "body": [
+        "\\begin{bmatrix}",
+        "$1 & $2 \\\\\\",
+        "$4 & $5 ",
+        "\\end{bmatrix}",
+    ]
+  },
+
+  "Matrix Notation":{
+    "scope": "latex",
+    "prefix": "mex",
+    "body": "$1_{$2,$3}"
+  },
+
   "Sum":{
     "scope": "latex",
     "prefix": "sum",
-    "body": "\\sum_{n = $1}^{$2}"
+    "body": "\\sum_{i = $1}^{$2}"
   },
 
   "Times":{
@@ -173,5 +203,23 @@
     "scope": "latex",
     "prefix": "sp()",
     "body": "\\operatorname{span}($1)"
+  },
+
+  "Braces":{
+    "scope": "latex",
+    "prefix": "br{}",
+    "body": "\\left\\lbrace $1 \\right\\rbrace"
+  },
+
+  "Math Label":{
+    "scope": "latex",
+    "prefix": "mlu",
+    "body": "\\underbrace{$1}_{$2}"
+  },
+
+  "Dimensionality":{
+    "scope": "latex",
+    "prefix": "mxn",
+    "body": "\\xxx{$1}\\times\\yyy{$2}"
   }
 }
