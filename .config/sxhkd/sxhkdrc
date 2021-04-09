@@ -64,16 +64,16 @@ super + shift + ctrl + alt + {BackSpace,i}
 # ╠╩╗└─┐├─┘││││││
 # ╚═╝└─┘┴  └┴┘┴ ┴
 # close window
-ctrl + Escape 
+ctrl + Escape
 	bspc node -c
+
+# kill window
+super + z 
+	bspc node -k 
 
 # alternate between the tiled and monocle layout
 super + Tab
 	bspc desktop -l next
-
-# move window focus
-super + {Prior, Next}
-	bspc node -f {prev,next}
 
 super + alt + shift + {u,i,n,o}
 	bspc node -f {north,south,west,east}.local
@@ -107,7 +107,7 @@ super + alt + {Up, Down}
     bspc desktop -f "$DIR"
 
 # switch to next/prev desktop
-super + {Left, Right}
+ctrl + {Prior, Next}
 	DIR={prev,next}; \
 	bspc desktop -f "$DIR"
 
@@ -126,6 +126,18 @@ XF86AudioLowerVolume
 ctrl + shift + alt + super + b
 	ffmpeg \
 	-f x11grab -video_size 3840x2160 -framerate 30 -i $DISPLAY \ 
+	-f pulse -ac 2 -ar 44100 -i bluez_sink.14_3F_A6_10_A1_B5.a2dp_sink.monitor \
+	-f pulse -ac 2 -ar 44100 -i alsa_input.hw_1_0 \
+	-filter_complex amix=inputs=2 \
+	-vcodec libx264 -preset veryfast -crf 18 \ 
+	-acodec libmp3lame -ar 44100 \
+	~/recordings/$(date +%m-%d-%y_%H':'%M':'%S).mkv \
+	& notify-send -u critical -t 3000 started Recording
+
+# Monocle record with audio
+ctrl + shift + alt + super + c
+	ffmpeg \
+	-f x11grab -video_size 3000x1780 -framerate 30 -i :0.0+420,216 \ 
 	-f pulse -ac 2 -ar 44100 -i bluez_sink.14_3F_A6_10_A1_B5.a2dp_sink.monitor \
 	-f pulse -ac 2 -ar 44100 -i alsa_input.hw_1_0 \
 	-filter_complex amix=inputs=2 \
