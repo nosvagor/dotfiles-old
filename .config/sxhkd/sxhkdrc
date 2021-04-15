@@ -107,7 +107,7 @@ super + alt + {Up, Down}
     bspc desktop -f "$DIR"
 
 # switch to next/prev desktop
-ctrl + {Prior, Next}
+super + {Left, Right}
 	DIR={prev,next}; \
 	bspc desktop -f "$DIR"
 
