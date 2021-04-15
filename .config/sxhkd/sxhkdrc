@@ -141,8 +141,8 @@ ctrl + shift + alt + super + c
 	-f pulse -ac 2 -ar 44100 -i bluez_sink.14_3F_A6_10_A1_B5.a2dp_sink.monitor \
 	-f pulse -ac 2 -ar 44100 -i alsa_input.hw_1_0 \
 	-filter_complex amix=inputs=2 \
-	-vcodec libx264 -preset veryfast -crf 18 \ 
 	-acodec libmp3lame -ar 44100 \
+	-vcodec libx264 -preset veryfast -crf 18 \
 	~/recordings/$(date +%m-%d-%y_%H':'%M':'%S).mkv \
 	& notify-send -u critical -t 3000 started Recording
 
@@ -150,6 +150,10 @@ ctrl + shift + alt + super + c
 ctrl + shift + alt + super + q
 	killall --user $USER  --ignore-case  --signal INT  ffmpeg & notify-send -u Critical -t 3000 ended Recording
 
+# toggle microphone
+super + space
+	amixer set Capture toggle & notify-send -u critical -t 1500 toggled Microphone
+	 
 # generate gif of selected area
 ctrl + shift + alt + super + x
 	~/scripts/gif.sh
