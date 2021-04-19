@@ -137,14 +137,14 @@ ctrl + shift + alt + super + b
 # Monocle record with audio
 ctrl + shift + alt + super + c
 	ffmpeg \
-	-f x11grab -video_size 3000x1780 -framerate 30 -i :0.0+420,216 \ 
+	-f x11grab -video_size 2937x1717 -framerate 30 -i :0.0+452,243 \ 
 	-f pulse -ac 2 -ar 44100 -i bluez_sink.14_3F_A6_10_A1_B5.a2dp_sink.monitor \
 	-f pulse -ac 2 -ar 44100 -i alsa_input.hw_1_0 \
 	-filter_complex amix=inputs=2 \
 	-acodec libmp3lame -ar 44100 \
 	-vcodec libx264 -preset veryfast -crf 18 \
 	~/recordings/$(date +%m-%d-%y_%H':'%M':'%S).mkv \
-	& notify-send -u critical -t 3000 started Recording
+	& notify-send -u critical -t 3000 'monocle view' Recording
 
 # stop ffmpeg
 ctrl + shift + alt + super + q
