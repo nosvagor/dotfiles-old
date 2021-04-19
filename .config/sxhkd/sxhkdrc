@@ -111,6 +111,10 @@ super + {Left, Right}
 	DIR={prev,next}; \
 	bspc desktop -f "$DIR"
 
+super + {Prior, Next}
+	DIR={prev,next}; \
+	bspc desktop -f "$DIR"
+
 # ╦  ╦┌─┐┬  ┬ ┬┌┬┐┌─┐
 # ╚╗╔╝│ ││  │ ││││├┤ 
 #  ╚╝ └─┘┴─┘└─┘┴ ┴└─┘
