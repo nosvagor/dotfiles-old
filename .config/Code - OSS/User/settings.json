@@ -131,5 +131,6 @@
   "files.associations": {
     "matplotlibrc": "ini"
   },
-  "python.dataScience.sendSelectionToInteractiveWindow": true
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "python.dataScience.alwaysTrustNotebooks": true
 }
