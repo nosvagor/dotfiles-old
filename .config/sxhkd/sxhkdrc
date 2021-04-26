@@ -68,7 +68,7 @@ ctrl + Escape
 	bspc node -c
 
 # kill window
-super + z 
+super + x
 	bspc node -k 
 
 # alternate between the tiled and monocle layout
