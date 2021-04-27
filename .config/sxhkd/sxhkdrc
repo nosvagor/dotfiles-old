@@ -156,7 +156,10 @@ ctrl + shift + alt + super + q
 
 # toggle microphone
 super + space
-	amixer set Capture toggle & notify-send -u critical -t 1500 toggled Microphone
+	amixer set Capture nocap & notify-send -u critical -t 1500 off Microphone
+
+super + j
+	amixer set Capture cap & notify-send -u critical -t 1500 on Microphone
 	 
 # generate gif of selected area
 ctrl + shift + alt + super + x
