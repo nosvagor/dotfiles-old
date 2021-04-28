@@ -30,7 +30,7 @@ Hacked version of https://github.com/eduardhojbota/moonlight-userChrome
   } */
 
   /* hide navigation bar when it is not focused; use Ctrl+L to get focus */
-  #main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover) {
+  #main-window:not([customizing]) #navigator-toolbox:not(:focus-within) {
     margin-top: -40px;
   }
 
