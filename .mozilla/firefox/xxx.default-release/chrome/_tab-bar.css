@@ -1,9 +1,14 @@
 #TabsToolbar {
-    padding: 4px 2px 3px 7px !important;
+    padding: 3px 2px 3px 7px !important;
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
   visibility: collapse !important;
+}
+
+toolbarbutton#scrollbutton-up, toolbarbutton#scrollbutton-down,
+toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
+    display:none !important;
 }
 
 .tabbrowser-tab .tab-close-button {
