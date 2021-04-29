@@ -257,7 +257,7 @@ click-middle = kitty -e alsamixer
 ; ╚═╝┴  └─┘
 [module/cpu]
 type = internal/cpu
-interval = 0.5
+interval = 0.2
 format = %{A1:bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e s-tui:}<label> <ramp-coreload>%{Ar}
 label = "%{F#b0d0eb}%{T5}﬙%{T-}%{F-}  %percentage%% "
 format-margin = 1
