@@ -299,7 +299,7 @@ bar-used-empty-foreground = ${colors.inactive}
 ;  ╩ └─┘┴ ┴┴ 
 [module/temperature]
 type = internal/temperature
-hwmon-path = /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/hwmon/hwmon0/temp1_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0/nvme/nvme0/hwmon0/temp1_input
 units = true
 format-margin = 2
 
