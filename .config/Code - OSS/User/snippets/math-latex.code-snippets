@@ -154,7 +154,7 @@
 
   "Indefinite Matrix":{
     "scope": "latex",
-    "prefix": "imx",
+    "prefix": "inx",
     "body": [
       "\\begin{bmatrix}",
       "e & e & \\cdots & e \\\\\\",
@@ -180,6 +180,18 @@
     "scope": "latex",
     "prefix": "mex",
     "body": "$1_{$2,$3}"
+  },
+
+  "Eigen lambda": {
+    "scope": "latex",
+    "prefix": "eil",
+    "body": "\\(\\eigl \\)"
+  },
+
+  "Eigen Lambda": {
+    "scope": "latex",
+    "prefix": "eiL",
+    "body": "\\(\\eigL \\)"
   },
 
   "Sum":{
