@@ -1,5 +1,6 @@
-#TabsToolbar {
-    padding: 3px 2px 3px 7px !important;
+.tabbrowser-tab {
+    padding: 2px !important;
+    padding-bottom: 3px !important;
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
@@ -8,7 +9,7 @@
 
 toolbarbutton#scrollbutton-up, toolbarbutton#scrollbutton-down,
 toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
-    display:none !important;
+    visibility: collapse !important;
 }
 
 .tabbrowser-tab .tab-close-button {
@@ -39,7 +40,7 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
 .tabbrowser-tab .tab-stack {
     background: var(--inVerba-gray-2) !important;
     border: 1px outset var(--inVerba-sub-3) !important;
-    margin: 2px 9px 2px 2px !important;
+    margin: 2px !important;
     border-radius: 4px !important;
     color: var(--inVerba-bold) !important;
     transition: var(--inVerba-move) !important;
@@ -71,5 +72,13 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
 
 .tabbrowser-tab[selected] .tab-background {
     background: var(--inVerba-gray-2) !important;
-    border-radius: 4px !important;
+    border-radius: 4px !important;    */
+}
+
+#tabbrowser-tabs {
+  padding
+  --uc-tab-curve-size:10px;
+  --uc-tabs-scrollbutton-border: 0px;
+  --proton-tab-block-margin:0px;
+  --tab-min-height: 30px;
 }

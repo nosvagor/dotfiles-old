@@ -28,9 +28,8 @@
     background: none !important;
 }
 
-#back-button > .toolbarbutton-icon {
-    background: none !important;
-    border: none !important;
+#back-button, #forward-button {
+    visibility: collapse !important;
 }
 
 #PanelUI-button {

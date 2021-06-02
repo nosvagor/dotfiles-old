@@ -1,11 +1,11 @@
 #PersonalToolbar {
     background-color: var(--inVerba-gray-2) !important;
-    padding-top: 4px !important;
+    padding-left: 2px !important;
 }
 #PersonalToolbar toolbarbutton.bookmark-item {
-    padding: 3px 9px !important; 
-    margin-right: 6px !important;
-    margin-bottom: 3px !important;
+    padding: 3px 8px !important; 
+    margin-right: 5px !important;
+    margin-bottom: 5px !important;
     background: var(--inVerba-gray-2) !important;
     border: 1px outset var(--inVerba-sub-3) !important;
     border-radius: 4px !important;
