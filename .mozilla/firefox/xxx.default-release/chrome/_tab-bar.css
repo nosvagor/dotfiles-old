@@ -41,6 +41,7 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
     background: var(--inVerba-gray-2) !important;
     border: 1px outset var(--inVerba-sub-3) !important;
     margin: 2px !important;
+    margin-right: 0px !important;
     border-radius: 4px !important;
     color: var(--inVerba-bold) !important;
     transition: var(--inVerba-move) !important;
@@ -72,11 +73,10 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
 
 .tabbrowser-tab[selected] .tab-background {
     background: var(--inVerba-gray-2) !important;
-    border-radius: 4px !important;    */
+    border-radius: 4px !important;  
 }
 
 #tabbrowser-tabs {
-  padding
   --uc-tab-curve-size:10px;
   --uc-tabs-scrollbutton-border: 0px;
   --proton-tab-block-margin:0px;
