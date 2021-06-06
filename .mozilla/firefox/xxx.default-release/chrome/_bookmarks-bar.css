@@ -1,7 +1,9 @@
 #PersonalToolbar {
     background-color: var(--inVerba-gray-2) !important;
     padding-left: 2px !important;
+    transition: var(--inVerba-move) !important;
 }
+
 #PersonalToolbar toolbarbutton.bookmark-item {
     padding: 3px 8px !important; 
     margin-right: 5px !important;

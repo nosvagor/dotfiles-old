@@ -20,16 +20,3 @@ Hacked version of https://github.com/eduardhojbota/moonlight-userChrome
 @import '_side-bar.css';
 @import '_menu.css';
 @import "_megabar-disable.css";
-
-@-moz-document url(chrome://browser/content/browser.xul),
-               url(chrome://browser/content/browser.xhtml) {
-    
-  /* hide navigation bar when it is not focused; use Ctrl+L to get focus */
-  #main-window:not([customizing]) #navigator-toolbox:not(:focus-within) {
-    margin-top: -38px;
-  }
-
-  #navigator-toolbox {
-    transition: 324ms cubic-bezier(0.69, 0.042, 0.324, 1) margin-top;
-  }
-}

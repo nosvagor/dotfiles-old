@@ -1,66 +1,29 @@
-#sidebar-search-container,
-#bookmarks-view,
-#historyTree,
 [lwt-sidebar] {
   background-color: var(--inVerba-gray-2) !important;
-  color: var(--inVerba-gray-10) !important;
-  transition: var(--inVerba-move) !important;
 }
 
-#sidebar-splitter{ 
-  display: none !important
+#bookmarksPanel treechildren::-moz-tree-indentation { 
+  width: 0px !important 
 }
 
 
-#sidebar-box {
-  position: relative !important;
-  min-width: 180px !important;
+#sidebar-splitter {
   border: none !important;
-  background-color: var(--inVerba-gray-2) !important;
-  color: var(--inVerba-gray-10) !important;
+  width: 3px !important;
+}
+
+#sidebar-splitter:hover {
+  background: var(--inVerba-emph) !important;
   transition: var(--inVerba-move) !important;
 }
 
-/* delete this if you want to nd edit */
-
-#sidebar-box #sidebar-header {
-  border: none !important;
-}
-
-#sidebar-box #sidebar-header #sidebar-switcher-target {
-  transition: var(--inVerba-move) !important;
-  margin: -10px 0px -8px 0px !important;
-}
-
-#sidebar-box #sidebar-header #sidebar-switcher-target:hover {
-  color: var(--inVerba-sec) !important;
-  background-color: transparent !important;
-}
+#sidebar-header, #sidebar-search-container, 
 #sidebar-box #sidebar-header #sidebar-close {
   visibility: collapse !important;
 }
 
-#sidebar-search-container #search-box {
-  -moz-appearance: none !important;
-  background-color: var(--inVerba-gray-1) !important;
-  border: 1px inset var(--inVerba-gray-3) !important;
-  color: var(--inVerba-gray-6) !important;
-  border-radius: 4px !important;
-  transition: var(--inVerba-move) !important;
-}
-
-#sidebar-search-container #search-box:focus-within {
-  color: var(--inVerba-sec) !important;
-}
-
-#sidebar-search-container #viewButton {
-  visibility: collapse !important;
-}
-
-treechildren::-moz-tree-separator {
-  -moz-appearance: none !important;
-  border: none !important;
-  background: transparent !important;
-  min-height: 0px !important;
-  max-height: 0px !important;
-}
+#bookmarks-view treechildren::-moz-tree-twisty,
+#historyTree treechildren::-moz-tree-twisty {
+  list-style-image: none !important;
+  margin-left: -12px !important;
+} 

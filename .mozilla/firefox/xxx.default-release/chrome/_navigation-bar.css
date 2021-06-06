@@ -151,3 +151,20 @@
 #pageActionSeparator {
     display: none !important;
 }
+  
+#navigator-toolbox {
+    transition: var(--inVerba-move) !important;
+}
+   
+#main-window:not([customizing]) #navigator-toolbox:not(:focus-within) {  
+    margin-top: -46px;
+}
+   
+#main-window:not([customizing]) #navigator-toolbox:not(:focus-within) .tabbrowser-tab {
+  padding: 10px 2px 3px 2px  !important;
+  transition: var(--inVerba-move) !important;
+}
+  
+#main-window:not([customizing]) #navigator-toolbox:not(:focus-within) #PersonalToolbar {
+  padding-top: 10px !important;
+}

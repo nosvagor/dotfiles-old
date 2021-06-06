@@ -1,10 +1,9 @@
 .tabbrowser-tab {
-    padding: 2px !important;
-    padding-bottom: 3px !important;
+    padding: 2px 2px 3px 2px  !important;
 }
 
 #tabs-newtab-button .toolbarbutton-icon {
-  visibility: collapse !important;
+     visibility: collapse !important;
 }
 
 toolbarbutton#scrollbutton-up, toolbarbutton#scrollbutton-down,
@@ -28,12 +27,7 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
     display: none !important;
 }
 
-.tab-label {
-    -moz-box-flex: 1 !important;
-    text-align: center !important;
-}
-
-.tabbrowser-tab[label="New Tab"] .tab-content .tab-icon-image {
+.tabbrowser-tab[label="New Tab"] .tab-icon-image {
    display: none !important; 
 }
 
@@ -80,5 +74,23 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
   --uc-tab-curve-size:10px;
   --uc-tabs-scrollbutton-border: 0px;
   --proton-tab-block-margin:0px;
-  --tab-min-height: 30px;
+  --tab-min-height: 30px; 
+}
+
+.tab-icon-sound-label {
+    visibility: collapse !important;
+}
+
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox, #tabbrowser-arrowscrollbox{
+    min-height: 0 !important; 
+    transition: var(--inVerba-move) !important;
+}
+
+.accessibility-indicator,
+.private-browsing-indicator{ 
+  height: unset !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab[first-visible-tab="true"][last-visible-tab="true"] {
+  visibility: collapse !important;
 }
