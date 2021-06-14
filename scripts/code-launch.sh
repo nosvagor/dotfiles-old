@@ -7,7 +7,7 @@ feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png'
 kitty -e cava &
 sleep 1
 
-bspc config split_ratio 0.33 && firefox -new-window https://github.com/cullyn-inverba/notes/tree/master/$1 & 
+bspc config split_ratio 0.33 && firefox -new-window & 
 sleep 1
 
 bspc node -f west.local 
