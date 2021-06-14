@@ -168,3 +168,7 @@
 #main-window:not([customizing]) #navigator-toolbox:not(:focus-within) #PersonalToolbar {
   padding-top: 10px !important;
 }
+
+#tab-notification-deck notification-message {
+    visibility:  collapse !important;
+}
