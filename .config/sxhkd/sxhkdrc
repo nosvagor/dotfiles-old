@@ -33,6 +33,10 @@ super + alt + shift + {f,t,d,r,e,v,w,x}
 	bspc wm -r, \
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty,bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop} 
 
+# kill hard to end applications
+ctrl + shift + alt + super + u
+	pkill java & pkill electron
+
 # ╔╦╗┌─┐┬┌┬┐
 # ║║║├─┤││││
 # ╩ ╩┴ ┴┴┴ ┴

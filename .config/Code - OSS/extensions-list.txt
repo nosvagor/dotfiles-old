@@ -1,0 +1,13 @@
+abusaidm.html-snippets
+davidlday.languagetool-linter
+ecmel.vscode-html-css
+Equinusocio.vsc-community-material-theme
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+golang.go
+James-Yu.latex-workshop
+ms-python.python
+naumovs.color-highlight
+PKief.material-icon-theme
+ritwickdey.LiveServer
+valentjn.vscode-ltex

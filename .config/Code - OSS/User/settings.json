@@ -114,7 +114,6 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "editor.fontFamily": "'Hack Nerd Font'",
   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
-  "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.integrated.cursorStyle": "line",
   "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "kitty",
@@ -132,5 +131,9 @@
     "matplotlibrc": "ini"
   },
   "python.dataScience.sendSelectionToInteractiveWindow": true,
-  "python.dataScience.alwaysTrustNotebooks": true
+  "python.dataScience.alwaysTrustNotebooks": true,
+  "ltex.additionalRules.enablePickyRules": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
