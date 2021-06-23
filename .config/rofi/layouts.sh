@@ -12,9 +12,10 @@ dotfiles="dotfiles"
 golang="golang"
 stat="statistics"
 htmlcss="html-css"
+capstone="capstone"
 
 # Variable passed to rofi
-options="$dotfiles\n$notes\n$golang\n$stat\n$htmlcss"
+options="$dotfiles\n$notes\n$golang\n$stat\n$htmlcss\n$capstone"
 
 chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu)"
 case $chosen in
@@ -41,4 +42,7 @@ case $chosen in
         ;;
     $htmlcss)
         ./scripts/code-launch.sh html-css
+        ;;
+    $capstone)
+        ./scripts/code-launch.sh capstone
 esac

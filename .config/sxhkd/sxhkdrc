@@ -162,7 +162,7 @@ ctrl + shift + alt + super + q
 super + space
 	amixer set Capture nocap & notify-send -u critical -t 1500 off Microphone
 
-super + j
+super + h
 	amixer set Capture cap & notify-send -u critical -t 1500 on Microphone
 	 
 # generate gif of selected area
@@ -178,4 +178,3 @@ ctrl + shift + alt + super + v
 
 ctrl + shift + alt + super + h
 	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock
-	

@@ -288,5 +288,12 @@
     "scope": "latex", 
     "prefix": "mbyn",
     "body": "\\(\\xxx{m} \\times \\yyy{n} \\)"
+  },
+
+  "Mean":{
+    "scope": "latex",
+    "prefix": "mean",
+    "body": "\\overline{$1}"
   }
 }
+

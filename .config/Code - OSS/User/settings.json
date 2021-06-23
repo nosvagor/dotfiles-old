@@ -133,7 +133,11 @@
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.dataScience.alwaysTrustNotebooks": true,
   "ltex.additionalRules.enablePickyRules": true,
+  "liveServer.settings.donotShowInfoMsg": true,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "prettier.printWidth": 420,
+  "editor.formatOnSave": true,
+  
 }
