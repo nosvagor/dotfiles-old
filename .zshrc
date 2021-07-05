@@ -53,5 +53,5 @@ key[End]=${terminfo[kend]}
 [[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
 bindkey  "^[[3~"  delete-char
 
-export GOPATH="$HOME/notes/golang"
-export PATH="$PATH:$HOME/notes/golang/bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$HOME/go/bin"
