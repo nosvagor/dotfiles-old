@@ -11,11 +11,13 @@ notes="notes"
 dotfiles="dotfiles"
 golang="golang"
 stat="statistics"
-htmlcss="html-css"
+javascript="javascript"
 capstone="capstone"
+python="python"
+pandas="pandas"
 
 # Variable passed to rofi
-options="$dotfiles\n$notes\n$golang\n$stat\n$htmlcss\n$capstone"
+options="$dotfiles\n$golang\n$python\n$javascript\n$notes\n$stat\n$pandas\n$capstone"
 
 chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu)"
 case $chosen in
@@ -38,10 +40,16 @@ case $chosen in
 		./scripts/code-launch.sh golang
         ;;
     $stat)
-        ./scripts/code-launch.sh statistics
+        ./scripts/tex-launch.sh statistics
         ;;
-    $htmlcss)
-        ./scripts/code-launch.sh html-css
+    $pandas)
+        ./scripts/code-launch.sh python/pandas
+        ;;
+    $python)
+        ./scripts/code-launch.sh python
+        ;;
+    $javascript)
+        ./scripts/code-launch.sh javascript
         ;;
     $capstone)
         ./scripts/code-launch.sh capstone

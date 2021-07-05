@@ -18,165 +18,100 @@
   "Aligned Math": {
     "scope": "latex",
     "prefix": "axy",
-    "body": [
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      "\\begin{align*}",
-      "\t$1 &= $2 \\\\\\",
-      "\t$3 &= $4",
-      "\\end{align*}",
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      ""
-    ],
+    "body": ["%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", "\\begin{align*}", "\t$1 &= $2 \\\\\\", "\t$3 &= $4", "\\end{align*}", "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", ""],
     "description": "Set up for multi step math equation"
   },
 
   "Math Explaination": {
     "scope": "latex",
     "prefix": "exy",
-    "body": [
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      "\\begin{align*}",
-      "\t$1 &= $2 & \\text{$3} \\\\\\",
-      "\t$4 &= $5 & \\text{$6}",
-      "\\end{align*}",
-      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      ""
-    ],
+    "body": ["%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", "\\begin{align*}", "\t$1 &= $2 & \\text{$3} \\\\\\", "\t$4 &= $5 & \\text{$6}", "\\end{align*}", "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", ""],
     "description": "Set up for multi step math equation with side explations"
   },
 
-  "Cases":{
+  "Cases": {
     "scope": "latex",
     "prefix": "csx",
-    "body": [
-      "\\begin{cases}",
-      "$1",
-      "\\end{cases}",
-    ]
+    "body": ["\\begin{cases}", "$1", "\\end{cases}"]
   },
 
   "Dispaly Equation": {
     "scope": "latex",
     "prefix": "deq",
-    "body": [
-      "\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      "$1",
-      "\\]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      ""
-    ]
+    "body": ["\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", "$1", "\\]%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", ""]
   },
 
-
-  "Respone Math":{
+  "Respone Math": {
     "scope": "latex",
     "prefix": "deqr",
-    "body": [
-      "\\basec{\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      "$1",
-      "\\]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-      ""
-    ]
+    "body": ["\\basec{\\[%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", "$1", "\\]}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%", ""]
   },
 
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 
-  "Bold Math":{
+  "Bold Math": {
     "scope": "latex",
     "prefix": "bm",
     "body": "\\bm{$1}"
   },
 
-  "Text-Bold Math":{
+  "Text-Bold Math": {
     "scope": "latex",
     "prefix": "tbm",
     "body": "\\tbm{$1}"
   },
 
-  "Overarrow":{
+  "Overarrow": {
     "scope": "latex",
     "prefix": "ov",
     "body": "\\vv{$1}"
   },
 
-  "Column Vector":{
+  "Column Vector": {
     "scope": "latex",
     "prefix": "cv",
-    "body": [
-      "\\begin{bmatrix} $1 \\\\\\ $2 \\\\\\ $3 \\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix} $1 \\\\\\ $2 \\\\\\ $3 \\end{bmatrix}"]
   },
 
-  "Row Vector":{
+  "Row Vector": {
     "scope": "latex",
     "prefix": "rv",
-    "body": [
-        "\\begin{bmatrix} $1 & $2 & $3 \\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix} $1 & $2 & $3 \\end{bmatrix}"]
   },
 
-  "Matrix":{
+  "Matrix": {
     "scope": "latex",
     "prefix": "mx",
-    "body": [
-        "\\begin{bmatrix}",
-        "$1 & $2 & $3 \\\\\\",
-        "$4 & $5 & $6 \\\\\\",
-        "$7 & $8 & $9 ",
-        "\\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix}", "$1 & $2 & $3 \\\\\\", "$4 & $5 & $6 \\\\\\", "$7 & $8 & $9 ", "\\end{bmatrix}"]
   },
 
-  "Identity Matrix":{
+  "Identity Matrix": {
     "scope": "latex",
     "prefix": "imx",
-    "body": [
-        "\\begin{bmatrix}",
-        "1 & 0 & 0 \\\\\\",
-        "0 & 1 & 0 \\\\\\",
-        "0 & 0 & 1 ",
-        "\\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix}", "1 & 0 & 0 \\\\\\", "0 & 1 & 0 \\\\\\", "0 & 0 & 1 ", "\\end{bmatrix}"]
   },
 
-  "Augmented Matrix":{
+  "Augmented Matrix": {
     "scope": "latex",
     "prefix": "amx",
-    "body": [
-        "\\begin{bmatrix}[ccc|c]",
-        "$1 & $2 & $3 & $4 \\\\\\",
-        "$5 & $6 & $7 & $8 \\\\\\",
-        "$9 & $10 & $11 & $12 ",
-        "\\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix}[ccc|c]", "$1 & $2 & $3 & $4 \\\\\\", "$5 & $6 & $7 & $8 \\\\\\", "$9 & $10 & $11 & $12 ", "\\end{bmatrix}"]
   },
 
-  "Indefinite Matrix":{
+  "Indefinite Matrix": {
     "scope": "latex",
     "prefix": "inx",
-    "body": [
-      "\\begin{bmatrix}",
-      "e & e & \\cdots & e \\\\\\",
-      "e & e & \\cdots & e \\\\\\",
-      "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
-      "e & e & \\cdots & e",
-      "\\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix}", "e & e & \\cdots & e \\\\\\", "e & e & \\cdots & e \\\\\\", "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\", "e & e & \\cdots & e", "\\end{bmatrix}"]
   },
 
-  "2x2 Matrix":{
+  "2x2 Matrix": {
     "scope": "latex",
     "prefix": "smx",
-    "body": [
-        "\\begin{bmatrix}",
-        "$1 & $2 \\\\\\",
-        "$4 & $5 ",
-        "\\end{bmatrix}",
-    ]
+    "body": ["\\begin{bmatrix}", "$1 & $2 \\\\\\", "$4 & $5 ", "\\end{bmatrix}"]
   },
 
-  "Matrix Notation":{
+  "Matrix Notation": {
     "scope": "latex",
     "prefix": "mex",
     "body": "$1_{$2,$3}"
@@ -194,106 +129,123 @@
     "body": "\\(\\eigL \\)"
   },
 
-  "Sum":{
+  "Sum": {
     "scope": "latex",
     "prefix": "sum",
     "body": "\\sum_{i = $1}^{$2}"
   },
 
-  "Times":{
+  "Times": {
     "scope": "latex",
     "prefix": "times",
     "body": "\\cdot"
   },
 
-  "Transpose":{
+  "Transpose": {
     "scope": "latex",
     "prefix": "trp",
     "body": "\\bm{$1}^T"
   },
 
-  "Text-Vector Norm":{
+  "Text-Vector Norm": {
     "scope": "latex",
     "prefix": "tvn",
     "body": "\\( \\| \\bm{$1} \\| \\)"
   },
 
-  "Vector Norm":{
+  "Vector Norm": {
     "scope": "latex",
     "prefix": "vnr",
     "body": "\\| \\bm{$1} \\|"
   },
 
-  "Forbenius Norm":{
+  "Forbenius Norm": {
     "scope": "latex",
     "prefix": "fnr",
     "body": "\\langle \\bm{$1},\\bm{$1} \\rangle_F"
   },
 
-  "Cos Theta":{
+  "Cos Theta": {
     "scope": "latex",
     "prefix": "cth",
-    "body": "\\(\\cos(\\theta)\\)",
+    "body": "\\(\\cos(\\theta)\\)"
   },
 
-  "Sine Theta":{
+  "Sine Theta": {
     "scope": "latex",
     "prefix": "sth",
-    "body": "\\(\\sin(\\theta)\\)",
+    "body": "\\(\\sin(\\theta)\\)"
   },
 
-  "Field":{
+  "Field": {
     "scope": "latex",
     "prefix": "bbf",
     "body": "\\mathbb{$1}"
   },
 
-  "Span":{
+  "Span": {
     "scope": "latex",
     "prefix": "sp()",
     "body": "\\operatorname{span}($1)"
   },
 
-  "Braces":{
+  "Braces": {
     "scope": "latex",
     "prefix": "br{}",
     "body": "\\left\\lbrace $1 \\right\\rbrace"
   },
 
-  "Math Label":{
+  "Math Label": {
     "scope": "latex",
     "prefix": "mlu",
     "body": "\\underbrace{$1}_{$2}"
   },
 
-  "Dimensionality":{
+  "Dimensionality": {
     "scope": "latex",
     "prefix": "mxn",
     "body": "\\xxx{$1}\\times\\yyy{$2}"
   },
 
-  "Inverse":{
+  "Inverse": {
     "scope": "latex",
     "prefix": "inv",
     "body": "^{-1}"
   },
 
-  "N x N":{
-    "scope": "latex", 
+  "N x N": {
+    "scope": "latex",
     "prefix": "nbyn",
     "body": "\\(n \\times n \\)"
   },
 
-  "M x N":{
-    "scope": "latex", 
+  "M x N": {
+    "scope": "latex",
     "prefix": "mbyn",
     "body": "\\(\\xxx{m} \\times \\yyy{n} \\)"
   },
 
-  "Mean":{
+  "Mean": {
     "scope": "latex",
     "prefix": "mean",
-    "body": "\\overline{$1}"
+    "body": "\\bar{$1}"
+  },
+
+  "Null Hypothesis": {
+    "scope": "latex",
+    "prefix": "nulh",
+    "body": "\\(H_\\nil\\)"
+  },
+
+  "Alternative Hypothesis": {
+    "scope": "latex",
+    "prefix": "alth",
+    "body": "\\(H_a\\)"
+  },
+
+  "t-test": {
+    "scope": "latex",
+    "prefix": "ttst",
+    "body": "\\(t\\)-test"
   }
 }
-

@@ -33,7 +33,7 @@ window {
     text-color:                     @foreground;
 	border:							0% 0.2% 0.3% 0%;
 	border-color:					@sec;
-    border-radius:                  0% 8% 8% 6%;
+    border-radius:                  0% 6.2% 6.3% 6%;
     location:                       north west;
     width:                          30%;
     x-offset:                       0;
@@ -44,11 +44,11 @@ window {
 mainbox {
     background-color:               @background;
 	border:							0% 0.2% 0.3% 0%;
-    border-radius:                  0% 8.9% 7% 5.9%;
+    border-radius:                  0% 6% 6% 6%;
 	border-color:					@sub;
     children:                       [ inputbar, listview ];
     spacing:                        2.5%;
-    padding:                        0% 0% 3% 0%;
+    padding:                        0% 0% 2.5% 0%;
 }
 
 prompt {
@@ -78,19 +78,19 @@ inputbar {
 	border:							0% 0.05% 0.1% 0%;
     border-radius:                  0% 1% 1.5% 1.5%;
 	border-color:					@sec;
-    margin:                         0% 20.3% 0% 0.8%;
+    margin:                         0% 22.5% 0% 0.8%;
     padding:                        0.69% 0% 1% 0.4%;
 }
 
 listview {
     background-color:               @background;
     columns:                        2;
-    lines:                          2;
+    lines:                          4;
     fixed-height:                   false;
     spacing:                        0%;
     cycle:                          true;
     dynamic:                        true;
-    margin:                         -1% 0% -1% 1%;
+    margin:                         -1.5% 0% -1% 1%;
     padding:                        0% 1.5% 0% 0%;
     layout:                         vertical;
 }

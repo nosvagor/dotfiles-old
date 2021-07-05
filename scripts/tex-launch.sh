@@ -17,7 +17,7 @@ sleep 1
 
 bspc node -f east.local 
 
-bspc config split_ratio 0.67 &&  firefox -new-window https://github.com/cullyn-inverba/notes/tree/master/$1 &
+bspc config split_ratio 0.67 &&  zathura ~/notes/$1/$1.pdf &
 sleep 1
 
 bspc config split_ratio 0.68 && kitty -d ~/notes/$1 &
