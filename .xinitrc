@@ -32,8 +32,6 @@ fi
 
 xset r rate 196 69
 xsetroot -cursor_name left_ptr 
-export GOPATH="$HOME/go"
-export PATH="$PATH:$HOME/go/bin"
 export TEXINPUTS=".:~/notes/assets/latex:"
 export PATH="$HOME/.local/bin:$PATH"
 exec bspwm

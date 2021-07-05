@@ -52,3 +52,6 @@ key[End]=${terminfo[kend]}
 [[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
 [[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
 bindkey  "^[[3~"  delete-char
+
+export GOPATH="$HOME/notes/golang"
+export PATH="$PATH:$HOME/notes/golang/bin"
