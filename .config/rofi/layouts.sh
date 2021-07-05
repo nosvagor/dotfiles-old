@@ -14,10 +14,10 @@ stat="statistics"
 javascript="javascript"
 capstone="capstone"
 python="python"
-pandas="pandas"
+solidity="solidity"
 
 # Variable passed to rofi
-options="$dotfiles\n$golang\n$python\n$javascript\n$notes\n$stat\n$pandas\n$capstone"
+options="$golang\n$solidity\n$python\n$javascript\n$dotfiles\n$notes\n$stat\n$capstone"
 
 chosen="$(echo -e "$options" | $rofi_command -p "" -dmenu)"
 case $chosen in
@@ -42,8 +42,8 @@ case $chosen in
     $stat)
         ./scripts/tex-launch.sh statistics
         ;;
-    $pandas)
-        ./scripts/code-launch.sh python/pandas
+    $solidity)
+        ./scripts/code-launch.sh solidity
         ;;
     $python)
         ./scripts/code-launch.sh python

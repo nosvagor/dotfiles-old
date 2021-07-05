@@ -1,0 +1,7 @@
+{
+  "Print line": {
+    "scope": "go",
+    "prefix": "pl",
+    "body": "fmt.Println($1)$0"
+  }
+}
