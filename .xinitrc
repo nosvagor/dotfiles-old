@@ -34,4 +34,4 @@ xset r rate 196 69
 xsetroot -cursor_name left_ptr 
 export TEXINPUTS=".:~/notes/assets/latex:"
 export PATH="$HOME/.local/bin:$PATH"
-exec bspwm
+numlockx & exec bspwm

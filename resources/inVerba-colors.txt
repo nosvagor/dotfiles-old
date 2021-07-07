@@ -11,78 +11,76 @@
   #e0e0e0 foreground 
   #b0b0b0 minor
   #6b6b6b minimal
-
   #1f1f1f background
 
-  #f5b17a emph #b08058
-  #ff9e4f stress
+  #f5af71 emph
+  #f5984c stress
+  #f58ecc alt-emph
+  #4ca9f5 alt-stress
 
-  #4ca9f5 #1 
-  #7abef5 #2
-  #b0d0eb #3 #849cb0
-  #cedeeb #4
+  #7abef5 h1
+  #b0d0eb h2
+  #cedeeb h3
 
-  #99e09b hyper-link
-  #78b07a up-link
-  #496b4a down-link
+  #81de84 link
+  #66b06b internal-link
 
 
  ╔╦╗┬┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐┬ ┬
   ║║││  ├─┤│ │ │ │ ││││└┬┘
  ═╩╝┴└─┘┴ ┴└─┘ ┴ └─┘┴ ┴ ┴ 
           
-  Charge:   #f5736c (positive) → #5f89f5 (negative)
-  Boolean:  #57d9c3 (true)     → #eb4972 (false)
-  Relative: #c28bf0 (x)        → #f0dd86 (y)
+  Charge:   #f57067#f53325 (positive) → #678ff5#2560f5 (negative)
+  Boolean:  #57d9c3 (true)            → #eb4972 (false)
+  Relative: #c88ef5#ac4cf5 (x X)      → #f5e48e#f5d94c (y Y)
 
 
-                   ╦═╗┌─┐┌─┐┌─┐┬─┐┌─┐┌┐┌┌─┐┌─┐
-                   ╠╦╝├┤ ├┤ ├┤ ├┬┘├┤ ││││  ├┤ 
-                   ╩╚═└─┘└  └─┘┴└─└─┘┘└┘└─┘└─┘
+                  ╦═╗┌─┐┌─┐┌─┐┬─┐┌─┐┌┐┌┌─┐┌─┐
+                  ╠╦╝├┤ ├┤ ├┤ ├┬┘├┤ ││││  ├┤ 
+                  ╩╚═└─┘└  └─┘┴└─└─┘┘└┘└─┘└─┘
 
-
-                 fff #eb4972       #f5736c rrr
-         
-                          ____________
-                         /\  ________ \       
-    xxx #c28bf0         /  \ \______/\ \        #f5b17a emph
-                       / /\ \ \  / /\ \ \         #ff9e4f stress
-                      / / /\ \ \/ / /\ \ \          
+                 fff #f54c7f       #f53325 RRR
+            ppp #f5769c                 #f57067 rrr
+                          ____________              
+                         /\  ________ \         
+      xxx #c88ef5       /  \ \______/\ \        #f5af71  emph
+    XXX #ac4cf5        / /\ \ \  / /\ \ \         #f5984c str
+                      / / /\ \ \/ / /\ \ \
                      / / /__\_\/ / /__\_\ \
-                    / /_/_______/ /________\
-   rrr  #5f89f5     \ \ \______ \ \______  /
-                     \ \ \  / /\ \ \  / / /
-                      \ \ \/ / /\ \ \/ / /      #f0dd86 yyy
-                       \ \/ / /__\_\/ / /      
-       chap #4ca9f5     \  / /______\/ /
+   BBB #2560f5      / /_/_______/ /________\       
+    bbb #678ff5     \ \ \______ \ \______  /   
+                     \ \ \  / /\ \ \  / / /        #f5e48e yyy
+                      \ \ \/ / /\ \ \/ / /       #f5d94c YYY
+       bBb #4ca9f5     \ \/ / /__\_\/ / /         
+                        \  / /______\/ /
       sec #7abef5        \/___________/
-    ssec #b0d0eb        
-  jarg #cedeeb                              #99e09b link
-                         #57d9c3 ttt          #78b07a ulink
-                                                #496b4a dlink
- #ebebeb                       
-   /\ 
-  /  \ #e0e0e0 foreground 
- / /\ \ 
- \ \/ / 
-  \ \/ #b0b0b0 minor
-  /\ \ 
-  \ \/ #949494
-  /\ \ 
-  \ \/ #808080
-  /\ \ 
- / /\ \ #6b6b6b minimal
- \ \ \/ 
- /\ \ \
- \ \/ / #4f4f4f
-  \ \/
-  /\ \ #404040
-  \ \/
-  /\ \ #2f2f2f
-  \ \/
-  /\ \ #262626
- / /\ \
- \ \/ / 
-  \  / #1f1f1f background
-   \/                      
- #141414 
+    ssec #b0d0eb                              #81de84 ggg
+  ddd  #cedeeb                             #66b06b GGG
+                         #4cf5d9 ttt      
+                         
+#ebebeb bight                     
+  /\ 
+ /  \ #e0e0e0 foreground (fg)
+/ /\ \ 
+\ \/ / 
+ \ \/ #b0b0b0 
+ /\ \ 
+ \ \/ #949494 minor
+ /\ \ 
+ \ \/ #808080 
+ /\ \ 
+/ /\ \ #6b6b6b minimal
+\ \ \/ 
+/\ \ \
+\ \/ / #4f4f4f
+ \ \/
+ /\ \ #404040 
+ \ \/
+ /\ \ #2f2f2f faint
+ \ \/
+ /\ \ #262626
+/ /\ \
+\ \/ / 
+ \  / #1f1f1f background (bg)
+  \/                      
+#141414 dark

@@ -247,5 +247,17 @@
     "scope": "latex",
     "prefix": "ttst",
     "body": "\\(t\\)-test"
+  },
+
+  "Independent": {
+    "scope": "latex",
+    "prefix": "ix",
+    "body": "\\xxx{independent}"
+  },
+
+  "Dependent": {
+    "scope": "latex",
+    "prefix": "iy",
+    "body": "\\yyy{dependent}"
   }
 }
