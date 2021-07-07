@@ -64,6 +64,10 @@ super + shift + ctrl + alt + n
 super + shift + ctrl + alt + {BackSpace,i}
 	{~/.config/rofi/{powermenu,layouts}.sh
 
+# emoji
+super + alt + shift + space
+	rofi -show emoji -modi emoji -theme ~/.config/rofi/emoji.rasi
+
 # ╔╗ ┌─┐┌─┐┬ ┬┌┬┐
 # ╠╩╗└─┐├─┘││││││
 # ╚═╝└─┘┴  └┴┘┴ ┴
