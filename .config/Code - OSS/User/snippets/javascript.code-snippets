@@ -3,5 +3,11 @@
     "scope": "javascript",
     "prefix": "cl",
     "body": "console.log($1)$0"
+  },
+
+  "Section": {
+    "scope": "javascript",
+    "prefix": "ssec",
+    "body": ["// $1", "console.log(`$1 ↓`)", "$0", "console.log(\"----------\")"]
   }
 }
