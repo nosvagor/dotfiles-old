@@ -1,4 +1,17 @@
 {
+  "Empty Snippet": {
+    "scope": "jsonc",
+    "prefix": "sgo",
+    "body": [
+      "\"$1\": {",
+      "\"scope\": \"javascript\",",
+      "\"prefix\": \"$2\",",
+      "\"body\": [\n\"$3\",\n],",
+      "\"description\": \"$4\"",
+      "},$0\n"
+    ],
+    "description": "Blank snippet for go"
+  },
   "Print line": {
     "scope": "go",
     "prefix": "pl",

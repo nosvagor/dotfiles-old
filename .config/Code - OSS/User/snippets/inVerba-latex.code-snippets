@@ -5,16 +5,14 @@
   // ██║     ██╔══██║   ██║   ██╔══╝   ██╔██╗
   // ███████╗██║  ██║   ██║   ███████╗██╔╝ ██╗
   // ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-  //  .--.      .-'.      .--.      .--.      .--.      .--.      .`-.
-  // |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-  // |::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\::::::::.\
-  // |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
-  //         `--'      `.-'      `--'      `--'      `--'      `-.'      `
-
+  //  .--.      .-'.      .--.      .--.      .--.      .--.
+  // |:::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  // |::::.\:: https://github.com/cullyn-inverba/dotfiles ::.\
+  // |:::::.\::::::::.\::::::::.\::::::::.\::::::::.\::::::::.\
+  //         `--'      `.-'      `--'      `--'      `--'      `
   // ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
   // ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
   // ╚  └─┘┴└─┴ ┴┴ ┴ ┴  ┴ ┴┘└┘└─┘
-
   "Document Start": {
     "scope": "latex",
     "prefix": "docstart",
@@ -31,8 +29,7 @@
       "\\end{document}"
     ]
   },
-
-  "Note Start":{
+  "Note Start": {
     "scope": "latex",
     "prefix": "notestart",
     "body": [
@@ -52,8 +49,7 @@
       "\\end{document}"
     ]
   },
-
-  "Apa Bib Start":{
+  "Apa Bib Start": {
     "scope": "latex",
     "prefix": "bibstart",
     "body": [
@@ -61,9 +57,7 @@
       "\\bibliographystyle{apacite}",
       "\\bibliography{$1.bib}"
     ]
-
   },
-
   "New Section": {
     "scope": "latex",
     "prefix": "sec",
@@ -75,7 +69,6 @@
       ""
     ]
   },
-
   "New Subsection": {
     "scope": "latex",
     "prefix": "ssection",
@@ -87,24 +80,21 @@
       ""
     ]
   },
-
-  "No indent list":{
+  "No indent list": {
     "scope": "latex",
     "prefix": "noindent",
-    "body": "[align=left, leftmargin=0pt, labelindent=\\parindent, listparindent=\\parindent, labelwidth=0pt, itemindent=!]",
+    "body": "[align=left, leftmargin=0pt, labelindent=\\parindent, listparindent=\\parindent, labelwidth=0pt, itemindent=!]"
   },
-
-  "Response":{
+  "Response": {
     "scope": "latex",
     "prefix": "basec",
     "body": [
       "\\basec{\\begin{itemize}",
       "\t\\item $0",
       "\\end{itemize}}",
-      "",
+      ""
     ]
   },
-
   "Centered Graphic": {
     "scope": "latex",
     "prefix": "Centered Graphic",
@@ -115,8 +105,7 @@
     ],
     "description": "Insert centered graphic"
   },
-
-  "Multicol Graphic":{
+  "Multicol Graphic": {
     "scope": "latex",
     "prefix": "jci",
     "body": [
@@ -129,19 +118,16 @@
       "$0"
     ]
   },
-
-  "Image with width":{
+  "Image with width": {
     "scope": "latex",
     "prefix": "img",
     "body": "\\Image{0.8\\columnwidth}{images/week-9-$1.jpg}"
   },
-
-  "Graphic":{
+  "Graphic": {
     "scope": "latex",
     "prefix": "grpx",
     "body": "\\includegraphics[scale=0.$1]{images/$2}"
   },
-
   "My Table": {
     "scope": "latex",
     "prefix": "my table",
@@ -163,78 +149,75 @@
     ],
     "description": "Template for a nice table"
   },
-
   "Move Left": {
     "scope": "latex",
     "prefix": "mleft",
     "body": "\\hspace{-$1pt}"
   },
-
-  "Needs Space":{
+  "Needs Space": {
     "scope": "latex",
     "prefix": "nvs",
     "body": "\\vspace{42pt}"
   },
-
   "Begin Center": {
     "scope": "latex",
     "prefix": "ccenter",
-    "body": ["\\begin{center}", "$0", "\\end{center}"]
+    "body": [
+      "\\begin{center}",
+      "$0",
+      "\\end{center}"
+    ]
   },
-
   "Multicols": {
     "scope": "latex",
     "prefix": "mti",
     "body": "\\begin{multicols}{2}"
   },
-
   "End Multicols": {
     "scope": "latex",
     "prefix": "emti",
     "body": "\\end{multicols}"
   },
-
   // ╔═╗┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
   // ║  │ │││││││├─┤│││ ││└─┐
   // ╚═╝└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
-
   "Internal Down Link": {
     "scope": "latex",
     "prefix": "dll",
-    "body": ["\\hyperref[$1]{\\dlink{$0"],
+    "body": [
+      "\\hyperref[$1]{\\dlink{$0"
+    ],
     "description": "A styled link to a later part of the document (needs }})"
   },
-
-  "To be defined":{
+  "To be defined": {
     "scope": "latex",
     "prefix": "tbd",
-    "body": ["\\hyperref[tbd]{\\dlink{$0"],
+    "body": [
+      "\\hyperref[tbd]{\\dlink{$0"
+    ],
     "description": "A styled link to a later part of the document that is currently not defined (needs }})"
   },
-
   "Internal Up Link": {
     "scope": "latex",
     "prefix": "ull",
-    "body": ["\\hyperref[$1]{\\ulink{$0"],
+    "body": [
+      "\\hyperref[$1]{\\ulink{$0"
+    ],
     "description": "A styled link to an earlier part of the document (needs }})"
   },
-
   "SI units": {
     "scope": "latex",
     "prefix": "sii",
     "body": "\\SI{$1}{$2}$0"
   },
-
   "Only units": {
     "scope": "latex",
     "prefix": "siii",
     "body": "\\si{$1}$0"
   },
-
   // ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
   // ║  ├─┤├┤ ││││└─┐ │ ├┬┘└┬┘
   // ╚═╝┴ ┴└─┘┴ ┴┴└─┘ ┴ ┴└─ ┴
-
   // "Centered Reaction Scheme": {
   //   "scope": "latex",
   //   "prefix": "centschemestart",
@@ -251,7 +234,6 @@
   //   ],
   //   "description": "A centered reaction scheme"
   // },
-
   // "Reaction Scheme": {
   //   "scope": "latex",
   //   "prefix": "schemestart",
@@ -265,7 +247,6 @@
   //   ],
   //   "description": "chemfig reaction scheme"
   // },
-
   // "Small Reaction Scheme": {
   //   "scope": "latex",
   //   "prefix": "smallscheme",
@@ -281,125 +262,104 @@
   //   ],
   //   "description": "chemfig reaction scheme"
   // },
-
   // "Labeled Chemfig": {
   //   "scope": "latex",
   //   "prefix": "chname",
   //   "body": ["\\chemname{\\chemfig{${1:figure}}}{${2:label}}"]
   // },
-
   // "Anion": {
   //   "scope": "latex",
   //   "prefix": "anion",
   //   "body": "\\bbb{\\ch{$1^{-$2}}}$0"
   // },
-
   // "Cation": {
   //   "scope": "latex",
   //   "prefix": "cation",
   //   "body": "\\rrr{\\ch{$1^{+$2}}}$0"
   // },
-
   // "Water": {
   //   "scope": "latex",
   //   "prefix": "water",
   //   "body": "\\ch{H2O}"
   // },
-
   // "ozone": {
   //   "scope": "latex",
   //   "prefix": "ozone",
   //   "body": "\\ch{O3}"
   // },
-
   // "na borohydride": {
   //   "scope": "latex",
   //   "prefix": "nabh4",
   //   "body": "\\ch{NaBH4}"
   // },
-
   // "li al hydride ": {
   //   "scope": "latex",
   //   "prefix": "lialh4",
   //   "body": "\\ch{LiAlH4}"
   // },
-
   // "Priamry": {
   //   "scope": "latex",
   //   "prefix": "prim",
   //   "body": "\\ang{1}"
   // },
-
   // "Secondary": {
   //   "scope": "latex",
   //   "prefix": "sec",
   //   "body": "\\ang{2}"
   // },
-
   // "Tertiary": {
   //   "scope": "latex",
   //   "prefix": "tert",
   //   "body": "\\ang{3}"
   // },
-
   // "SN2": {
   //   "scope": "latex",
   //   "prefix": "sn2",
   //   "body": "\\(S_N2\\)"
   // },
-
   // "SN1": {
   //   "scope": "latex",
   //   "prefix": "sn1",
   //   "body": "\\(S_N1\\)"
   // },
-
   // "Wavenumber": {
   //   "scope": "latex",
   //   "prefix": "wavenum",
   //   "body": "\\(\\tilde{\\nu} \\)"
   // },
-
   // // ╔═╗┬ ┬┌─┐┌┬┐┌─┐┬┌─┐
   // // ║  ├─┤├┤ │││├┤ ││ ┬
   // // ╚═╝┴ ┴└─┘┴ ┴└  ┴└─┘
-
   // "Basic +-90": {
   //   "scope": "latex",
   //   "prefix": "~ncs",
   //   "body": ["(-[:90]$1)(-[:-90]$2)$0"]
   // },
-
   // "90": {
   //   "scope": "latex",
   //   "prefix": "cnorth",
   //   "body": ["(-[:90]$1)"]
   // },
-
   // "90-Oxygen": {
   //   "scope": "latex",
   //   "prefix": "onorth",
   //   "body": ["(=[:90]O)"]
   // },
-
   // "Labeled Arrow": {
   //   "scope": "latex",
   //   "prefix": "larrow",
   //   "body": "\\arrow{->[$1][$2]}"
   // },
-
   // "extend": {
   //   "scope": "latex",
   //   "prefix": "arex",
   //   "body": "[0,1.$1]"
   // },
-
   // "Braces": {
   //   "scope": "latex",
   //   "prefix": "barrow",
   //   "body": "\\arrow(--[braces]){->}"
   // },
-
   // "Chemmove": {
   //   "scope": "latex",
   //   "prefix": "chemmove",
@@ -410,287 +370,239 @@
   //     "}"
   //   ]
   // },
-
   // "chdraw": {
   //   "scope": "latex",
   //   "prefix": "ddraw",
   //   "body": "\\draw($1)..controls +(north:1cm) and +(south:1cm).. ($2);"
   // },
-
   // "subtituients": {
   //   "scope": "latex",
   //   "prefix": "split",
   //   "body": "(-[:30]$1)(-[:-30]$2)$0"
   // },
-
   // "carbon+30": {
   //   "scope": "latex",
   //   "prefix": "cplus",
   //   "body": "-[:30]"
   // },
-
   // "carbon-30": {
   //   "scope": "latex",
   //   "prefix": "cminus",
   //   "body": "-[:-30]"
   // },
-
   // "alkyne": {
   //   "scope": "latex",
   //   "prefix": "cfalkyne",
   //   "body": "\\chemfig{R-~-R'}"
   // },
-
   // "alkene": {
   //   "scope": "latex",
   //   "prefix": "cfalkene",
   //   "body": "\\chemfig{(-[3])(-[5])=(-[1]H)(-[7])}"
   // },
-
   // "cfalign": {
   //   "scope": "latex",
   //   "prefix": "cfalign",
   //   "body": "\\arrow{0}[,0]"
   // },
-
   // "Chemabove": {
   //   "scope": "latex",
   //   "prefix": "chemabove",
   //   "body": "\\chemabove[6pt]{}{$1}"
   // },
-
   // "cyclo hexene": {
   //   "scope": "latex",
   //   "prefix": "cyclohexene",
   //   "body": "{\\footnotesize\\chemfig{*6(---=--)}}"
   // },
-
   // "benzene": {
   //   "scope": "latex",
   //   "prefix": "benzene",
   //   "body": "{\\footnotesize\\chemfig{*6(-=-=-=)}}"
   // },
-
   // "epoxide": {
   //   "scope": "latex",
   //   "prefix": "epoxide",
   //   "body": "\\chemfig{?(<:[:200]H)(<[:-110])-[:60]O-[:-60]?(<:[:-20]H)(<[:-70])}"
   // },
-
   // "carboxylic aid": {
   //   "scope": "latex",
   //   "prefix": "cfcarboxylic",
   //   "body": "\\chemfig{(=[2]O)(-[:210]R)-[:-30]OH}"
   // },
-
   // "carboxylic aid reversed": {
   //   "scope": "latex",
   //   "prefix": "cfcarboxylic rev",
   //   "body": "\\chemfig{HO-[:30](=[2]O)(-[:-30]R')}"
   // },
-
   // ╔═╗┬─┐┌─┐┌─┐┬┌─
   // ║ ╦├┬┘├┤ ├┤ ├┴┐
   // ╚═╝┴└─└─┘└─┘┴ ┴
-
   "alpha": {
     "scope": "latex",
     "prefix": "alpha",
     "body": "\\(\\alpha \\)"
   },
-
   "beta": {
     "scope": "latex",
     "prefix": "beta",
     "body": "\\(\\beta \\)"
   },
-
   "gamma": {
     "scope": "latex",
     "prefix": "gamma",
     "body": "\\(\\gamma \\)"
   },
-
   "Gamma": {
     "scope": "latex",
     "prefix": "Gamma",
     "body": "\\(\\Gamma \\)"
   },
-
   "delta": {
     "scope": "latex",
     "prefix": "delta",
     "body": "\\(\\delta \\)"
   },
-
   "Delta": {
     "scope": "latex",
     "prefix": "Delta",
     "body": "\\(\\Delta \\)"
   },
-
   "epsilon": {
     "scope": "latex",
     "prefix": "epsilon",
     "body": "\\(\\epsilon \\)"
   },
-
   "zeta": {
     "scope": "latex",
     "prefix": "zeta",
     "body": "\\(\\zeta \\)"
   },
-
   "eta": {
     "scope": "latex",
     "prefix": "eta",
     "body": "\\(\\eta \\)"
   },
-
   "theta": {
     "scope": "latex",
     "prefix": "theta",
     "body": "\\(\\theta \\)"
   },
-
   "Theta": {
     "scope": "latex",
     "prefix": "Theta",
     "body": "\\(\\Theta \\)"
   },
-
   "iota": {
     "scope": "latex",
     "prefix": "iota",
     "body": "\\(\\iota \\)"
   },
-
   "kappa": {
     "scope": "latex",
     "prefix": "kappa",
     "body": "\\(\\kappa \\)"
   },
-
   "lambda": {
     "scope": "latex",
     "prefix": "lambda",
     "body": "\\(\\lambda \\)"
   },
-
   "Lambda": {
     "scope": "latex",
     "prefix": "Lambda",
     "body": "\\(\\Lambda \\)"
   },
-
   "mu": {
     "scope": "latex",
     "prefix": "mu",
     "body": "\\(\\mu \\)"
   },
-
   "nu": {
     "scope": "latex",
     "prefix": "nu",
     "body": "\\(\\nu \\)"
   },
-
   "xi": {
     "scope": "latex",
     "prefix": "xi",
     "body": "\\(\\xi \\)"
   },
-
   "Xi": {
     "scope": "latex",
     "prefix": "Xi",
     "body": "\\(\\Xi \\)"
   },
-
   "pi": {
     "scope": "latex",
     "prefix": "pi",
     "body": "\\(\\pi \\)"
   },
-
   "Pi": {
     "scope": "latex",
     "prefix": "Pi",
     "body": "\\(\\Pi \\)"
   },
-
   "rho": {
     "scope": "latex",
     "prefix": "rho",
     "body": "\\(\\rho \\)"
   },
-
   "sigma": {
     "scope": "latex",
     "prefix": "sigma",
     "body": "\\(\\sigma \\)"
   },
-
   "Sigma": {
     "scope": "latex",
     "prefix": "Sigma",
     "body": "\\(\\Sigma \\)"
   },
-
   "tau": {
     "scope": "latex",
     "prefix": "tau",
     "body": "\\(\\tau \\)"
   },
-
   "upsilon": {
     "scope": "latex",
     "prefix": "upsilon",
     "body": "\\(\\upsilon \\)"
   },
-
   "Upsilon": {
     "scope": "latex",
     "prefix": "Upsilon",
     "body": "\\(\\Upsilon \\)"
   },
-
   "phi": {
     "scope": "latex",
     "prefix": "phi",
     "body": "\\(\\phi \\)"
   },
-
   "Phi": {
     "scope": "latex",
     "prefix": "Phi",
     "body": "\\(\\Phi \\)"
   },
-
   "chi": {
     "scope": "latex",
     "prefix": "chi",
     "body": "\\(\\chi \\)"
   },
-
   "Chi": {
     "scope": "latex",
     "prefix": "Chi",
     "body": "\\(\\Chi \\)"
   },
-
   "psi": {
     "scope": "latex",
     "prefix": "psi",
     "body": "\\(\\psi \\)"
   },
-
   "Psi": {
     "scope": "latex",
     "prefix": "Psi",
     "body": "\\(\\Psi \\)"
   },
-
   "omega": {
     "scope": "latex",
     "prefix": "omega",

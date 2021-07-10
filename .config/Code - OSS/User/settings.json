@@ -6,7 +6,31 @@
   "editor.cursorBlinking": "phase",
   "window.zoomLevel": 0,
   "editor.quickSuggestionsDelay": 0,
-  "latex-workshop.latex.clean.fileTypes": ["*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.fls", "*.log", "*.fdb_latexmk", "*.snm", "*.synctex(busy)", "*.synctex.gz(busy)", "*.nav", "*.synctex.gz"],
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.synctex(busy)",
+    "*.synctex.gz(busy)",
+    "*.nav",
+    "*.synctex.gz"
+  ],
   "files.exclude": {
     "**/.directory": true
   },
@@ -78,7 +102,13 @@
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-lualatex", "%DOC%"]
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-lualatex",
+        "%DOC%"
+      ]
     }
   ],
   "latex-workshop.synctex.afterBuild.enabled": true,
@@ -90,9 +120,11 @@
   "editor.mouseWheelZoom": true,
   "telemetry.experiments.showDefaultViewlet": false,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "python.venvFolders": ["~/notes"],
+  "python.venvFolders": [
+    "~/notes"
+  ],
   "go.toolsManagement.autoUpdate": true,
   "python.dataScience.askForKernelRestart": false,
   "editor.tabSize": 2,
