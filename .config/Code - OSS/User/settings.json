@@ -143,5 +143,42 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "todohighlight.keywords": [
+    {
+      "text": "-REFACTOR-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#f58ecc"
+    },
+    {
+      "text": "-TESTING-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#c88ef5"
+    },
+    {
+      "text": "-EXPLANATION-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#678ff5"
+    },
+    {
+      "text": "-TODO-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#81de84"
+    },
+    {
+      "text": "-CONFUSED-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#f5d94c"
+    },
+    {
+      "text": "-CRITICAL-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#f5984c"
+    },
+    {
+      "text": "-BROKEN-",
+      "color": "#1f1f1f",
+      "backgroundColor": "#f57067"
+    },
+  ]
 }

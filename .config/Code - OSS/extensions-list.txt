@@ -9,3 +9,4 @@ PKief.material-icon-theme
 ritwickdey.LiveServer
 streetsidesoftware.code-spell-checker
 valentjn.vscode-ltex
+wayou.vscode-todo-highlight
