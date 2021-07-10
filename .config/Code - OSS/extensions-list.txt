@@ -1,6 +1,3 @@
-abusaidm.html-snippets
-davidlday.languagetool-linter
-ecmel.vscode-html-css
 Equinusocio.vsc-community-material-theme
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
@@ -10,4 +7,5 @@ ms-python.python
 naumovs.color-highlight
 PKief.material-icon-theme
 ritwickdey.LiveServer
+streetsidesoftware.code-spell-checker
 valentjn.vscode-ltex
