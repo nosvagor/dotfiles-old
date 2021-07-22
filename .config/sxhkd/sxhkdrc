@@ -86,6 +86,12 @@ super + Tab
 super + alt + shift + {u,i,n,o}
 	bspc node -f {north,south,west,east}.local
 
+super + alt + shift + l 
+	bspc node -f east.local && bspc node -f east.local && bspc node -f south.local 
+
+super + alt + shift + y
+	bspc node -f west.local && bspc node -f west.local
+
 # makeshift tab swap
 super + alt + shift + l
 	bspc node -s south; bspc node -f north
@@ -181,4 +187,4 @@ ctrl + shift + alt + super + v
 	~/scripts/bluetooth.sh connect
 
 ctrl + shift + alt + super + h
-	~/scripts/bluetooth.sh disconnect & pkill pentablet & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock
+	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock

@@ -26,5 +26,12 @@
       "$0",
       "console.log(\"----------\")"
     ]
-  }
+  },
+  "querySelector": {
+    "scope": "javascript",
+    "prefix": "qs",
+    "body": [
+      "document.querySelector($1)$0",
+    ],
+  },
 }

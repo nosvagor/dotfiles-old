@@ -4,7 +4,7 @@
     "prefix": "sgo",
     "body": [
       "\"$1\": {",
-      "\"scope\": \"javascript\",",
+      "\"scope\": \"go\",",
       "\"prefix\": \"$2\",",
       "\"body\": [\n\"$3\",\n],",
       "\"description\": \"$4\"",
@@ -16,5 +16,15 @@
     "scope": "go",
     "prefix": "pl",
     "body": "fmt.Println($1)$0"
-  }
+  },
+  "Print format": {
+    "scope": "go",
+    "prefix": "pf",
+    "body": "fmt.Printf($1)$0"
+  },
+  "Type": {
+    "scope": "go",
+    "prefix": "type",
+    "body": "\"%T\""
+  },
 }

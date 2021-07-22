@@ -36,7 +36,6 @@
   },
   "explorer.confirmDragAndDrop": false,
   "editor.wordWrap": "on",
-  "workbench.sideBar.location": "left",
   "explorer.confirmDelete": false,
   "editor.renderControlCharacters": false,
   "terminal.integrated.inheritEnv": true,
@@ -180,5 +179,10 @@
       "color": "#1f1f1f",
       "backgroundColor": "#f57067"
     },
-  ]
+  ],
+  "cSpell.diagnosticLevel": "Hint",
+  "prettier.arrowParens": "avoid",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true
 }
