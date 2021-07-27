@@ -34,4 +34,12 @@
       "document.querySelector($1)$0",
     ],
   },
+  "Anonymous function": {
+    "scope": "javascript",
+    "prefix": "af",
+    "body": [
+      "() => {$0}",
+    ],
+    "description": ""
+  },
 }
