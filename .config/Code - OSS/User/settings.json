@@ -185,10 +185,10 @@
     "editor.quickSuggestions": true
   },
   "bracket-pair-colorizer-2.colors": [
-    "#2560f5",
-    "#4c7cf5",
-    "#8eabf5",
-    "#ced9f5",
+    "#2548f5",
+    "#4c84f5",
+    "#8ec1f5",
+    "#cee8f5",
   ],
   "bracket-pair-colorizer-2.unmatchedScopeColor": "#f53325",
   "editor.matchBrackets": "never",
@@ -203,7 +203,6 @@
   "prettier.printWidth": 79,
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showBracketsInRuler": true,
-  "bracket-pair-colorizer-2.highlightActiveScope": true,
   "editor.highlightActiveIndentGuide": false,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -240,7 +239,10 @@
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "variable.parameter",
+          "variable.other.readwrite.js"
+        ],
         "settings": {
           "foreground": "#f57067"
         }
@@ -255,19 +257,27 @@
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "keyword",
+          "storage.type.function.arrow.js",
+          "storage.type.function.js"
+        ],
         "settings": {
           "foreground": "#f5984c"
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "meta.var.expr.js",
+        ],
         "settings": {
           "foreground": "#f5e48e"
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "variable.language.this.js"
+        ],
         "settings": {
           "foreground": "#f5d94c"
         }
@@ -285,6 +295,7 @@
       {
         "scope": [
           "entity.name",
+          "string.other.link.title.markdown",
         ],
         "settings": {
           "foreground": "#66b06b"
@@ -293,6 +304,7 @@
       {
         "scope": [
           "punctuation",
+          "constant.language.boolean.true.js",
         ],
         "settings": {
           "foreground": "#4cf5d9"
@@ -300,7 +312,7 @@
       },
       {
         "scope": [
-          "keyword.control"
+          "keyword.control",
         ],
         "settings": {
           "foreground": "#7abef5"
@@ -308,10 +320,10 @@
       },
       {
         "scope": [
-          "keyword"
+          "keyword.operator"
         ],
         "settings": {
-          "foreground": "#678ff5"
+          "foreground": "#4c7ff5"
         }
       },
       {
@@ -323,13 +335,16 @@
       {
         "scope": [
           "storage.type",
+          "storage.type.js"
         ],
         "settings": {
           "foreground": "#c88ef5"
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "variable.other.constant",
+        ],
         "settings": {
           "foreground": "#ac4cf5"
         }
@@ -337,18 +352,21 @@
       {
         "scope": [
           "constant.numeric",
-          "variable.other.constant",
         ],
         "settings": {
           "foreground": "#f5769c"
         }
       },
       {
-        "scope": [],
+        "scope": [
+          "constant.language",
+          "keyword.operator.logical.js",
+        ],
         "settings": {
           "foreground": "#f54c7f"
         }
       },
     ]
   },
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
 }
