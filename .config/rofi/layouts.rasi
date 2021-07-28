@@ -84,7 +84,7 @@ inputbar {
 
 listview {
     background-color:               @background;
-    columns:                        2;
+    columns:                        3;
     lines:                          4;
     fixed-height:                   false;
     spacing:                        0%;

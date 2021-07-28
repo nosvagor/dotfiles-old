@@ -7,7 +7,7 @@ feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg'
 kitty -e cava &
 sleep 1
 
-bspc config split_ratio 0.33 && firefox -new-window https://www.udemy.com/home/my-courses/learning/ & 
+bspc config split_ratio 0.33 && firefox -new-window https://calendar.google.com/calendar/u/0/r & 
 sleep 1
 
 bspc node -f west.local 
