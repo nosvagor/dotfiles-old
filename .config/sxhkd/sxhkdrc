@@ -93,7 +93,7 @@ super + alt + shift + y
 	bspc node -f west.local && bspc node -f west.local
 
 # makeshift tab swap
-super + alt + shift + l
+super + alt + shift + p
 	bspc node -s south; bspc node -f north
 
 # set the window state

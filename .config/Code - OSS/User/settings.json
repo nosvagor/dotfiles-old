@@ -185,7 +185,7 @@
     "editor.quickSuggestions": true
   },
   "bracket-pair-colorizer-2.colors": [
-    "#2548f5",
+    "#3d56f5",
     "#4c84f5",
     "#8ec1f5",
     "#cee8f5",
@@ -200,7 +200,7 @@
     },
   ],
   "editor.wordWrapColumn": 79,
-  "prettier.printWidth": 79,
+  "prettier.printWidth": 1000,
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showBracketsInRuler": true,
   "editor.highlightActiveIndentGuide": false,
@@ -241,7 +241,8 @@
       {
         "scope": [
           "variable.parameter",
-          "variable.other.readwrite.js"
+          "constant.character.math.tex",
+          "meta.definition.label.latex"
         ],
         "settings": {
           "foreground": "#f57067"
@@ -250,7 +251,9 @@
       {
         "scope": [
           "support.function",
-          "entity.name.function"
+          "entity.name.function",
+          "markup.italic.emph.latex",
+          "constant.other.general.math.tex"
         ],
         "settings": {
           "foreground": "#f5af71"
@@ -260,7 +263,11 @@
         "scope": [
           "keyword",
           "storage.type.function.arrow.js",
-          "storage.type.function.js"
+          "storage.type.function.js",
+          "support.class",
+          "punctuation.definition.string.begin.latex",
+          "punctuation.definition.string.end.latex",
+          "constant.numeric.math.tex"
         ],
         "settings": {
           "foreground": "#f5984c"
@@ -268,7 +275,7 @@
       },
       {
         "scope": [
-          "meta.var.expr.js",
+          "variable.other.constant",
         ],
         "settings": {
           "foreground": "#f5e48e"
@@ -276,7 +283,9 @@
       },
       {
         "scope": [
-          "variable.language.this.js"
+          "variable.language.this.js",
+          "meta.var.expr.js",
+          "variable.object.property.js",
         ],
         "settings": {
           "foreground": "#f5d94c"
@@ -296,6 +305,8 @@
         "scope": [
           "entity.name",
           "string.other.link.title.markdown",
+          "markup.bold.markdown",
+          "markup.underline.link.latex"
         ],
         "settings": {
           "foreground": "#66b06b"
@@ -312,15 +323,35 @@
       },
       {
         "scope": [
-          "keyword.control",
+          "variable.other.readwrite.js",
+          "support.variable.property.js",
+          "variable.parameter.function.latex",
         ],
         "settings": {
-          "foreground": "#7abef5"
+          "foreground": "#bae1f5"
         }
       },
       {
         "scope": [
-          "keyword.operator"
+          "keyword.control",
+          "keyword.operator.expression.of.js",
+          "keyword.operator.new.js",
+          "entity.name.section.latex",
+          "keyword.other",
+          "support.function.be.latex",
+        ],
+        "settings": {
+          "foreground": "#7abef5",
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator",
+          "support.function.section.latex",
+          "punctuation.definition.function.latex",
+          "punctuation.definition.function.tex",
+          "punctuation.definition.keyword.latex",
+          "punctuation.definition.constant.math.tex",
         ],
         "settings": {
           "foreground": "#4c7ff5"
@@ -329,22 +360,21 @@
       {
         "scope": [],
         "settings": {
-          "foreground": "#2560f5"
+          "foreground": "#3d56f5"
         }
       },
       {
         "scope": [
           "storage.type",
-          "storage.type.js"
+          "storage.type.js",
+          "keyword.operator.expression.typeof.js"
         ],
         "settings": {
           "foreground": "#c88ef5"
         }
       },
       {
-        "scope": [
-          "variable.other.constant",
-        ],
+        "scope": [],
         "settings": {
           "foreground": "#ac4cf5"
         }
@@ -366,7 +396,25 @@
           "foreground": "#f54c7f"
         }
       },
+      {
+        "scope": [
+          "entity.name.section.latex",
+        ],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.expression.of.js",
+        ],
+        "settings": {
+          "fontStyle": "italic",
+        }
+      },
     ]
   },
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "editor.wordWrap": "on",
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
 }

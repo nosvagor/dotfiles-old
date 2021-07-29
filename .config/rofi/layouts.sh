@@ -39,7 +39,7 @@ case $chosen in
         ./scripts/code-launch.sh bash
         ;;
     $calc)
-        ./scripts/code-launch.sh python/calculus
+        ./scripts/tex-launch.sh python/calculus calculus
         ;;
     $solidity)
         ./scripts/code-launch.sh solidity
