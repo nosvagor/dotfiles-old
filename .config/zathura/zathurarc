@@ -44,7 +44,7 @@ set notification-bg "#1f1f1f"
 set notification-fg "#e0e0e0"
 
 set recolor-lightcolor "#1f1f1f"
-set recolor-darkcolor "#e0e0e0"
+set recolor-darkcolor "#ebebeb"
 set recolor-keephue "true"
 set recolor-reverse-video "true"
 

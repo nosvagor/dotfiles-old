@@ -225,12 +225,6 @@
         },
       },
       {
-        "scope": [],
-        "settings": {
-          "foreground": "#141414",
-        },
-      },
-      {
         "scope": [
           "invalid.illegal"
         ],
@@ -276,19 +270,12 @@
       {
         "scope": [
           "variable.other.constant",
+          "variable.object.property.js",
+          "meta.var.expr.js",
+          "variable.language.this.js",
         ],
         "settings": {
           "foreground": "#f5e48e"
-        }
-      },
-      {
-        "scope": [
-          "variable.language.this.js",
-          "meta.var.expr.js",
-          "variable.object.property.js",
-        ],
-        "settings": {
-          "foreground": "#f5d94c"
         }
       },
       {
@@ -298,7 +285,7 @@
           "punctuation.definition.string.end",
         ],
         "settings": {
-          "foreground": "#81de84"
+          "foreground": "#85d688"
         }
       },
       {
@@ -309,7 +296,7 @@
           "markup.underline.link.latex"
         ],
         "settings": {
-          "foreground": "#66b06b"
+          "foreground": "#66b068"
         }
       },
       {
@@ -358,12 +345,6 @@
         }
       },
       {
-        "scope": [],
-        "settings": {
-          "foreground": "#3d56f5"
-        }
-      },
-      {
         "scope": [
           "storage.type",
           "storage.type.js",
@@ -371,12 +352,6 @@
         ],
         "settings": {
           "foreground": "#c88ef5"
-        }
-      },
-      {
-        "scope": [],
-        "settings": {
-          "foreground": "#ac4cf5"
         }
       },
       {
@@ -407,6 +382,8 @@
       {
         "scope": [
           "keyword.operator.expression.of.js",
+          "meta.object-literal.key.js",
+          "meta.definition.method.js",
         ],
         "settings": {
           "fontStyle": "italic",
@@ -417,4 +394,5 @@
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "editor.wordWrap": "on",
   "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "python.formatting.provider": "autopep8",
 }

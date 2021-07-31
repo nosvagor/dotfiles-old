@@ -11,5 +11,17 @@
       "},$0\n"
     ],
     "description": "Blank snippet for javascript"
-  }
+  },
+  "Section": {
+    "scope": "python",
+    "prefix": "ssec",
+    "body": [
+      "// $1",
+      "print('$1 ↓')",
+      "",
+      "$0",
+      "",
+      "print(\"----------\")"
+    ]
+  },
 }
