@@ -57,7 +57,7 @@ case $chosen in
 		./scripts/code-launch.sh python/pandas
         ;;
     $linear)
-		./scripts/code-launch.sh python/mth-343
+		./scripts/code-launch.sh python/linear
         ;;
     $stat)
 		./scripts/code-launch.sh python/statistics

@@ -27,14 +27,14 @@ super + Return
 	kitty
 
 # most used apps
-super + alt + shift + {f,t,d,r,e,v,w,x}
-	{code,firefox,discord,zathura,\
+super + alt + shift + {f,t,r,e,v,w,x}
+	{code,firefox,zathura,\
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
 	bspc wm -r, \
 	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty,bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop} 
 
 # kill hard to end applications
-ctrl + shift + alt + super + u
+ctrl + shift + alt + super + v
 	pkill java & pkill electron
 
 # ╔╦╗┌─┐┬┌┬┐
@@ -183,8 +183,5 @@ ctrl + shift + alt + super + x
 # ╠╩╗│  │ │├┤  │ │ ││ │ │ ├─┤
 # ╚═╝┴─┘└─┘└─┘ ┴ └─┘└─┘ ┴ ┴ ┴
 
-ctrl + shift + alt + super + v
-	~/scripts/bluetooth.sh connect
-
 ctrl + shift + alt + super + h
-	~/scripts/bluetooth.sh disconnect & env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock
+	env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_LIST_VIDEOS_COMMAND="find ~/resources/videos -type f" XSECURELOCK_SHOW_HOSTNAME=0 xsecurelock

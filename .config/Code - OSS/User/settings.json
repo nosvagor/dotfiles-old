@@ -195,6 +195,10 @@
   "debug.showBreakpointsInOverviewRuler": true,
   "editor.rulers": [
     {
+      "column": 69,
+      "color": "#141414"
+    },
+    {
       "column": 79,
       "color": "#141414"
     },
@@ -261,7 +265,8 @@
           "support.class",
           "punctuation.definition.string.begin.latex",
           "punctuation.definition.string.end.latex",
-          "constant.numeric.math.tex"
+          "constant.numeric.math.tex",
+          "constant.language",
         ],
         "settings": {
           "foreground": "#f5984c"
@@ -273,6 +278,8 @@
           "variable.object.property.js",
           "meta.var.expr.js",
           "variable.language.this.js",
+          "variable.other.declaration.go",
+          "variable.other.assignment.go",
         ],
         "settings": {
           "foreground": "#f5e48e"
@@ -303,6 +310,7 @@
         "scope": [
           "punctuation",
           "constant.language.boolean.true.js",
+          "constant.other.placeholder.go"
         ],
         "settings": {
           "foreground": "#4cf5d9"
@@ -348,7 +356,9 @@
         "scope": [
           "storage.type",
           "storage.type.js",
-          "keyword.operator.expression.typeof.js"
+          "keyword.operator.expression.typeof.js",
+          "keyword.operator.assignment.go",
+          "keyword.var.go",
         ],
         "settings": {
           "foreground": "#c88ef5"
@@ -364,8 +374,7 @@
       },
       {
         "scope": [
-          "constant.language",
-          "keyword.operator.logical.js",
+          "keyword.operator.logical",
         ],
         "settings": {
           "foreground": "#f54c7f"
@@ -384,6 +393,7 @@
           "keyword.operator.expression.of.js",
           "meta.object-literal.key.js",
           "meta.definition.method.js",
+          "storage.type"
         ],
         "settings": {
           "fontStyle": "italic",
@@ -395,4 +405,5 @@
   "editor.wordWrap": "on",
   "bracket-pair-colorizer-2.highlightActiveScope": true,
   "python.formatting.provider": "autopep8",
+  "editor.tabCompletion": "on",
 }
