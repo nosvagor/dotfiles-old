@@ -263,8 +263,6 @@
           "storage.type.function.arrow.js",
           "storage.type.function.js",
           "support.class",
-          "punctuation.definition.string.begin.latex",
-          "punctuation.definition.string.end.latex",
           "constant.numeric.math.tex",
           "constant.language",
         ],
@@ -280,6 +278,7 @@
           "variable.language.this.js",
           "variable.other.declaration.go",
           "variable.other.assignment.go",
+          "meta.object-literal.key.js",
         ],
         "settings": {
           "foreground": "#f5e48e"
@@ -290,6 +289,7 @@
           "string",
           "punctuation.definition.string.begin",
           "punctuation.definition.string.end",
+          "support.class.math.block.environment.latex",
         ],
         "settings": {
           "foreground": "#85d688"
@@ -300,17 +300,19 @@
           "entity.name",
           "string.other.link.title.markdown",
           "markup.bold.markdown",
-          "markup.underline.link.latex"
+          "markup.underline.link.latex",
         ],
         "settings": {
-          "foreground": "#66b068"
+          "foreground": "#66b06b"
         }
       },
       {
         "scope": [
           "punctuation",
           "constant.language.boolean.true.js",
-          "constant.other.placeholder.go"
+          "constant.other.placeholder.go",
+          "punctuation.definition.string.begin.latex",
+          "punctuation.definition.string.end.latex",
         ],
         "settings": {
           "foreground": "#4cf5d9"
@@ -333,7 +335,6 @@
           "keyword.operator.new.js",
           "entity.name.section.latex",
           "keyword.other",
-          "support.function.be.latex",
         ],
         "settings": {
           "foreground": "#7abef5",
@@ -347,6 +348,9 @@
           "punctuation.definition.function.tex",
           "punctuation.definition.keyword.latex",
           "punctuation.definition.constant.math.tex",
+          "support.function.be.latex",
+          "constant.language.null.js",
+          "constant.language.undefined.js",
         ],
         "settings": {
           "foreground": "#4c7ff5"
@@ -367,6 +371,7 @@
       {
         "scope": [
           "constant.numeric",
+          "constant.numeric.math.tex"
         ],
         "settings": {
           "foreground": "#f5769c"
@@ -393,7 +398,9 @@
           "keyword.operator.expression.of.js",
           "meta.object-literal.key.js",
           "meta.definition.method.js",
-          "storage.type"
+          "storage.type",
+          "support.function.be.latex",
+          "support.class.math.block.environment.latex",
         ],
         "settings": {
           "fontStyle": "italic",

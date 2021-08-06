@@ -44,4 +44,10 @@
     ],
     "description": ""
   },
+  "Event Listener": {
+    "scope": "javascript",
+    "prefix": ".ae",
+    "body": ".addEventListener(${1:'click'}, e => {$0});",
+    "description": ""
+  },
 }

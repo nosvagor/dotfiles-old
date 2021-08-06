@@ -15,13 +15,13 @@
     "prefix": "slx",
     "body": [
       "\"$1\": {",
-      "\"scope\": \"javascript\",",
+      "\"scope\": \"latex\",",
       "\"prefix\": \"$2\",",
       "\"body\": [\n\"$3\",\n],",
       "\"description\": \"$4\"",
       "},$0\n"
     ],
-    "description": "Blank snippet for javascript"
+    "description": "Blank snippet for latex"
   },
   // ╔═╗┌─┐┬─┐┌┬┐┌─┐┌┬┐┌┬┐┬┌┐┌┌─┐
   // ╠╣ │ │├┬┘│││├─┤ │  │ │││││ ┬
@@ -294,5 +294,28 @@
     "scope": "latex",
     "prefix": "iy",
     "body": "\\yyy{dependent}"
-  }
+  },
+  "limit": {
+    "scope": "latex",
+    "prefix": "lim",
+    "body": [
+      "\\lim_{\\xxx{$1} \\to \\yyy{$2}}$0",
+    ],
+    "description": "Limit, x to ?"
+  },
+  "function": {
+    "scope": "latex",
+    "prefix": "fnx",
+    "body": [
+      "f(\\xxx{$1})$0",
+    ],
+  },
+  "Infinity": {
+    "scope": "latex",
+    "prefix": "inf",
+    "body": [
+      "\\infty",
+    ],
+    "description": ""
+  },
 }

@@ -17,34 +17,15 @@
     "scope": "latex",
     "prefix": "docstart",
     "body": [
-      "\\documentclass[basic]{inVerba-notes}",
+      "\\documentclass[basic]{nosvagor-notes}",
+      "\\usepackage{nosvagor-math}",
       "",
       "\\newcommand{\\userName}{Cullyn Newman}",
-      "\\newcommand{\\class}{BI:\\@ $1}",
-      "\\newcommand{\\theTitle}{$2}",
+      "\\newcommand{\\class}{$1:\\@ $2}",
+      "\\newcommand{\\theTitle}{$3}",
       "\\newcommand{\\institution}{Portland State University}",
       "",
       "\\begin{document}",
-      "",
-      "\\end{document}"
-    ]
-  },
-  "Note Start": {
-    "scope": "latex",
-    "prefix": "notestart",
-    "body": [
-      "\\documentclass{inVerba-notes}",
-      "",
-      "\\definecolor{title-color}{HTML}{5f89f5}",
-      "\\newcommand{\\theTitle}{\\href{https://github.com/cullyn-inverba/notes/tree/master/$1}{$2}}",
-      "",
-      "\\begin{document}",
-      "",
-      "{\\pagestyle{plain}",
-      "\\hypertarget{ToC}{\\tableofcontents}",
-      "\\cleardoublepage}",
-      "",
-      "\\include{ch-1.tex}",
       "",
       "\\end{document}"
     ]
@@ -77,21 +58,6 @@
       "\\begin{itemize}",
       "\t\\item $0",
       "\\end{itemize}",
-      ""
-    ]
-  },
-  "No indent list": {
-    "scope": "latex",
-    "prefix": "noindent",
-    "body": "[align=left, leftmargin=0pt, labelindent=\\parindent, listparindent=\\parindent, labelwidth=0pt, itemindent=!]"
-  },
-  "Response": {
-    "scope": "latex",
-    "prefix": "basec",
-    "body": [
-      "\\basec{\\begin{itemize}",
-      "\t\\item $0",
-      "\\end{itemize}}",
       ""
     ]
   },
@@ -159,6 +125,11 @@
     "prefix": "nvs",
     "body": "\\vspace{42pt}"
   },
+  "Parens": {
+    "scope": "latex",
+    "prefix": "prn",
+    "body": "\\prn{$1}$0"
+  },
   "Begin Center": {
     "scope": "latex",
     "prefix": "ccenter",
@@ -189,14 +160,6 @@
     ],
     "description": "A styled link to a later part of the document (needs }})"
   },
-  "To be defined": {
-    "scope": "latex",
-    "prefix": "tbd",
-    "body": [
-      "\\hyperref[tbd]{\\dlink{$0"
-    ],
-    "description": "A styled link to a later part of the document that is currently not defined (needs }})"
-  },
   "Internal Up Link": {
     "scope": "latex",
     "prefix": "ull",
@@ -212,7 +175,7 @@
   },
   "Only units": {
     "scope": "latex",
-    "prefix": "siii",
+    "prefix": "usi",
     "body": "\\si{$1}$0"
   },
   // ╔═╗┬ ┬┌─┐┌┬┐┬┌─┐┌┬┐┬─┐┬ ┬
