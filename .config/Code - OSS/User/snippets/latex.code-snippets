@@ -61,6 +61,14 @@
       ""
     ]
   },
+  "Source Link": {
+    "scope": "latex",
+    "prefix": "srl",
+    "body": [
+      "\\src{\\link{$1}{$2}}",
+    ],
+    "description": ""
+  },
   "Centered Graphic": {
     "scope": "latex",
     "prefix": "Centered Graphic",

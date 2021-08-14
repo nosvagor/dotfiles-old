@@ -20,7 +20,7 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
 }
 
 .tabbrowser-tab::after {
-    display: none !important;
+    visibility: collapse !important;
 }
 
 .tab-background .tab-line {
@@ -74,7 +74,7 @@ toolbarbutton#new-tab-button, toolbarbutton#alltabs-button {
   --uc-tab-curve-size:10px;
   --uc-tabs-scrollbutton-border: 0px;
   --proton-tab-block-margin:0px;
-  --tab-min-height: 30px; 
+  --tab-min-height: 24px; 
 }
 
 .tab-icon-sound-label {

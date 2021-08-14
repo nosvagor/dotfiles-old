@@ -36,6 +36,13 @@
       "document.querySelector($1)$0",
     ],
   },
+  "querySelectorAll": {
+    "scope": "javascript",
+    "prefix": "qsa",
+    "body": [
+      "document.querySelectorAll($1)$0",
+    ],
+  },
   "Anonymous function": {
     "scope": "javascript",
     "prefix": "af",
@@ -47,7 +54,21 @@
   "Event Listener": {
     "scope": "javascript",
     "prefix": ".ae",
-    "body": ".addEventListener(${1:'click'}, e => {$0});",
+    "body": ".addEventListener('${1:click}', $0);",
+    "description": ""
+  },
+  "Async Function": {
+    "scope": "javascript",
+    "prefix": "asyf",
+    "body": [
+      "const $1 = async function () {",
+      "\ttry {",
+      "\t\t$0",
+      "\t} catch (error) {",
+      "\t\t\talert(error)",
+      "\t}",
+      "}",
+    ],
     "description": ""
   },
 }

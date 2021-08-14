@@ -180,7 +180,6 @@
   "prettier.arrowParens": "avoid",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "prettier.singleQuote": true,
   "[markdown]": {
     "editor.quickSuggestions": true
   },
@@ -204,7 +203,7 @@
     },
   ],
   "editor.wordWrapColumn": 79,
-  "prettier.printWidth": 1000,
+  "prettier.printWidth": 69,
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showBracketsInRuler": true,
   "editor.highlightActiveIndentGuide": false,
@@ -240,7 +239,7 @@
         "scope": [
           "variable.parameter",
           "constant.character.math.tex",
-          "meta.definition.label.latex"
+          "meta.definition.label.latex",
         ],
         "settings": {
           "foreground": "#f57067"
@@ -265,6 +264,8 @@
           "support.class",
           "constant.numeric.math.tex",
           "constant.language",
+          "entity.name",
+          "entity.other.inherited-class"
         ],
         "settings": {
           "foreground": "#f5984c"
@@ -279,6 +280,7 @@
           "variable.other.declaration.go",
           "variable.other.assignment.go",
           "meta.object-literal.key.js",
+          "variable.language.super.js",
         ],
         "settings": {
           "foreground": "#f5e48e"
@@ -297,7 +299,6 @@
       },
       {
         "scope": [
-          "entity.name",
           "string.other.link.title.markdown",
           "markup.bold.markdown",
           "markup.underline.link.latex",
@@ -323,6 +324,8 @@
           "variable.other.readwrite.js",
           "support.variable.property.js",
           "variable.parameter.function.latex",
+          "variable.other.property.js",
+          "variable.other.object.property.js",
         ],
         "settings": {
           "foreground": "#bae1f5"
@@ -332,6 +335,7 @@
         "scope": [
           "keyword.control",
           "keyword.operator.expression.of.js",
+          "storage.modifier.async.js",
           "keyword.operator.new.js",
           "entity.name.section.latex",
           "keyword.other",
@@ -361,6 +365,7 @@
           "storage.type",
           "storage.type.js",
           "keyword.operator.expression.typeof.js",
+          "keyword.operator.expression.instanceof.js",
           "keyword.operator.assignment.go",
           "keyword.var.go",
         ],
@@ -371,7 +376,7 @@
       {
         "scope": [
           "constant.numeric",
-          "constant.numeric.math.tex"
+          "constant.numeric.math.tex",
         ],
         "settings": {
           "foreground": "#f5769c"
@@ -380,6 +385,7 @@
       {
         "scope": [
           "keyword.operator.logical",
+          "constant.language.boolean.false.js",
         ],
         "settings": {
           "foreground": "#f54c7f"
@@ -396,11 +402,14 @@
       {
         "scope": [
           "keyword.operator.expression.of.js",
+          "keyword.operator.expression.instanceof.js",
+          "keyword.operator.expression.typeof.js",
           "meta.object-literal.key.js",
-          "meta.definition.method.js",
           "storage.type",
+          "storage.modifier",
           "support.function.be.latex",
           "support.class.math.block.environment.latex",
+          "keyword.operator.new.js",
         ],
         "settings": {
           "fontStyle": "italic",
@@ -413,4 +422,7 @@
   "bracket-pair-colorizer-2.highlightActiveScope": true,
   "python.formatting.provider": "autopep8",
   "editor.tabCompletion": "on",
+  "latex-workshop.latexindent.path": "/usr/local/bin",
+  "editor.autoIndent": "advanced",
+  "editor.formatOnPaste": true
 }

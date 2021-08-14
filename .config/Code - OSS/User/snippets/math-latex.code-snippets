@@ -299,7 +299,7 @@
     "scope": "latex",
     "prefix": "lim",
     "body": [
-      "\\lim_{\\xxx{$1} \\to \\yyy{$2}}$0",
+      "\\lim_{x \\to $2}$0",
     ],
     "description": "Limit, x to ?"
   },
@@ -307,7 +307,7 @@
     "scope": "latex",
     "prefix": "fnx",
     "body": [
-      "f(\\xxx{$1})$0",
+      "f(x)$0",
     ],
   },
   "Infinity": {
@@ -315,6 +315,14 @@
     "prefix": "inf",
     "body": [
       "\\infty",
+    ],
+    "description": ""
+  },
+  "Number": {
+    "scope": "latex",
+    "prefix": "nmp",
+    "body": [
+      "\\ppp{$1}$0",
     ],
     "description": ""
   },
