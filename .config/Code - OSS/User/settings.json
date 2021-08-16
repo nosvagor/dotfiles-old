@@ -212,6 +212,8 @@
       {
         "scope": [
           "variable",
+          "source.css support.type.property-name",
+          "markup.italic.textit.latex",
         ],
         "settings": {
           "foreground": "#ebebeb",
@@ -250,7 +252,7 @@
           "support.function",
           "entity.name.function",
           "markup.italic.emph.latex",
-          "constant.other.general.math.tex"
+          "constant.other.general.math.tex",
         ],
         "settings": {
           "foreground": "#f5af71"
@@ -265,7 +267,8 @@
           "constant.numeric.math.tex",
           "constant.language",
           "entity.name",
-          "entity.other.inherited-class"
+          "entity.other.inherited-class",
+          "variable.parameter.keyframe-list.css",
         ],
         "settings": {
           "foreground": "#f5984c"
@@ -281,6 +284,7 @@
           "variable.other.assignment.go",
           "meta.object-literal.key.js",
           "variable.language.super.js",
+          "entity.name.tag.reference.scss",
         ],
         "settings": {
           "foreground": "#f5e48e"
@@ -302,6 +306,8 @@
           "string.other.link.title.markdown",
           "markup.bold.markdown",
           "markup.underline.link.latex",
+          "variable.parameter.url.css",
+          "meta.attribute-selector.scss"
         ],
         "settings": {
           "foreground": "#66b06b"
@@ -314,6 +320,8 @@
           "constant.other.placeholder.go",
           "punctuation.definition.string.begin.latex",
           "punctuation.definition.string.end.latex",
+          "keyword.control.at-rule.keyframes.css",
+          "punctuation.definition.entity.css"
         ],
         "settings": {
           "foreground": "#4cf5d9"
@@ -326,6 +334,7 @@
           "variable.parameter.function.latex",
           "variable.other.property.js",
           "variable.other.object.property.js",
+          "variable.scss",
         ],
         "settings": {
           "foreground": "#bae1f5"
@@ -339,6 +348,8 @@
           "keyword.operator.new.js",
           "entity.name.section.latex",
           "keyword.other",
+          "support.constant",
+          "meta.property-value.css"
         ],
         "settings": {
           "foreground": "#7abef5",
@@ -354,7 +365,7 @@
           "punctuation.definition.constant.math.tex",
           "support.function.be.latex",
           "constant.language.null.js",
-          "constant.language.undefined.js",
+          "constant.language.undefined.js"
         ],
         "settings": {
           "foreground": "#4c7ff5"
@@ -368,6 +379,7 @@
           "keyword.operator.expression.instanceof.js",
           "keyword.operator.assignment.go",
           "keyword.var.go",
+          "entity.other.attribute-name.class.css",
         ],
         "settings": {
           "foreground": "#c88ef5"
@@ -377,6 +389,7 @@
         "scope": [
           "constant.numeric",
           "constant.numeric.math.tex",
+          "entity.other.keyframe-offset.percentage.css"
         ],
         "settings": {
           "foreground": "#f5769c"
@@ -386,6 +399,7 @@
         "scope": [
           "keyword.operator.logical",
           "constant.language.boolean.false.js",
+          "keyword.other.unit",
         ],
         "settings": {
           "foreground": "#f54c7f"
@@ -415,6 +429,14 @@
           "fontStyle": "italic",
         }
       },
+      {
+        "scope": [
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
     ]
   },
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
@@ -423,6 +445,9 @@
   "python.formatting.provider": "autopep8",
   "editor.tabCompletion": "on",
   "latex-workshop.latexindent.path": "/usr/local/bin",
-  "editor.autoIndent": "advanced",
-  "editor.formatOnPaste": true
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.compatibleVendorPrefixes": "warning",
+  "scss.lint.emptyRules": "ignore",
+  "scss.lint.boxModel": "warning"
 }
