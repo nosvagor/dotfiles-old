@@ -26,12 +26,7 @@
 super + Return
 	kitty
 
-# most used apps
-super + alt + shift + {f,t,r,e,v,w,x}
-	{code,firefox,zathura,\
-	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e ranger, \
-	bspc wm -r, \
-	bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty,bspc rule -a kitty -o state=floating rectangle=1920x1080+1080+540 && kitty -e htop} 
+
 
 # kill hard to end applications
 ctrl + shift + alt + super + v
@@ -71,9 +66,6 @@ super + alt + shift + space
 # ╔╗ ┌─┐┌─┐┬ ┬┌┬┐
 # ╠╩╗└─┐├─┘││││││
 # ╚═╝└─┘┴  └┴┘┴ ┴
-# close window
-ctrl + Escape
-	bspc node -c
 
 # kill window
 super + x
@@ -103,16 +95,6 @@ super + {w,r}
 # focus the last desktop
 super + Escape
 	bspc desktop -f last
-
-# focus desktop and change background
-super + a
-	bspc desktop -f ^1; feh --bg-scale ~/resources/wallpapers/'jelly-3840x2160.jpg'
-super + s
-	bspc desktop -f ^2; feh --bg-scale ~/resources/wallpapers/'spirited-3840x2160.png'
-super + e
-	bspc desktop -f ^3; feh --bg-scale ~/resources/wallpapers/'arrival-3840x2160.jpg'
-super + t
-	bspc desktop -f ^4; feh --bg-scale ~/resources/wallpapers/'girl-3840x2160.png'
 
 # move focused window to next desktop then switch
 super + alt + {Up, Down}
